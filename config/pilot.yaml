@@ -1,0 +1,31 @@
+seed: 42
+
+chunking:
+  min_words: 50
+  max_words: 200
+
+splits:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  group_key: document_id
+
+classes:
+  positive:
+    label: 1
+    source_group: defence
+  negatives:
+    label: 0
+    groups:
+      - general_wikipedia
+      - military_wikipedia
+
+sampling:
+  balance_classes: true
+  match_length_distribution: true
+
+models:
+  lexical_baseline: tfidf_logistic_regression
+  semantic_baseline: sbert_logistic_regression
+  sbert_checkpoint: sentence-transformers/all-MiniLM-L6-v2
+

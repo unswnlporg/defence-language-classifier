@@ -1,0 +1,42 @@
+{
+  "pairs": 300,
+  "model": "sbert_logistic_regression",
+  "checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+  "classification_threshold": 0.371459154857299,
+  "pairwise": {
+    "target_wins": 256,
+    "dispreferred_wins": 44,
+    "ties": 0,
+    "target_win_rate": 0.8533333333333334,
+    "sign_test_p_value": 7.941077471014399e-38,
+    "wilcoxon_p_value": 1.0053638847266232e-34
+  },
+  "scores": {
+    "target_mean": 0.8967545175801163,
+    "target_median": 0.9448944431733011,
+    "dispreferred_mean": 0.812378073881921,
+    "dispreferred_median": 0.8963602055398013,
+    "mean_margin": 0.0843764436981952,
+    "median_margin": 0.03736263783411464,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.07029944007332309,
+      0.09882487029402788
+    ]
+  },
+  "threshold_outcomes": {
+    "both_defence": 280,
+    "target_only": 18,
+    "dispreferred_only": 0,
+    "neither": 2
+  },
+  "answer_lengths": {
+    "training_range_words": [
+      50,
+      200
+    ],
+    "target_mean_words": 88.53,
+    "dispreferred_mean_words": 84.03,
+    "target_below_training_range": 35,
+    "dispreferred_below_training_range": 43
+  }
+}

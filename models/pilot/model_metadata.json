@@ -1,0 +1,14 @@
+{
+  "dataset_sha256": "386ac5250ff379ce77a42a28ce0bc3f5750bff0ff5856c5c2bb821380405d540",
+  "tfidf_logistic_regression": {
+    "artifact": "tfidf_logistic_regression.joblib",
+    "threshold": 0.3202620756480383
+  },
+  "sbert_logistic_regression": {
+    "artifact": "sbert_logistic_regression.joblib",
+    "checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+    "normalize_embeddings": true,
+    "embedding_dimension": 384,
+    "threshold": 0.371459154857299
+  }
+}

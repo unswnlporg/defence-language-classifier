@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+data/raw/
+data/interim/
+models/*
+data/cache/
+
+!data/processed/.gitkeep
+!models/.gitkeep
+!models/pilot/
+models/pilot/*.joblib
+!reports/.gitkeep

@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "sources": {
+    "data/processed/defence_passages.jsonl": "79127d775d1fb1bb704c2621c02e3749c365a8a90dbb3898a3736b7a07c08367",
+    "data/processed/wikipedia_negatives.jsonl": "0f06186afb84fe8c46c555febfb882dd01c4880897719bd7a94edde6c6c2bb48"
+  },
+  "output_sha256": "386ac5250ff379ce77a42a28ce0bc3f5750bff0ff5856c5c2bb821380405d540",
+  "summary": {
+    "train": {
+      "passages": 1244,
+      "documents": 260,
+      "positive": 620,
+      "negative": 624,
+      "general_wikipedia": 312,
+      "military_wikipedia": 312
+    },
+    "validation": {
+      "passages": 270,
+      "documents": 59,
+      "positive": 136,
+      "negative": 134,
+      "general_wikipedia": 67,
+      "military_wikipedia": 67
+    },
+    "test": {
+      "passages": 270,
+      "documents": 59,
+      "positive": 136,
+      "negative": 134,
+      "general_wikipedia": 67,
+      "military_wikipedia": 67
+    }
+  }
+}
