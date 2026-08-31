@@ -1,0 +1,56 @@
+#!/bin/bash
+#PBS -N defence-qwen
+#PBS -l walltime=01:00:00
+#PBS -j oe
+
+set -euo pipefail
+
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+: "${STAGE:?Submit with STAGE=setup,download,train, or verify}"
+
+module purge
+module load python/3.11.3
+
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TORCH_HOME="$SCRATCH/cache/torch"
+export TOKENIZERS_PARALLELISM=true
+
+mkdir -p "$HF_HOME" "$TORCH_HOME" "$SCRATCH/defence-language-classifier/embeddings"
+
+if [[ "$STAGE" == setup && ! -x "$VENV/bin/python" ]]; then
+    python -m venv "$VENV"
+    "$VENV/bin/pip" install --upgrade pip
+    "$VENV/bin/pip" install -r "$REPO/requirements.txt"
+fi
+
+cd "$REPO"
+case "$STAGE" in
+    setup)
+        "$VENV/bin/python" -c 'import sentence_transformers, sklearn; print(sentence_transformers.__version__, sklearn.__version__)'
+        ;;
+    download)
+        "$VENV/bin/python" -c 'from huggingface_hub import snapshot_download; print(snapshot_download("Qwen/Qwen3-Embedding-8B"))'
+        ;;
+    train)
+        "$VENV/bin/python" scripts/train_baselines.py \
+            --dataset data/processed/dataset_splits.jsonl \
+            --model-dir models/qwen \
+            --report-dir reports/qwen \
+            --cache-dir "$SCRATCH/defence-language-classifier/embeddings/qwen3-embedding-8b" \
+            --sbert-checkpoint Qwen/Qwen3-Embedding-8B \
+            --batch-size 4
+        ;;
+    verify)
+        test -s reports/qwen/metrics.json
+        test -s reports/qwen/test_predictions.jsonl
+        test -s models/qwen/model_metadata.json
+        "$VENV/bin/python" -m json.tool reports/qwen/metrics.json >/dev/null
+        ;;
+    *)
+        echo "Unknown STAGE=$STAGE" >&2
+        exit 2
+        ;;
+esac
