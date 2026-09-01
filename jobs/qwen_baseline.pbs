@@ -8,7 +8,7 @@ set -euo pipefail
 REPO=/home/z5703460/defence-language-classifier
 SCRATCH=/srv/scratch/z5703460
 VENV="$SCRATCH/venvs/defence-language-classifier"
-: "${STAGE:?Submit with STAGE=setup,download,train, or verify}"
+: "${STAGE:?Submit with STAGE=setup,download,train,verify, or score_preferences}"
 
 module purge
 module load python/3.11.3
@@ -48,6 +48,14 @@ case "$STAGE" in
         test -s reports/qwen/test_predictions.jsonl
         test -s models/qwen/model_metadata.json
         "$VENV/bin/python" -m json.tool reports/qwen/metrics.json >/dev/null
+        ;;
+    score_preferences)
+        "$VENV/bin/python" scripts/score_preference_pairs.py \
+            --pairs data/raw/preference_pairs.jsonl \
+            --model-dir models/qwen \
+            --output reports/qwen/preference_pair_scores.jsonl \
+            --summary reports/qwen/preference_pair_summary.json \
+            --batch-size 4
         ;;
     *)
         echo "Unknown STAGE=$STAGE" >&2

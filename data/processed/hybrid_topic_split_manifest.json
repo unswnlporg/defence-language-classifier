@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "source_topic_pairs": "[PosixPath('data/processed/topic_matched_pairs.jsonl'), PosixPath('data/processed/topic_matched_pairs_qwenfloor032.jsonl')]",
+  "defence_passages_used": 439,
+  "total_rows": 1317,
+  "composition": "1 positive : 1 topic-matched negative : 1 easy negative per Defence passage",
+  "summary": {
+    "train": {
+      "positive": 296,
+      "topic_matched_negative": 296,
+      "easy_negative": 296
+    },
+    "validation": {
+      "positive": 68,
+      "topic_matched_negative": 68,
+      "easy_negative": 68
+    },
+    "test": {
+      "positive": 75,
+      "topic_matched_negative": 75,
+      "easy_negative": 75
+    }
+  }
+}

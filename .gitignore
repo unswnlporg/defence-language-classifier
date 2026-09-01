@@ -16,6 +16,10 @@ data/cache/
 models/pilot/*.joblib
 !models/qwen/
 models/qwen/*.joblib
+!models/hybrid_minilm/
+models/hybrid_minilm/*.joblib
+!models/hybrid_qwen/
+models/hybrid_qwen/*.joblib
 !reports/.gitkeep
 
 *.o[0-9]*

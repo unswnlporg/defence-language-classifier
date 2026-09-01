@@ -1,0 +1,246 @@
+{
+  "positive_defence": [
+    {
+      "feature": "planning",
+      "coefficient": 5.865502549653116
+    },
+    {
+      "feature": "operational",
+      "coefficient": 4.51264684548271
+    },
+    {
+      "feature": "jmap",
+      "coefficient": 4.455991270379235
+    },
+    {
+      "feature": "adf",
+      "coefficient": 4.3705211455640764
+    },
+    {
+      "feature": "military",
+      "coefficient": 4.326469344114731
+    },
+    {
+      "feature": "this",
+      "coefficient": 3.9787368292998146
+    },
+    {
+      "feature": "the adf",
+      "coefficient": 3.664899984140563
+    },
+    {
+      "feature": "strategic",
+      "coefficient": 3.66187961646304
+    },
+    {
+      "feature": "political warfare",
+      "coefficient": 3.319912683674325
+    },
+    {
+      "feature": "warfare",
+      "coefficient": 3.2342269292205743
+    },
+    {
+      "feature": "political",
+      "coefficient": 3.194230307523959
+    },
+    {
+      "feature": "environment",
+      "coefficient": 3.187080066719729
+    },
+    {
+      "feature": "doctrine",
+      "coefficient": 3.1451484419300995
+    },
+    {
+      "feature": "us",
+      "coefficient": 3.1291554686997434
+    },
+    {
+      "feature": "approach",
+      "coefficient": 2.8611864941968586
+    },
+    {
+      "feature": "the jmap",
+      "coefficient": 2.8478041804542586
+    },
+    {
+      "feature": "western",
+      "coefficient": 2.6777329966567773
+    },
+    {
+      "feature": "joint",
+      "coefficient": 2.6160658943846835
+    },
+    {
+      "feature": "cog",
+      "coefficient": 2.576483093009726
+    },
+    {
+      "feature": "will",
+      "coefficient": 2.4034832873105625
+    },
+    {
+      "feature": "australia",
+      "coefficient": 2.2358502151818644
+    },
+    {
+      "feature": "thinking",
+      "coefficient": 2.2085633401480282
+    },
+    {
+      "feature": "however",
+      "coefficient": 2.1798510564211346
+    },
+    {
+      "feature": "campaigning",
+      "coefficient": 2.1695446691458806
+    },
+    {
+      "feature": "operational art",
+      "coefficient": 2.1588793137874056
+    },
+    {
+      "feature": "adversary",
+      "coefficient": 2.1526013337532324
+    },
+    {
+      "feature": "complex",
+      "coefficient": 2.1288724977499123
+    },
+    {
+      "feature": "the operational",
+      "coefficient": 2.1193712652508947
+    },
+    {
+      "feature": "militaries",
+      "coefficient": 2.036484922359049
+    },
+    {
+      "feature": "art",
+      "coefficient": 2.026973710959303
+    }
+  ],
+  "negative_wikipedia": [
+    {
+      "feature": "was",
+      "coefficient": -2.381801885973069
+    },
+    {
+      "feature": "were",
+      "coefficient": -1.6657460322175397
+    },
+    {
+      "feature": "some",
+      "coefficient": -1.5869340941249004
+    },
+    {
+      "feature": "his",
+      "coefficient": -1.4687538458931442
+    },
+    {
+      "feature": "used",
+      "coefficient": -1.3571655580261943
+    },
+    {
+      "feature": "law",
+      "coefficient": -1.2699042736291088
+    },
+    {
+      "feature": "many",
+      "coefficient": -1.2519816636573047
+    },
+    {
+      "feature": "he",
+      "coefficient": -1.239383338551528
+    },
+    {
+      "feature": "which",
+      "coefficient": -1.2385868072423618
+    },
+    {
+      "feature": "called",
+      "coefficient": -1.2171055155838857
+    },
+    {
+      "feature": "research",
+      "coefficient": -1.2091790420929835
+    },
+    {
+      "feature": "had",
+      "coefficient": -1.1659634165742054
+    },
+    {
+      "feature": "from",
+      "coefficient": -1.1451262199207355
+    },
+    {
+      "feature": "on",
+      "coefficient": -1.143669795855693
+    },
+    {
+      "feature": "armed",
+      "coefficient": -1.0806802725936486
+    },
+    {
+      "feature": "by the",
+      "coefficient": -1.078988667389676
+    },
+    {
+      "feature": "others",
+      "coefficient": -1.0747354254173214
+    },
+    {
+      "feature": "in",
+      "coefficient": -1.0294144018997036
+    },
+    {
+      "feature": "known",
+      "coefficient": -1.010186225672501
+    },
+    {
+      "feature": "history",
+      "coefficient": -1.0057153604546833
+    },
+    {
+      "feature": "made",
+      "coefficient": -0.9719765558292296
+    },
+    {
+      "feature": "united",
+      "coefficient": -0.9620549833658718
+    },
+    {
+      "feature": "about",
+      "coefficient": -0.9505306706525624
+    },
+    {
+      "feature": "german",
+      "coefficient": -0.9490873443280916
+    },
+    {
+      "feature": "large",
+      "coefficient": -0.9418429955731371
+    },
+    {
+      "feature": "been",
+      "coefficient": -0.9366138520713707
+    },
+    {
+      "feature": "organization",
+      "coefficient": -0.9343753867661309
+    },
+    {
+      "feature": "of the",
+      "coefficient": -0.9321448570808556
+    },
+    {
+      "feature": "business",
+      "coefficient": -0.9144620228052599
+    },
+    {
+      "feature": "british",
+      "coefficient": -0.9093978290012342
+    }
+  ]
+}

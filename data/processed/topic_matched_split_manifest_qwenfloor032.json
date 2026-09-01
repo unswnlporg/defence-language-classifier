@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "retrieval_encoder": "Qwen/Qwen3-Embedding-8B",
+  "semantic_floor": 0.32,
+  "near_dup_threshold": 0.5,
+  "min_words": 50,
+  "max_words": 200,
+  "requested_pairs": 892,
+  "accepted_pairs": 438,
+  "unmatched": 454,
+  "splits_inherited_from": "data/processed/dataset_splits.jsonl",
+  "summary": {
+    "train": {
+      "pairs": 292
+    },
+    "validation": {
+      "pairs": 68
+    },
+    "test": {
+      "pairs": 78
+    }
+  }
+}

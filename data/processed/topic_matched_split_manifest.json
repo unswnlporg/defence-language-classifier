@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "retrieval_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "semantic_floor": 0.4,
+  "near_dup_threshold": 0.5,
+  "min_words": 50,
+  "max_words": 200,
+  "requested_pairs": 892,
+  "accepted_pairs": 158,
+  "unmatched": 734,
+  "splits_inherited_from": "data/processed/dataset_splits.jsonl",
+  "summary": {
+    "train": {
+      "pairs": 107
+    },
+    "validation": {
+      "pairs": 26
+    },
+    "test": {
+      "pairs": 25
+    }
+  }
+}

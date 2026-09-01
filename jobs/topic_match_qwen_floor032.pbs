@@ -1,0 +1,33 @@
+#!/bin/bash
+#PBS -N defence-topicmatch-qwenfloor032
+#PBS -l walltime=02:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+"$VENV/bin/python" scripts/build_topic_matched_negatives.py \
+  --defence data/processed/defence_passages.jsonl \
+  --dataset-splits data/processed/dataset_splits.jsonl \
+  --negatives-output data/processed/topic_matched_wikipedia_negatives_qwenfloor032.jsonl \
+  --pairs-output data/processed/topic_matched_pairs_qwenfloor032.jsonl \
+  --combined-output data/processed/topic_matched_dataset_splits_qwenfloor032.jsonl \
+  --manifest-output data/processed/topic_matched_split_manifest_qwenfloor032.json \
+  --report-dir reports/topic_matched_qwenfloor032 \
+  --cache-dir "$SCRATCH/cache/topic_matching" \
+  --progress "$SCRATCH/cache/topic_matching/decisions_qwenfloor032.jsonl" \
+  --retrieval-encoder Qwen/Qwen3-Embedding-8B \
+  --semantic-floor 0.32 \
+  --workers 10 \
+  --max-extract-words 900

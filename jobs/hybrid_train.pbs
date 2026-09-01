@@ -1,0 +1,50 @@
+#!/bin/bash
+#PBS -N defence-hybrid
+#PBS -l walltime=00:45:00
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+: "${STAGE:?Submit with STAGE=minilm,qwen, or score_preferences}"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+case "$STAGE" in
+    minilm)
+        "$VENV/bin/python" scripts/train_baselines.py \
+            --dataset data/processed/hybrid_topic_dataset_splits.jsonl \
+            --model-dir models/hybrid_minilm \
+            --report-dir reports/hybrid_minilm \
+            --cache-dir "$SCRATCH/defence-language-classifier/embeddings/hybrid-minilm" \
+            --sbert-checkpoint sentence-transformers/all-MiniLM-L6-v2 \
+            --batch-size 32
+        ;;
+    qwen)
+        "$VENV/bin/python" scripts/train_baselines.py \
+            --dataset data/processed/hybrid_topic_dataset_splits.jsonl \
+            --model-dir models/hybrid_qwen \
+            --report-dir reports/hybrid_qwen \
+            --cache-dir "$SCRATCH/defence-language-classifier/embeddings/hybrid-qwen3-embedding-8b" \
+            --sbert-checkpoint Qwen/Qwen3-Embedding-8B \
+            --batch-size 4
+        ;;
+    score_preferences)
+        "$VENV/bin/python" scripts/score_preference_pairs.py \
+            --pairs data/raw/preference_pairs.jsonl \
+            --model-dir models/hybrid_qwen \
+            --output reports/hybrid_qwen/preference_pair_scores.jsonl \
+            --summary reports/hybrid_qwen/preference_pair_summary.json \
+            --batch-size 4
+        ;;
+    *)
+        echo "Unknown STAGE=$STAGE" >&2
+        exit 2
+        ;;
+esac

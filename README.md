@@ -87,11 +87,17 @@ Labels are `1` for Defence-corpus passages and `0` for non-Defence passages.
 - [x] Train SBERT + logistic regression.
 - [x] Evaluate and conduct error analysis.
 - [x] Score the 300 QA candidates.
-- [ ] Construct topic-matched Wikipedia negatives for a harder evaluation.
-- [ ] Re-run frozen-embedding + logistic-regression training with
+- [x] Re-run frozen-embedding + logistic-regression training with
       `Qwen/Qwen3-Embedding-8B` on Katana.
-- [ ] Compare Qwen3-Embedding-8B against the MiniLM and TF-IDF baselines using
-      the same document-disjoint splits and evaluation metrics.
+- [x] Construct topic-matched Wikipedia negatives for a harder evaluation
+      (439/892 passages matched; see "Topic-matched dataset" in
+      `docs/training_methodology.md` for the yield ceiling and why it wasn't
+      forced to 892).
+- [x] Compare Qwen3-Embedding-8B against the MiniLM and TF-IDF baselines on
+      the topic-matched hybrid dataset.
+- [ ] Consider whether topic-matching yield can be raised past ~49% with a
+      different approach (e.g. a local full-Wikipedia index), or whether 439
+      is the practical ceiling for this corpus.
 
 ## Katana handoff
 

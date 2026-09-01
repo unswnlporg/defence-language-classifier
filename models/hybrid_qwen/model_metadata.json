@@ -1,0 +1,14 @@
+{
+  "dataset_sha256": "d893a6c58ed6ef9b0323dae7b25c5bf1609282048d607416718fb454b4d6aecd",
+  "tfidf_logistic_regression": {
+    "artifact": "tfidf_logistic_regression.joblib",
+    "threshold": 0.3585146061067104
+  },
+  "sbert_logistic_regression": {
+    "artifact": "sbert_logistic_regression.joblib",
+    "checkpoint": "Qwen/Qwen3-Embedding-8B",
+    "normalize_embeddings": true,
+    "embedding_dimension": 4096,
+    "threshold": 0.35821324586868286
+  }
+}

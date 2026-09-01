@@ -1,0 +1,42 @@
+{
+  "pairs": 300,
+  "model": "sbert_logistic_regression",
+  "checkpoint": "Qwen/Qwen3-Embedding-8B",
+  "classification_threshold": 0.35821324586868286,
+  "pairwise": {
+    "target_wins": 254,
+    "dispreferred_wins": 46,
+    "ties": 0,
+    "target_win_rate": 0.8466666666666667,
+    "sign_test_p_value": 2.5321200386496716e-36,
+    "wilcoxon_p_value": 1.0717347810288771e-30
+  },
+  "scores": {
+    "target_mean": 0.9415489435195923,
+    "target_median": 0.9875554442405701,
+    "dispreferred_mean": 0.8879203200340271,
+    "dispreferred_median": 0.9702688455581665,
+    "mean_margin": 0.05362864211201668,
+    "median_margin": 0.011438220739364624,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.041001614090055226,
+      0.0669716389849782
+    ]
+  },
+  "threshold_outcomes": {
+    "both_defence": 288,
+    "target_only": 8,
+    "dispreferred_only": 0,
+    "neither": 4
+  },
+  "answer_lengths": {
+    "training_range_words": [
+      50,
+      200
+    ],
+    "target_mean_words": 88.53,
+    "dispreferred_mean_words": 84.03,
+    "target_below_training_range": 35,
+    "dispreferred_below_training_range": 43
+  }
+}
