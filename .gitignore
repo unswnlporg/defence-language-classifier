@@ -52,6 +52,12 @@ models/combined_892_tfidf/*.joblib
 models/combined_892_minilm/*.joblib
 !models/combined_892_qwen/
 models/combined_892_qwen/*.joblib
+!models/pure_topic_892_tfidf/
+models/pure_topic_892_tfidf/*.joblib
+!models/pure_topic_892_minilm/
+models/pure_topic_892_minilm/*.joblib
+!models/pure_topic_892_qwen/
+models/pure_topic_892_qwen/*.joblib
 models/*_892_*_raw/
 !reports/.gitkeep
 

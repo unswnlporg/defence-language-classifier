@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/pure_topic_892_minilm",
+  "model_type": "sbert",
+  "test_name": "easy",
+  "pairing_method": "deterministic SHA256-sorted position (NO ground-truth content link -- original easy negatives were only length-matched, not id-linked to a specific passage)",
+  "threshold": 0.4671076536178589,
+  "n_pairs": 134,
+  "pairwise": {
+    "positive_greater_than_negative": 134,
+    "negative_wins": 0,
+    "ties": 0,
+    "win_rate": 1.0
+  },
+  "scores": {
+    "positive_mean": 0.9122889637947083,
+    "negative_mean": 0.023725001141428947,
+    "mean_margin": 0.8885639309883118,
+    "median_margin": 0.958120584487915,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.8606622889637947,
+      0.9139631509780883
+    ]
+  }
+}

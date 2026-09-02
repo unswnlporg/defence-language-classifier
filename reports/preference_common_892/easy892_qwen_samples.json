@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "6f52c594e7638a49",
+      "question": "What is the essence of the model Downer Defence has created to support SMEs entering the defense sector?",
+      "target_answer": "The essence of the model is to provide support through mitigations, processes, and systems such as supervision, ongoing training, mentoring, and coaching to ensure SMEs succeed in the defense sector. It involves identifying challenges and hurdles and offering targeted assistance, akin to supporting someone in their first job or business expansion, with the aim of enabling long-term success.",
+      "everyday_answer": "The model is about helping small businesses get started in the defense industry by offering support like training, mentoring, and guidance. It's similar to helping someone in their first job by figuring out what they need and giving them the right help so they can succeed.",
+      "target_probability": 0.7595961093902588,
+      "everyday_probability": 0.1713816225528717,
+      "margin": 0.5882144868373871,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "08b2c64e9b12bd93",
+      "question": "What factors contribute to China's potential ability to conduct operations against Vietnam-held or Philippines-held South China Sea features with limited military backlash?",
+      "target_answer": "China's potential ability to conduct operations against Vietnam-held or Philippines-held South China Sea features with limited military backlash is supported by the military disparity between China Coast Guard (CCG), PLA-N, and Vietnamese or Philippine forces. Additionally, China can leverage newly expanded and militarised outposts on nearby features. Strategic geography also plays a role, as Vietnam-held features are in close proximity to PRC-held features, reducing the operational distance. Furthermore, the absence of a formal defensive arrangement between Vietnam and the US, and the reduced US presence in the Philippines, has likely reduced China's perceived risk.",
+      "everyday_answer": "China might be able to take control of islands or reefs held by Vietnam or the Philippines in the South China Sea with little pushback because its military is stronger than theirs. China has built up its military bases near these areas, making it easier to act quickly. Also, the islands held by Vietnam and the Philippines are close to Chinese-controlled areas, so it's easier to reach them. Vietnam doesn't have a military agreement with the US, and the US has pulled back from the Philippines, which makes it less risky for China to act.",
+      "target_probability": 0.8710041642189026,
+      "everyday_probability": 0.3341918885707855,
+      "margin": 0.5368122756481171,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7aace25c719679f7",
+      "question": "What is the rationale for centralising Army's deployable health capabilities into a single formation?",
+      "target_answer": "Centralising Army's deployable health capabilities into one formation, such as a Health Brigade, provides a realistic solution to effectively contribute to combat viability. This approach is supported by Army doctrine and is aligned with the practices of major coalition partners like the US and UK. It enables more efficient force preparation, mobilisation, and management of limited health specialist rosters, while reducing superfluous staff effort in capability development. It also ensures that health support is managed in a single, effects-focussed formation, similar to the successful models of SOCOMD and 16 Brigade (Aviation).",
+      "everyday_answer": "Putting all the Army's health support units into one group, like a Health Brigade, makes it easier to manage and use these important but limited resources. This is something the US and UK armies already do, and it helps them prepare and respond more effectively. It also means that managing health specialists and equipment is more efficient, and it avoids unnecessary work. Examples like SOCOMD and 16 Brigade (Aviation) show that grouping similar resources together can lead to better results.",
+      "target_probability": 0.7870813012123108,
+      "everyday_probability": 0.2790847718715668,
+      "margin": 0.507996529340744,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "0677686e20045e28",
+      "question": "What is a key requirement for improving supply chain resilience according to the passage?",
+      "target_answer": "A key requirement is that the Commonwealth's procurement rules recognise that long-term partnerships in certain sectors are the best way to achieve value for money, rather than defaulting to competitive bidding without a coordinated approach.",
+      "everyday_answer": "An important step is for the government to understand that working closely with partners over the long term can be better for getting good value, instead of always trying to compete for the best price without planning properly.",
+      "target_probability": 0.5096224546432495,
+      "everyday_probability": 0.5502997636795044,
+      "margin": -0.04067730903625488,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9aa33bd04ba74638",
+      "question": "What is the main argument of the book 'Malaya' by Brian Farrell and Garth Pratten?",
+      "target_answer": "The main argument of the book is that the tragic outcome of the Malayan campaign was not due to inadequate fighting qualities in the common soldiers but rather due to poor leadership at all levels, from grand strategic to tactical, including prime ministers, generals, and battalion commanders.",
+      "everyday_answer": "The book argues that the failure in the Malayan campaign wasn't because Australian soldiers weren't brave or capable, but because the leadership at all levels, from top government officials to military commanders, didn't perform well.",
+      "target_probability": 0.34452754259109497,
+      "everyday_probability": 0.4116641879081726,
+      "margin": -0.06713664531707764,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "6a407cf8263f0a65",
+      "question": "What insight does the book 'Cobra II' provide about the role of the media in modern conflict?",
+      "target_answer": "The book highlights the access, power and reach of the modern media in conflict, noting that journalists were granted significant access to multiple levels of command. It raises questions about the influence of media access on the coverage of perspectives and the role of media in contemporary conflict.",
+      "everyday_answer": "The book shows how the media has a lot of access and influence in modern conflicts. It points out that journalists were given a lot of access to military leaders and that this might have affected how different viewpoints were covered. It makes you think about how the media operates during wars today.",
+      "target_probability": 0.6200002431869507,
+      "everyday_probability": 0.7075313329696655,
+      "margin": -0.08753108978271484,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "f6a67db064aa6f55",
+      "question": "What is the concept of 'Natural Strategic Bastions' as proposed by General de Wanty in the context of land strategy?",
+      "target_answer": "The concept of 'Natural Strategic Bastions' proposed by General de Wanty involves identifying natural defensive regions in Europe that are self-contained and capable of decentralized, integrated tactical and logistical operations. These regions, such as the Vosges, the Rhine, and the Jura, would rely on locally found garrisons and be coordinated with more mobile forces in the surrounding areas.",
+      "everyday_answer": "General de Wanty suggested the idea of 'Natural Strategic Bastions' as areas in Europe that are naturally suited for defense. These areas can operate independently with their own resources and forces, and they work together with more mobile units in the surrounding regions.",
+      "target_probability": 0.27754709124565125,
+      "everyday_probability": 0.27719756960868835,
+      "margin": 0.0003495216369628906,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f7eb6e48e0eb6faa",
+      "question": "What role did Mrs Gundula Holbrook play in the development of the Holbrook Submarine Museum?",
+      "target_answer": "Mrs Gundula Holbrook was a generous benefactor to the Holbrook Submarine Museum, providing critical funding after it became evident that the local council could not afford the cost of relocating the super-structure of the submarine Otway. Her contribution enabled the museum to become a unique historical submarine project and an integral part of the museum's infrastructure.",
+      "everyday_answer": "Gundula Holbrook helped make the Holbrook Submarine Museum possible by paying for the submarine Otway to be moved there when the local council couldn\u2019t afford it. Her support turned the museum into a special place for learning about submarines and history.",
+      "target_probability": 0.002134387381374836,
+      "everyday_probability": 0.0016885389341041446,
+      "margin": 0.0004458484472706914,
+      "winner": "target"
+    }
+  ]
+}

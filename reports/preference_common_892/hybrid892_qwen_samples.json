@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "7aace25c719679f7",
+      "question": "What is the rationale for centralising Army's deployable health capabilities into a single formation?",
+      "target_answer": "Centralising Army's deployable health capabilities into one formation, such as a Health Brigade, provides a realistic solution to effectively contribute to combat viability. This approach is supported by Army doctrine and is aligned with the practices of major coalition partners like the US and UK. It enables more efficient force preparation, mobilisation, and management of limited health specialist rosters, while reducing superfluous staff effort in capability development. It also ensures that health support is managed in a single, effects-focussed formation, similar to the successful models of SOCOMD and 16 Brigade (Aviation).",
+      "everyday_answer": "Putting all the Army's health support units into one group, like a Health Brigade, makes it easier to manage and use these important but limited resources. This is something the US and UK armies already do, and it helps them prepare and respond more effectively. It also means that managing health specialists and equipment is more efficient, and it avoids unnecessary work. Examples like SOCOMD and 16 Brigade (Aviation) show that grouping similar resources together can lead to better results.",
+      "target_probability": 0.8004555702209473,
+      "everyday_probability": 0.15250003337860107,
+      "margin": 0.6479555368423462,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "2c5c23cea9232a10",
+      "question": "What is one key challenge in driving innovation within the defence industry, and how can it be addressed?",
+      "target_answer": "One key challenge in driving innovation within the defence industry is the lengthy R&D cycles that result in outdated capabilities by the time they are deployed. This can be addressed by shortening these cycles, utilising simulation and trials outside operational environments, and testing innovations to ensure they are current and effective when deployed.",
+      "everyday_answer": "A big problem in making new things work in the defence industry is that it takes too long to develop new technologies, so they end up being out of date when they're finally used. To fix this, the process should be sped up by testing new ideas in simulations and trials before they're used in real operations.",
+      "target_probability": 0.8104724884033203,
+      "everyday_probability": 0.1771206259727478,
+      "margin": 0.6333518624305725,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "08b2c64e9b12bd93",
+      "question": "What factors contribute to China's potential ability to conduct operations against Vietnam-held or Philippines-held South China Sea features with limited military backlash?",
+      "target_answer": "China's potential ability to conduct operations against Vietnam-held or Philippines-held South China Sea features with limited military backlash is supported by the military disparity between China Coast Guard (CCG), PLA-N, and Vietnamese or Philippine forces. Additionally, China can leverage newly expanded and militarised outposts on nearby features. Strategic geography also plays a role, as Vietnam-held features are in close proximity to PRC-held features, reducing the operational distance. Furthermore, the absence of a formal defensive arrangement between Vietnam and the US, and the reduced US presence in the Philippines, has likely reduced China's perceived risk.",
+      "everyday_answer": "China might be able to take control of islands or reefs held by Vietnam or the Philippines in the South China Sea with little pushback because its military is stronger than theirs. China has built up its military bases near these areas, making it easier to act quickly. Also, the islands held by Vietnam and the Philippines are close to Chinese-controlled areas, so it's easier to reach them. Vietnam doesn't have a military agreement with the US, and the US has pulled back from the Philippines, which makes it less risky for China to act.",
+      "target_probability": 0.815974771976471,
+      "everyday_probability": 0.21430668234825134,
+      "margin": 0.6016680896282196,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "0ddde0e5b992e921",
+      "question": "What is the intent behind the new mandatory ransomware reporting requirements in Australia, and how might it affect critical infrastructure organizations?",
+      "target_answer": "The intent of the new mandatory ransomware reporting requirements is to discourage ransom payments by requiring public disclosure, particularly for critical infrastructure and major organizations. While it does not outlaw payments, it mandates transparency, thereby increasing accountability and potentially deterring non-compliance through civil penalties. Critical infrastructure organizations retain the option to pay ransoms but must report them within 72 hours, which is intended to enhance incident response planning and board-level awareness.",
+      "everyday_answer": "The new rules in Australia require companies, especially those in critical sectors, to report if they pay a ransom after a cyberattack. This is meant to make it harder to hide such payments and encourage better preparedness. Even though it doesn't ban paying ransoms, companies have to tell everyone if they do, and there are penalties if they don't report within 72 hours. This is expected to lead to better planning and awareness at the top level of companies.",
+      "target_probability": 0.14411050081253052,
+      "everyday_probability": 0.22361013293266296,
+      "margin": -0.07949963212013245,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "6a407cf8263f0a65",
+      "question": "What insight does the book 'Cobra II' provide about the role of the media in modern conflict?",
+      "target_answer": "The book highlights the access, power and reach of the modern media in conflict, noting that journalists were granted significant access to multiple levels of command. It raises questions about the influence of media access on the coverage of perspectives and the role of media in contemporary conflict.",
+      "everyday_answer": "The book shows how the media has a lot of access and influence in modern conflicts. It points out that journalists were given a lot of access to military leaders and that this might have affected how different viewpoints were covered. It makes you think about how the media operates during wars today.",
+      "target_probability": 0.5734025835990906,
+      "everyday_probability": 0.6603153347969055,
+      "margin": -0.08691275119781494,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9aa33bd04ba74638",
+      "question": "What is the main argument of the book 'Malaya' by Brian Farrell and Garth Pratten?",
+      "target_answer": "The main argument of the book is that the tragic outcome of the Malayan campaign was not due to inadequate fighting qualities in the common soldiers but rather due to poor leadership at all levels, from grand strategic to tactical, including prime ministers, generals, and battalion commanders.",
+      "everyday_answer": "The book argues that the failure in the Malayan campaign wasn't because Australian soldiers weren't brave or capable, but because the leadership at all levels, from top government officials to military commanders, didn't perform well.",
+      "target_probability": 0.3261116147041321,
+      "everyday_probability": 0.5015010833740234,
+      "margin": -0.17538946866989136,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "38ff89dc96478a11",
+      "question": "What is the main thesis of the book 'Why Vietnam' by Frank N. Trager, and what is the author's background?",
+      "target_answer": "The main thesis of 'Why Vietnam' by Frank N. Trager concerns the international legality of American involvement in Vietnam. The author develops this argument by examining the history of Vietnamese resistance to alien domination, the deficiencies of the 1954 Geneva Conference, and the agreements between the USA and the Republic of Vietnam. Trager is a professor of International Affairs at New York University and a former director of the Point Four Programme in Burma, with extensive experience in Southeast Asia and a record of writing on Asian affairs.",
+      "everyday_answer": "The book 'Why Vietnam' by Frank N. Trager mainly looks at whether the US involvement in Vietnam was legal under international law. Trager explains this by looking at Vietnam's history of fighting against foreign control, problems with the 1954 Geneva Conference, and agreements between the US and South Vietnam. Trager is a professor who has worked in Southeast Asia and has written a lot about Asian issues.",
+      "target_probability": 0.030996082350611687,
+      "everyday_probability": 0.03082423098385334,
+      "margin": 0.00017185136675834656,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f7eb6e48e0eb6faa",
+      "question": "What role did Mrs Gundula Holbrook play in the development of the Holbrook Submarine Museum?",
+      "target_answer": "Mrs Gundula Holbrook was a generous benefactor to the Holbrook Submarine Museum, providing critical funding after it became evident that the local council could not afford the cost of relocating the super-structure of the submarine Otway. Her contribution enabled the museum to become a unique historical submarine project and an integral part of the museum's infrastructure.",
+      "everyday_answer": "Gundula Holbrook helped make the Holbrook Submarine Museum possible by paying for the submarine Otway to be moved there when the local council couldn\u2019t afford it. Her support turned the museum into a special place for learning about submarines and history.",
+      "target_probability": 0.002875788602977991,
+      "everyday_probability": 0.00243939901702106,
+      "margin": 0.0004363895859569311,
+      "winner": "target"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "0562b098fcfd2fcf",
+      "question": "What strategic implications did the Soviet military buildup in the Pacific have for Japan and its regional security considerations?",
+      "target_answer": "The Soviet military buildup, including the deployment of aircraft carriers, guided missile cruisers, and amphibious assault ships to Vladivostok, reinforced the Soviet Pacific Fleet both qualitatively and quantitatively. This expansion eroded the US military advantage in the region and posed new strategic challenges for Japan\u2019s defence planners. The increased naval tonnage of the Soviet Pacific Fleet, six times that of the JMSDF, and the construction of military bases on disputed islands, underscored Japan\u2019s vulnerabilities and necessitated a re-evaluation of its regional security posture.",
+      "everyday_answer": "The Soviet Union built up its military presence in the Pacific by adding aircraft carriers, missile cruisers, and other ships to its fleet. This made the Soviet navy much stronger than Japan's, and they also built bases on islands Japan claims as its own. These actions made Japan worry about its security and highlighted the need to think more carefully about how to protect itself in the region.",
+      "target_probability": 0.9987371563911438,
+      "everyday_probability": 0.0024333042092621326,
+      "margin": 0.9963038521818817,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f87e91f220d37317",
+      "question": "What role does the Australian Army play in reinforcing the international rules-based order in the Indo-Pacific region?",
+      "target_answer": "The Australian Army reinforces the international rules-based order in the Indo-Pacific through its participation in Indo-Pacific Endeavour (IPE) deployments, particularly alongside Canberra-class landing helicopter dock (LHD) vessels. These annual deployments to contested regions such as the South China Sea demonstrate Australia's commitment to upholding UNCLOS and supporting the rules-based order. Additionally, the Army contributes through humanitarian and disaster relief (HADR) missions in the South Pacific, which align with Australia's strategic interests and reinforce its role as an influencer in the region.",
+      "everyday_answer": "The Australian Army helps support international rules and order in the Indo-Pacific by joining annual missions with large ships called LHDs. These missions go to areas like the South China Sea and show Australia's support for international laws. The Army also helps with disaster relief in the South Pacific, which supports Australia's role as a helpful and influential neighbor in the region.",
+      "target_probability": 0.9969726800918579,
+      "everyday_probability": 0.0013692504726350307,
+      "margin": 0.9956034296192229,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f60e40d79186ee28",
+      "question": "What were the operational and strategic challenges faced by the CAOC during the air campaign in Afghanistan?",
+      "target_answer": "The CAOC faced operational delays and strategic challenges due to restrictions on targeting that stemmed from a high-level political imperative to avoid suggesting the campaign targeted the Afghan people or Islam. This led to a minimally destructive air campaign, which caused CAOC staff to be cautious in proposing targets due to fears of disapproval. The Air Component Commander had to repeatedly remind staff of the campaign's purpose. The emphasis on collateral damage avoidance often overrode mission accomplishment, creating a dilemma where mission success sometimes required collateral damage avoidance. The increased situation awareness and communication bandwidth enabled senior leaders to personally intervene in force employment decisions, further complicating operational execution.",
+      "everyday_answer": "The CAOC had trouble carrying out the air campaign in Afghanistan because they had to follow strict rules to avoid hurting civilians or making it look like they were targeting Muslims. This made the campaign less aggressive than it could have been, and staff were hesitant to suggest targets for fear of being criticized. The commander kept reminding the team of why they were there. The focus on avoiding civilian harm sometimes meant they couldn't carry out their missions properly. Also, because leaders could now communicate so easily, they started getting involved in the details of how the campaign was run, which added to the problems.",
+      "target_probability": 0.9990435242652893,
+      "everyday_probability": 0.0041556754149496555,
+      "margin": 0.9948878488503397,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "4b4ab4b857b17b65",
+      "question": "What are the key elements required for the Royal Australian Air Force to realize the capability of 3D printing and digital transformation?",
+      "target_answer": "The key elements required for the Royal Australian Air Force to realize the capability of 3D printing and digital transformation include identifying early adopters, creating visibility for innovators, overcoming risk aversion, creating support structures for innovators, encouraging managed and connected disruptive innovation through 3D printing technologies, incentivising innovation and fostering a psychologically safe culture for experimentation, building digital technology expertise, creating bespoke collaborative technology platforms, and identifying strategies for relevant organisational change.",
+      "everyday_answer": "To make the most of 3D printing and digital changes, the RAAF needs to find people who are open to new ideas, give recognition to those who come up with good ideas, reduce fear of taking risks, support people trying new things, encourage creative problem-solving using 3D printing, motivate people to innovate in a safe environment, develop skills in digital technology, build custom platforms for collaboration, and plan for necessary organisational changes.",
+      "target_probability": 0.9991625547409058,
+      "everyday_probability": 0.8899868726730347,
+      "margin": 0.1091756820678711,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.6619442105293274,
+      "everyday_probability": 0.6325345635414124,
+      "margin": 0.02940964698791504,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "48e4324d33660caf",
+      "question": "How can younger soldiers benefit from engaging with older, more experienced members of the Australian Defence Force?",
+      "target_answer": "Younger soldiers can benefit by showing a willingness to learn and seeking advice from older members, as these individuals often possess valuable experience and perspective from different doctrinal or policy eras. Engaging with them can provide practical knowledge, such as jungle tips, and broaden the younger soldiers' understanding of operational contexts.",
+      "everyday_answer": "Younger soldiers can learn a lot by being open to advice from older, more experienced members of the army. These older soldiers have been through different ways of doing things and can share useful tips and a different point of view, which can help younger soldiers understand more about their work.",
+      "target_probability": 0.025582527741789818,
+      "everyday_probability": 0.0011534682707861066,
+      "margin": 0.02442905947100371,
+      "winner": "target"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "48e4324d33660caf",
+      "question": "How can younger soldiers benefit from engaging with older, more experienced members of the Australian Defence Force?",
+      "target_answer": "Younger soldiers can benefit by showing a willingness to learn and seeking advice from older members, as these individuals often possess valuable experience and perspective from different doctrinal or policy eras. Engaging with them can provide practical knowledge, such as jungle tips, and broaden the younger soldiers' understanding of operational contexts.",
+      "everyday_answer": "Younger soldiers can learn a lot by being open to advice from older, more experienced members of the army. These older soldiers have been through different ways of doing things and can share useful tips and a different point of view, which can help younger soldiers understand more about their work.",
+      "target_probability": 0.025582527741789818,
+      "everyday_probability": 0.0011534682707861066,
+      "margin": 0.02442905947100371,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.6619442105293274,
+      "everyday_probability": 0.6325345635414124,
+      "margin": 0.02940964698791504,
+      "winner": "target"
+    }
+  ]
+}

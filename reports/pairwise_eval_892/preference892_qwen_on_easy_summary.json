@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/preference_892_qwen",
+  "model_type": "sbert",
+  "test_name": "easy",
+  "pairing_method": "deterministic SHA256-sorted position (NO ground-truth content link -- original easy negatives were only length-matched, not id-linked to a specific passage)",
+  "threshold": 0.6430453062057495,
+  "n_pairs": 134,
+  "pairwise": {
+    "positive_greater_than_negative": 118,
+    "negative_wins": 16,
+    "ties": 0,
+    "win_rate": 0.8805970149253731
+  },
+  "scores": {
+    "positive_mean": 0.9471401572227478,
+    "negative_mean": 0.7918872237205505,
+    "mean_margin": 0.15525299310684204,
+    "median_margin": 0.12702780961990356,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.12683183178305626,
+      0.18579650148749352
+    ]
+  }
+}

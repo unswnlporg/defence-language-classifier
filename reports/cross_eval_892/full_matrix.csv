@@ -2,6 +2,9 @@ Training dataset,Model,Test dataset,N,Accuracy,F1,AUROC
 Combined-892,MiniLM,Easy,270,0.9852,0.9854,0.9988
 Combined-892,MiniLM,Preference-892,272,0.7868,0.7820,0.8547
 Combined-892,MiniLM,Pure Topic-Matched,150,0.8867,0.8982,0.9904
+Combined-892,Qwen3-8B,Easy,270,0.9889,0.9891,0.9996
+Combined-892,Qwen3-8B,Preference-892,272,0.8346,0.8133,0.9423
+Combined-892,Qwen3-8B,Pure Topic-Matched,150,0.9667,0.9677,0.9991
 Combined-892,TF-IDF,Easy,270,0.9889,0.9891,0.9991
 Combined-892,TF-IDF,Preference-892,272,0.9007,0.8924,0.9780
 Combined-892,TF-IDF,Pure Topic-Matched,150,0.8867,0.8982,0.9893
@@ -10,6 +13,11 @@ Easy-892,MiniLM,Easy,270,0.9926,0.9926,0.9999
 Easy-892,MiniLM,Hybrid-892,272,0.9301,0.9343,0.9838
 Easy-892,MiniLM,Preference-892,272,0.5993,0.5759,0.6248
 Easy-892,MiniLM,Pure Topic-Matched,150,0.8733,0.8862,0.9678
+Easy-892,Qwen3-8B,Combined-892,272,0.8346,0.8387,0.9321
+Easy-892,Qwen3-8B,Easy,270,1.0000,1.0000,1.0000
+Easy-892,Qwen3-8B,Hybrid-892,272,0.9412,0.9444,0.9949
+Easy-892,Qwen3-8B,Preference-892,272,0.5882,0.6028,0.6224
+Easy-892,Qwen3-8B,Pure Topic-Matched,150,0.8933,0.9036,0.9877
 Easy-892,TF-IDF,Combined-892,272,0.8162,0.8252,0.9268
 Easy-892,TF-IDF,Easy,270,0.9889,0.9891,0.9986
 Easy-892,TF-IDF,Hybrid-892,272,0.9081,0.9158,0.9868
@@ -20,6 +28,11 @@ Hybrid-892,MiniLM,Easy,270,0.9815,0.9813,1.0000
 Hybrid-892,MiniLM,Hybrid-892,272,0.9706,0.9704,0.9962
 Hybrid-892,MiniLM,Preference-892,272,0.5662,0.3587,0.6383
 Hybrid-892,MiniLM,Pure Topic-Matched,150,0.9600,0.9600,0.9925
+Hybrid-892,Qwen3-8B,Combined-892,272,0.8676,0.8636,0.9490
+Hybrid-892,Qwen3-8B,Easy,270,1.0000,1.0000,1.0000
+Hybrid-892,Qwen3-8B,Hybrid-892,272,0.9926,0.9927,0.9990
+Hybrid-892,Qwen3-8B,Preference-892,272,0.6029,0.5645,0.6479
+Hybrid-892,Qwen3-8B,Pure Topic-Matched,150,0.9867,0.9868,0.9973
 Hybrid-892,TF-IDF,Combined-892,272,0.8603,0.8455,0.9491
 Hybrid-892,TF-IDF,Easy,270,0.9815,0.9814,0.9997
 Hybrid-892,TF-IDF,Hybrid-892,272,0.9596,0.9600,0.9963
@@ -30,8 +43,19 @@ Preference-892,MiniLM,Easy,270,0.7741,0.8157,0.9571
 Preference-892,MiniLM,Hybrid-892,272,0.6728,0.7521,0.9133
 Preference-892,MiniLM,Preference-892,272,0.8824,0.8750,0.9584
 Preference-892,MiniLM,Pure Topic-Matched,150,0.6200,0.7246,0.8868
+Preference-892,Qwen3-8B,Combined-892,272,0.6875,0.7536,0.8357
+Preference-892,Qwen3-8B,Easy,270,0.5778,0.7047,0.8590
+Preference-892,Qwen3-8B,Hybrid-892,272,0.5515,0.6904,0.8133
+Preference-892,Qwen3-8B,Preference-892,272,0.9265,0.9237,0.9829
+Preference-892,Qwen3-8B,Pure Topic-Matched,150,0.5333,0.6818,0.7991
 Preference-892,TF-IDF,Combined-892,272,0.7684,0.8013,0.8979
 Preference-892,TF-IDF,Easy,270,0.7444,0.7928,0.9321
 Preference-892,TF-IDF,Hybrid-892,272,0.6324,0.7253,0.8293
 Preference-892,TF-IDF,Preference-892,272,0.9559,0.9542,0.9969
 Preference-892,TF-IDF,Pure Topic-Matched,150,0.5933,0.7109,0.7659
+puretopic892,MiniLM,Easy,270,0.9815,0.9813,0.9998
+puretopic892,MiniLM,Preference-892,272,0.5588,0.3478,0.6347
+puretopic892,MiniLM,Pure Topic-Matched,150,0.9667,0.9664,0.9948
+puretopic892,TF-IDF,Easy,270,0.9889,0.9889,0.9998
+puretopic892,TF-IDF,Preference-892,272,0.6471,0.5514,0.7251
+puretopic892,TF-IDF,Pure Topic-Matched,150,0.9533,0.9542,0.9945

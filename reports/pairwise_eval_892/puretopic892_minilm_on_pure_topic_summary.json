@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/pure_topic_892_minilm",
+  "model_type": "sbert",
+  "test_name": "pure_topic",
+  "pairing_method": "matched_defence_example_id (real pairing)",
+  "threshold": 0.4671076536178589,
+  "n_pairs": 75,
+  "pairwise": {
+    "positive_greater_than_negative": 75,
+    "negative_wins": 0,
+    "ties": 0,
+    "win_rate": 1.0
+  },
+  "scores": {
+    "positive_mean": 0.9063944220542908,
+    "negative_mean": 0.08012048900127411,
+    "mean_margin": 0.8262739777565002,
+    "median_margin": 0.9085010886192322,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.7789898484945297,
+      0.8692991614341735
+    ]
+  }
+}

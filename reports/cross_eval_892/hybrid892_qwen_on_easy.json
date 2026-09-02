@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/hybrid_892_qwen",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3439158499240875,
+  "metrics": {
+    "n": 270,
+    "threshold": 0.3439158499240875,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "average_precision": 0.9999999999999999,
+    "brier_score": 0.004715804476290941,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        134,
+        0
+      ],
+      [
+        0,
+        136
+      ]
+    ]
+  }
+}

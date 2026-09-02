@@ -1,0 +1,72 @@
+#!/bin/bash
+#PBS -N puretopic892-cpu
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -q cse12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/cross_eval_892 reports/pairwise_eval_892
+DS=data/processed/pure_topic_892_dataset_splits.jsonl
+
+declare -A MODEL_TYPE_FLAG=( [tfidf]=tfidf [minilm]=sbert )
+
+# train_baselines.py always fits TF-IDF and the given sbert checkpoint
+# together in one run -- a single MiniLM run yields both destination dirs.
+if [[ -f "models/pure_topic_892_tfidf/model_metadata.json" && -f "models/pure_topic_892_minilm/model_metadata.json" ]]; then
+  echo "SKIP train pure_topic_892 (already done)"
+else
+  raw_dir="models/pure_topic_892_minilm_raw"
+  "$PY" scripts/train_baselines.py \
+    --dataset "$DS" \
+    --model-dir "$raw_dir" \
+    --report-dir "reports/pure_topic_892_minilm" \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/puretopic892-minilm" \
+    --sbert-checkpoint sentence-transformers/all-MiniLM-L6-v2 \
+    --batch-size 32
+  "$PY" scripts/reorganize_model_dir.py "$raw_dir" "pure_topic_892" minilm models
+fi
+
+declare -A TESTSETS=(
+  [pure_topic]="$DS"
+  [easy]=data/processed/dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+)
+
+for repr in tfidf minilm; do
+  model_dir="models/pure_topic_892_${repr}"
+  for test_name in "${!TESTSETS[@]}"; do
+    out="reports/cross_eval_892/puretopic892_${repr}_on_${test_name}.json"
+    if [[ -f "$out" ]]; then echo "SKIP $out"; continue; fi
+    "$PY" scripts/cross_evaluate.py \
+      --model-dir "$model_dir" --model-type "${MODEL_TYPE_FLAG[$repr]}" \
+      --target-dataset "${TESTSETS[$test_name]}" \
+      --output "$out"
+  done
+done
+
+for repr in tfidf minilm; do
+  model_dir="models/pure_topic_892_${repr}"
+  for test_name in pure_topic easy; do
+    prefix="reports/pairwise_eval_892/puretopic892_${repr}_on_${test_name}"
+    if [[ -f "${prefix}_summary.json" ]]; then echo "SKIP ${prefix}_summary.json"; continue; fi
+    "$PY" scripts/evaluate_pairwise_892.py \
+      --model-dir "$model_dir" --model-type "${MODEL_TYPE_FLAG[$repr]}" \
+      --test-name "$test_name" \
+      --scores-output "${prefix}_scores.jsonl" \
+      --summary-output "${prefix}_summary.json"
+  done
+done
+echo "pure_topic_892 CPU stage complete."

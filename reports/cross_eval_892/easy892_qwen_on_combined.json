@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/easy_892_qwen",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/combined_892_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3266574442386627,
+  "metrics": {
+    "n": 272,
+    "threshold": 0.3266574442386627,
+    "accuracy": 0.8345588235294118,
+    "precision": 0.8181818181818182,
+    "recall": 0.8602941176470589,
+    "f1": 0.8387096774193549,
+    "roc_auc": 0.9320934256055363,
+    "average_precision": 0.9420408564102711,
+    "brier_score": 0.11592671275138855,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        110,
+        26
+      ],
+      [
+        19,
+        117
+      ]
+    ]
+  }
+}

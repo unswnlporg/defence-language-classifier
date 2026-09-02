@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "f87e91f220d37317",
+      "question": "What role does the Australian Army play in reinforcing the international rules-based order in the Indo-Pacific region?",
+      "target_answer": "The Australian Army reinforces the international rules-based order in the Indo-Pacific through its participation in Indo-Pacific Endeavour (IPE) deployments, particularly alongside Canberra-class landing helicopter dock (LHD) vessels. These annual deployments to contested regions such as the South China Sea demonstrate Australia's commitment to upholding UNCLOS and supporting the rules-based order. Additionally, the Army contributes through humanitarian and disaster relief (HADR) missions in the South Pacific, which align with Australia's strategic interests and reinforce its role as an influencer in the region.",
+      "everyday_answer": "The Australian Army helps support international rules and order in the Indo-Pacific by joining annual missions with large ships called LHDs. These missions go to areas like the South China Sea and show Australia's support for international laws. The Army also helps with disaster relief in the South Pacific, which supports Australia's role as a helpful and influential neighbor in the region.",
+      "target_probability": 0.9878159165382385,
+      "everyday_probability": 0.008273722603917122,
+      "margin": 0.9795421939343214,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7aace25c719679f7",
+      "question": "What is the rationale for centralising Army's deployable health capabilities into a single formation?",
+      "target_answer": "Centralising Army's deployable health capabilities into one formation, such as a Health Brigade, provides a realistic solution to effectively contribute to combat viability. This approach is supported by Army doctrine and is aligned with the practices of major coalition partners like the US and UK. It enables more efficient force preparation, mobilisation, and management of limited health specialist rosters, while reducing superfluous staff effort in capability development. It also ensures that health support is managed in a single, effects-focussed formation, similar to the successful models of SOCOMD and 16 Brigade (Aviation).",
+      "everyday_answer": "Putting all the Army's health support units into one group, like a Health Brigade, makes it easier to manage and use these important but limited resources. This is something the US and UK armies already do, and it helps them prepare and respond more effectively. It also means that managing health specialists and equipment is more efficient, and it avoids unnecessary work. Examples like SOCOMD and 16 Brigade (Aviation) show that grouping similar resources together can lead to better results.",
+      "target_probability": 0.9789896607398987,
+      "everyday_probability": 0.002899452578276396,
+      "margin": 0.9760902081616223,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "c3a578b62af744c6",
+      "question": "What is the importance of integrating air attack and land manoeuvre in contemporary warfighting?",
+      "target_answer": "In contemporary warfighting, the integration of air attack and land manoeuvre is vital to isolate segments of the battlespace and sweep them of enemy forces. As the Army transitions to smaller combined-arms units, air operations become essential in supporting ground forces, particularly in dispersed environments where precision strike and bombing can prevent enemy swarming. This integration enhances situational awareness, targeting capability, and joint communications, serving as a force multiplier in future operations.",
+      "everyday_answer": "Putting air attacks and land movements together is really important in modern warfare. It helps to clear out enemy forces from parts of the battlefield. As the Army uses smaller units, air support becomes crucial for protecting ground troops, especially when they're spread out. Air power can stop enemies from surrounding these units and helps with better communication and awareness on the battlefield.",
+      "target_probability": 0.9803630709648132,
+      "everyday_probability": 0.011620494537055492,
+      "margin": 0.9687425764277577,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "ec8c892438dd7766",
+      "question": "What role did the Vickers Valentine tank play in the Eastern Front during World War II?",
+      "target_answer": "The Vickers Valentine tank was so effective and popular with the Red Army that it remained in production for Soviet use well after being replaced in the British Army, with thousands seeing action on the Eastern Front.",
+      "everyday_answer": "The Vickers Valentine tank was widely used by the Soviet Union on the Eastern Front because it worked well and stayed in production even after the British stopped using it.",
+      "target_probability": 0.05825476720929146,
+      "everyday_probability": 0.016656149178743362,
+      "margin": 0.041598618030548096,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "58dc540a89e317c0",
+      "question": "What is the structure and operational pattern of Viet Cong military units in South Vietnam?",
+      "target_answer": "The Viet Cong military structure in South Vietnam is standardised, with three types of soldiers. Village-based guerrillas typically work during the day and are available for assignments at night or in emergencies. In areas under VC control, a squad of 10 to 16 men is common, often equipped with land mines, rifles, or submachine guns. At the district level, half-time irregular forces are organised into companies of 50 or more men, who receive partial pay and are better equipped and trained than village-level units. Many recruits are coerced through kidnapping, threats, or familial pressure, rather than volunteering.",
+      "everyday_answer": "The Viet Cong in South Vietnam had a standard military setup. They had soldiers who lived in villages and worked during the day, like farmers or workers, but were available for tasks at night. In areas where they had strong control, they usually had squads of 10 to 16 people, often with weapons like rifles and mines. At the district level, they had larger groups of around 50 people who were part-time soldiers and better trained. Many of these soldiers were forced to join because they were threatened or to protect their families.",
+      "target_probability": 0.03424961492419243,
+      "everyday_probability": 0.003480103798210621,
+      "margin": 0.030769511125981808,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.08368214219808578,
+      "everyday_probability": 0.07864082604646683,
+      "margin": 0.0050413161516189575,
+      "winner": "target"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.08368214219808578,
+      "everyday_probability": 0.07864082604646683,
+      "margin": 0.0050413161516189575,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "58dc540a89e317c0",
+      "question": "What is the structure and operational pattern of Viet Cong military units in South Vietnam?",
+      "target_answer": "The Viet Cong military structure in South Vietnam is standardised, with three types of soldiers. Village-based guerrillas typically work during the day and are available for assignments at night or in emergencies. In areas under VC control, a squad of 10 to 16 men is common, often equipped with land mines, rifles, or submachine guns. At the district level, half-time irregular forces are organised into companies of 50 or more men, who receive partial pay and are better equipped and trained than village-level units. Many recruits are coerced through kidnapping, threats, or familial pressure, rather than volunteering.",
+      "everyday_answer": "The Viet Cong in South Vietnam had a standard military setup. They had soldiers who lived in villages and worked during the day, like farmers or workers, but were available for tasks at night. In areas where they had strong control, they usually had squads of 10 to 16 people, often with weapons like rifles and mines. At the district level, they had larger groups of around 50 people who were part-time soldiers and better trained. Many of these soldiers were forced to join because they were threatened or to protect their families.",
+      "target_probability": 0.03424961492419243,
+      "everyday_probability": 0.003480103798210621,
+      "margin": 0.030769511125981808,
+      "winner": "target"
+    }
+  ]
+}

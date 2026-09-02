@@ -1,0 +1,34 @@
+{
+  "dataset_name": "pure_topic_892",
+  "derived_from": "data/processed/hybrid_892_dataset_splits.jsonl (all splits, negative_type=='topic_matched' pairs only)",
+  "note": "439 Defence + 439 topic-matched Wikipedia negatives, no easy negatives, no preference examples. Filtered from the already leakage-verified Hybrid-892 dataset (same method used for the pure-topic test set), consistent with it, no new leakage risk.",
+  "n_examples": 878,
+  "n_pairs": 439,
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 592,
+      "documents": 332,
+      "positive": 296,
+      "negative": 296,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    },
+    "validation": {
+      "passages": 136,
+      "documents": 76,
+      "positive": 68,
+      "negative": 68,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    },
+    "test": {
+      "passages": 150,
+      "documents": 83,
+      "positive": 75,
+      "negative": 75,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    }
+  },
+  "sha256": "125e34761083b1294ba42de0d5a7c47b0db85f8b09905222efb2062ac4520c6e"
+}
