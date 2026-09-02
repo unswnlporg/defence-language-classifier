@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/preference_892_tfidf",
+  "model_type": "tfidf",
+  "test_name": "pure_topic",
+  "pairing_method": "matched_defence_example_id (real pairing)",
+  "threshold": 0.6207162093119928,
+  "n_pairs": 75,
+  "pairwise": {
+    "positive_greater_than_negative": 64,
+    "negative_wins": 11,
+    "ties": 0,
+    "win_rate": 0.8533333333333334
+  },
+  "scores": {
+    "positive_mean": 0.8993237383528558,
+    "negative_mean": 0.7656502886203437,
+    "mean_margin": 0.13367344973251213,
+    "median_margin": 0.07974012712148504,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.091916515800687,
+      0.17726524133871682
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "64fe0387fa840787",
+      "question": "What are the concerns regarding Iranian influence and disinformation in Australia?",
+      "target_answer": "There are concerns about Iranian narratives and influence operations in Australia, particularly through social media and AI-generated content, which can deepen communal divisions and potentially impact domestic stability. While Iran's cyber capabilities may not be as prominent, the use of deepfakes and disinformation campaigns remains a significant threat. Additionally, there is an awareness of the potential for proxy forces and sleeper cells to be activated domestically, necessitating vigilance and visibility within workplaces and communities.",
+      "everyday_answer": "People are worried that Iran is trying to influence what's happening in Australia, especially online. They're using things like fake videos and messages to spread certain ideas and maybe cause more division between communities. Although Iran might not be as strong in cyber attacks as people think, they're still using social media to push their messages. There's also concern that groups linked to Iran could try to affect what happens in Australia, so it's important to be aware and know what to do if you see something suspicious.",
+      "target_probability": 0.9247910064337613,
+      "everyday_probability": 0.01803568211107768,
+      "margin": 0.9067553243226837,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "40de532a87a32f47",
+      "question": "What is the importance of Defence's total workforce system in achieving workforce outcomes?",
+      "target_answer": "Defence's total workforce system provides the flexibility to generate workforce outcomes without having to rely entirely on internal resources. It allows for a balanced approach, incorporating both Defence personnel and contractor consultants, ensuring that the right number of staff from both sides is utilised. This system supports capability delivery and force generation by leveraging strategic partnerships and shared risk management, as demonstrated in initiatives such as those within Navy and the DMO that improved maintenance outcomes.",
+      "everyday_answer": "The total workforce system used by Defence gives them the flexibility to get the right people for the job, whether they are Defence staff or outside consultants. It helps to balance the number of people from both sides and makes sure the right work is done. This approach has been useful in areas like Navy maintenance, where working together with outside partners helped improve results.",
+      "target_probability": 0.9323865753642956,
+      "everyday_probability": 0.030599481136327905,
+      "margin": 0.9017870942279677,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7cdb3dad8caca54a",
+      "question": "What lessons does the author highlight from the Allied efforts in 'Miracle at the Litza'?",
+      "target_answer": "The author highlights the critical importance of effective joint operations, including naval and naval air capabilities, on morale and flexibility; the timely interception and effective use of intelligence; the challenge of perception versus tangible assistance in trust and cooperation; the availability of the correct assets for flexible response options to local commanders; and the under-rated but critical importance of dogged resilience in defensive operations.",
+      "everyday_answer": "The author points out that working together well between different forces like navy and air is important for morale and flexibility. Good intelligence that is used quickly is also key. People need to see real help, not just the promise of it, to build trust. Having the right tools available for local leaders to respond quickly is important, and sticking with it in tough situations is crucial for defense.",
+      "target_probability": 0.9135400976066214,
+      "everyday_probability": 0.03067964997491181,
+      "margin": 0.8828604476317096,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "cf945c80ad4d9baa",
+      "question": "Who will launch the Australian Naval History video and podcast series and where will the launch take place?",
+      "target_answer": "The Chief of Navy, Vice Admiral Tim Barrett, will launch the Australian Naval History video and podcast series at the Seapower Conference in Sydney on 3 October 2017.",
+      "everyday_answer": "The head of the navy, Vice Admiral Tim Barrett, will start the Australian Naval History video and podcast series at a conference in Sydney on 3 October 2017.",
+      "target_probability": 0.31475478385632255,
+      "everyday_probability": 0.24135260203161338,
+      "margin": 0.07340218182470917,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "9d6292b5f393c1a2",
+      "question": "What does Bob Love express about the future of naval shipbuilding in Australia?",
+      "target_answer": "Bob Love expresses that it is a very exciting time to be in shipbuilding and ship repair, and he believes Australia is on the right track as it embarks on this journey.",
+      "everyday_answer": "Bob Love says it's an exciting time for building and repairing ships in Australia, and he thinks the country is heading in the right direction with these efforts.",
+      "target_probability": 0.23895606251987286,
+      "everyday_probability": 0.18067383466740125,
+      "margin": 0.05828222785247161,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.12404750023591159,
+      "everyday_probability": 0.1530456939837632,
+      "margin": -0.028998193747851606,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.12404750023591159,
+      "everyday_probability": 0.1530456939837632,
+      "margin": -0.028998193747851606,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9d6292b5f393c1a2",
+      "question": "What does Bob Love express about the future of naval shipbuilding in Australia?",
+      "target_answer": "Bob Love expresses that it is a very exciting time to be in shipbuilding and ship repair, and he believes Australia is on the right track as it embarks on this journey.",
+      "everyday_answer": "Bob Love says it's an exciting time for building and repairing ships in Australia, and he thinks the country is heading in the right direction with these efforts.",
+      "target_probability": 0.23895606251987286,
+      "everyday_probability": 0.18067383466740125,
+      "margin": 0.05828222785247161,
+      "winner": "target"
+    }
+  ]
+}

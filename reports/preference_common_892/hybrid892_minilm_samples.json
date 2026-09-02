@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "5d4aa45472b481bd",
+      "question": "What is the recommended strategic shift in mine countermeasure (MCM) operations according to the article?",
+      "target_answer": "The article recommends a strategic shift from direct, operational/tactical-level thinking to indirect, strategic-level thinking in MCM operations. This involves adopting a pervasive and persistent intelligence, surveillance, and reconnaissance (ISR) approach to 'know' where mines are a priori, rather than focusing solely on finding them.",
+      "everyday_answer": "The article suggests changing the way we think about dealing with sea mines. Instead of just trying to find and clear them, we should use constant monitoring and surveillance to know where they are before they become a problem.",
+      "target_probability": 0.8375594019889832,
+      "everyday_probability": 0.010319392196834087,
+      "margin": 0.8272400097921491,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "cf285cca9e672ce0",
+      "question": "What is the strategic significance of China's expanding security engagement in the Pacific and Indian Ocean regions according to the ASPI report?",
+      "target_answer": "China's expanding security engagement in the Pacific and Indian Ocean regions is reshaping the Indo-Pacific strategic environment by enabling Beijing to build familiarity with operating environments, normalise its presence, and pursue strategic objectives beyond its home waters. This includes regular and geographically distributed activities involving naval task groups, CCG vessels, research platforms, and maritime militia, which contribute to a denser operating environment, routine encounters, and increased risk of miscalculation.",
+      "everyday_answer": "China is increasing its security presence in the Pacific and Indian Ocean regions, which is changing how the area is strategically managed. By regularly sending military and support vessels, China is becoming more familiar with the region and normalising its presence. This leads to more frequent interactions and raises the risk of misunderstandings or accidental conflicts.",
+      "target_probability": 0.92039954662323,
+      "everyday_probability": 0.16601495444774628,
+      "margin": 0.7543845921754837,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "ba8cb568513dbaeb",
+      "question": "What role should the Royal Australian Navy (RAN) play in shaping Australia\u2019s foreign policy and public perception?",
+      "target_answer": "The RAN should be expert in China and US relations, inform and help direct Australia\u2019s foreign policy objectives, and act as a tool of diplomacy. It must also engage in the war of ideas by promoting Australian values and liberties in schools, universities, the media, and online, while expanding cadet forces and educational programmes to integrate into the Australian public sphere. This will help cement the RAN\u2019s role in the minds of ordinary Australians and support institutions facing Chinese subterfuge.",
+      "everyday_answer": "The navy should understand how China and the US relate, help shape Australia\u2019s foreign policy, and be used for diplomacy. It should also promote Australia\u2019s values and freedoms in schools, universities, and online, and get more involved with young people through training and education programs. This will help Australians understand what the navy does and why it matters, especially when dealing with challenges like those from China.",
+      "target_probability": 0.9289445281028748,
+      "everyday_probability": 0.218812957406044,
+      "margin": 0.7101315706968307,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "8dfa88e60c1a2493",
+      "question": "What challenges does the acquisition of off-the-shelf ISR aircraft with proprietary systems present for the Australian Air Force?",
+      "target_answer": "The acquisition of off-the-shelf ISR aircraft with proprietary systems presents an exponential integration problem as the platforms undergo spiral upgrades. Australia lacks the technical workforce to develop or maintain these systems, and the Air Force is responsible for ensuring integration within its own air domain. This is complicated by the absence of in-house expertise and the risk of exacerbating silos through project-based approaches that prioritise individual service needs over joint interoperability.",
+      "everyday_answer": "Buying ready-made surveillance aircraft with proprietary systems makes it hard to keep everything working together as the systems get upgraded. Australia doesn\u2019t have the skills to maintain or build these systems, and the Air Force has to manage integration in its own area. This is made harder because each service works separately on its own projects, which can lead to duplication and inefficiency.",
+      "target_probability": 0.17583590745925903,
+      "everyday_probability": 0.32122448086738586,
+      "margin": -0.14538857340812683,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9aa33bd04ba74638",
+      "question": "What is the main argument of the book 'Malaya' by Brian Farrell and Garth Pratten?",
+      "target_answer": "The main argument of the book is that the tragic outcome of the Malayan campaign was not due to inadequate fighting qualities in the common soldiers but rather due to poor leadership at all levels, from grand strategic to tactical, including prime ministers, generals, and battalion commanders.",
+      "everyday_answer": "The book argues that the failure in the Malayan campaign wasn't because Australian soldiers weren't brave or capable, but because the leadership at all levels, from top government officials to military commanders, didn't perform well.",
+      "target_probability": 0.6442263126373291,
+      "everyday_probability": 0.8519133925437927,
+      "margin": -0.20768707990646362,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "6a407cf8263f0a65",
+      "question": "What insight does the book 'Cobra II' provide about the role of the media in modern conflict?",
+      "target_answer": "The book highlights the access, power and reach of the modern media in conflict, noting that journalists were granted significant access to multiple levels of command. It raises questions about the influence of media access on the coverage of perspectives and the role of media in contemporary conflict.",
+      "everyday_answer": "The book shows how the media has a lot of access and influence in modern conflicts. It points out that journalists were given a lot of access to military leaders and that this might have affected how different viewpoints were covered. It makes you think about how the media operates during wars today.",
+      "target_probability": 0.3291369676589966,
+      "everyday_probability": 0.6083174347877502,
+      "margin": -0.27918046712875366,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "46e491a245bc9356",
+      "question": "What is the significance of the book 'The Secure Board' in the context of cybersecurity for directors and business leaders?",
+      "target_answer": "The Secure Board is a valuable resource for directors, enabling them to engage effectively with cybersecurity risks and satisfy their fiduciary responsibilities. It provides a framework for directors to address cybersecurity in the same manner as other enterprise risks, supporting informed decision-making and strategic integration within the boardroom.",
+      "everyday_answer": "The book 'The Secure Board' helps company directors understand and talk about cybersecurity issues with their security or IT teams. It's useful for directors to make sure they're doing their duty by considering cybersecurity as part of the overall business risks they manage in meetings.",
+      "target_probability": 0.00043233754695393145,
+      "everyday_probability": 0.000439344032201916,
+      "margin": -7.0064852479845285e-06,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9e25c4b9cebff69d",
+      "question": "What was Cliff Kyle's experience with the Seahawk variants during his career in the Royal Australian Navy?",
+      "target_answer": "Cliff Kyle spent his entire 15-year career in the Royal Australian Navy supporting the S70B2 Seahawk variant, before transitioning to support the MH-60 Romeo variant, which replaced the S70B2. He continued to support both the legacy and current Seahawk platforms through his transition to industry.",
+      "everyday_answer": "Cliff Kyle worked in the Royal Australian Navy for 15 years, supporting an older version of the Seahawk helicopter. He then moved to support the newer MH-60 Romeo model, which replaced the older one. He has continued to work with both the old and new Seahawk models through his job in the industry.",
+      "target_probability": 0.002479629823938012,
+      "everyday_probability": 0.0024459008127450943,
+      "margin": 3.3729011192917824e-05,
+      "winner": "target"
+    }
+  ]
+}

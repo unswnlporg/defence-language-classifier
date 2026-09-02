@@ -1,0 +1,7 @@
+{
+  "dataset_sha256": "cdf53d0d94b47fb0b5900ea4fd42058750f771c3693ed941dc3ce239ccb2ea38",
+  "tfidf_logistic_regression": {
+    "artifact": "tfidf_logistic_regression.joblib",
+    "threshold": 0.6207162093119928
+  }
+}

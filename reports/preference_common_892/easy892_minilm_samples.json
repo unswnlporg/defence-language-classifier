@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "5d4aa45472b481bd",
+      "question": "What is the recommended strategic shift in mine countermeasure (MCM) operations according to the article?",
+      "target_answer": "The article recommends a strategic shift from direct, operational/tactical-level thinking to indirect, strategic-level thinking in MCM operations. This involves adopting a pervasive and persistent intelligence, surveillance, and reconnaissance (ISR) approach to 'know' where mines are a priori, rather than focusing solely on finding them.",
+      "everyday_answer": "The article suggests changing the way we think about dealing with sea mines. Instead of just trying to find and clear them, we should use constant monitoring and surveillance to know where they are before they become a problem.",
+      "target_probability": 0.8738542199134827,
+      "everyday_probability": 0.09672622382640839,
+      "margin": 0.7771279960870743,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "42937cb603187156",
+      "question": "What is distinctive about the role of cyber as a domain in hybrid war and grey zone activities?",
+      "target_answer": "The emergence of cyber as a distinct domain represents a new and unique vehicle for hybrid war and grey zone activities, with no historical precedence. This development has introduced a revolutionary shift in the character and significance of such operations.",
+      "everyday_answer": "What makes cyber different is that it's a new kind of space for hybrid and grey zone activities, something that hasn't existed before. This has changed how these kinds of operations are carried out and how important they are.",
+      "target_probability": 0.6858407855033875,
+      "everyday_probability": 0.2527710795402527,
+      "margin": 0.43306970596313477,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "28f84357dbe7de69",
+      "question": "How did the CIA and counter-insurgent fighters use myth and narrative during the Hakvala Hap Rebellion in the Philippines?",
+      "target_answer": "The CIA and counter-insurgent fighters utilised the myth of the Aswang, a local vampire figure, as part of a psychological and cognitive influence operation. By deploying the symbology of the Aswang throughout the insurgency areas, they induced fear and psychological pressure on the insurgents, who operated in regions associated with the myth. This approach, combined with psychological levers such as leaving notes at discovered communist caches, contributed to the insurgents' reluctance to engage in further conflict, aligning with the strategic objective of diminishing the enemy's will to fight.",
+      "everyday_answer": "The CIA and the fighters used the local story of a vampire called the Aswang to scare the rebels. They spread the symbol of the Aswang in the areas where the rebels were active, which made them feel afraid. They also left messages at places where they found rebel supplies, which made the rebels feel watched and pressured. This made the rebels less willing to keep fighting.",
+      "target_probability": 0.5589654445648193,
+      "everyday_probability": 0.14939777553081512,
+      "margin": 0.4095676690340042,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "5d223c68e91b3bb6",
+      "question": "What are the implications of recent budgetary measures on home ownership and testamentary trusts in Australia?",
+      "target_answer": "Recent budgetary measures have sparked debate around home ownership and testamentary trusts, with a focus on facilitating home ownership for younger Australians. However, these measures have also raised concerns about unintended consequences for individuals with testamentary trusts, particularly if legislative amendments are delayed. Once legislation receives royal assent, it becomes law, potentially affecting beneficiaries before any changes can be enacted.",
+      "everyday_answer": "New budget changes are trying to help young Australians buy homes, but they've also caused some confusion about how testamentary trusts will be affected. There's worry that once the laws are passed, it might be hard to change them quickly, which could impact people who rely on these trusts. Some people are concerned about how these changes might affect their inheritance plans.",
+      "target_probability": 0.15108178555965424,
+      "everyday_probability": 0.22813192009925842,
+      "margin": -0.07705013453960419,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "4286586c8017f91c",
+      "question": "What is the process for submitting a book review to the Australian Army Journal?",
+      "target_answer": "To submit a book review to the Australian Army Journal, individuals should contact the journal team stating their areas of interest. The team can then provide a list of available books for review, and a free copy of the selected book will be supplied to the reviewer.",
+      "everyday_answer": "If you want to write a book review for the Australian Army Journal, you should get in touch with the team and tell them what kinds of books you're interested in. They'll give you a list of books to choose from and send you a free copy of the one you pick.",
+      "target_probability": 0.13871312141418457,
+      "everyday_probability": 0.2418270856142044,
+      "margin": -0.10311396420001984,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9d6292b5f393c1a2",
+      "question": "What does Bob Love express about the future of naval shipbuilding in Australia?",
+      "target_answer": "Bob Love expresses that it is a very exciting time to be in shipbuilding and ship repair, and he believes Australia is on the right track as it embarks on this journey.",
+      "everyday_answer": "Bob Love says it's an exciting time for building and repairing ships in Australia, and he thinks the country is heading in the right direction with these efforts.",
+      "target_probability": 0.20811240375041962,
+      "everyday_probability": 0.34658384323120117,
+      "margin": -0.13847143948078156,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "46e491a245bc9356",
+      "question": "What is the significance of the book 'The Secure Board' in the context of cybersecurity for directors and business leaders?",
+      "target_answer": "The Secure Board is a valuable resource for directors, enabling them to engage effectively with cybersecurity risks and satisfy their fiduciary responsibilities. It provides a framework for directors to address cybersecurity in the same manner as other enterprise risks, supporting informed decision-making and strategic integration within the boardroom.",
+      "everyday_answer": "The book 'The Secure Board' helps company directors understand and talk about cybersecurity issues with their security or IT teams. It's useful for directors to make sure they're doing their duty by considering cybersecurity as part of the overall business risks they manage in meetings.",
+      "target_probability": 0.08793897181749344,
+      "everyday_probability": 0.08474777638912201,
+      "margin": 0.0031911954283714294,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "367d74d086f021ff",
+      "question": "What is the ADF's pathway forward in aligning its planning processes with modern warfare?",
+      "target_answer": "The ADF's pathway forward lies in the fusion of philosophical understanding and practical methodologies, aligning its planning processes with the complexities of modern warfare.",
+      "everyday_answer": "The ADF needs to combine deep thinking with practical methods to make sure its planning keeps up with the challenges of modern warfare.",
+      "target_probability": 0.9883415102958679,
+      "everyday_probability": 0.9851270318031311,
+      "margin": 0.0032144784927368164,
+      "winner": "target"
+    }
+  ]
+}

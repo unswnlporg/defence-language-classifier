@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "5d4aa45472b481bd",
+      "question": "What is the recommended strategic shift in mine countermeasure (MCM) operations according to the article?",
+      "target_answer": "The article recommends a strategic shift from direct, operational/tactical-level thinking to indirect, strategic-level thinking in MCM operations. This involves adopting a pervasive and persistent intelligence, surveillance, and reconnaissance (ISR) approach to 'know' where mines are a priori, rather than focusing solely on finding them.",
+      "everyday_answer": "The article suggests changing the way we think about dealing with sea mines. Instead of just trying to find and clear them, we should use constant monitoring and surveillance to know where they are before they become a problem.",
+      "target_probability": 0.8738542199134827,
+      "everyday_probability": 0.09672622382640839,
+      "margin": 0.7771279960870743,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "70ea20718ea07564",
+      "question": "Why is the accessibility of foreign air bases important for Australia's ability to project air power?",
+      "target_answer": "Australia\u2019s isolated geography necessitates reliance on the accessibility of foreign air bases to effectively project air power. This is supported by Malcolm Davis\u2019 Australian Strategic Policy Institute report, which highlights the necessity of deploying to foreign operating bases (FOBs) in foreign nations to respond appropriately to future security challenges.",
+      "everyday_answer": "Because Australia is quite isolated geographically, it needs to use air bases in other countries to get its planes close enough to where they are needed. Experts like Malcolm Davis have said that using these bases is important for Australia to deal with future security issues.",
+      "target_probability": 0.7635115385055542,
+      "everyday_probability": 0.23388491570949554,
+      "margin": 0.5296266227960587,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "57116ffbf121c85c",
+      "question": "What challenges did Corporal Daniel Starr identify for young soldiers operating in Afghanistan, particularly regarding vehicle operation?",
+      "target_answer": "Young soldiers face challenges in adapting to the complex and unpredictable traffic environment in Afghanistan, particularly in Kabul. They must learn on the go without prior training in Australia, often without experienced guidance. This environment introduces operational risks, such as damaging PMVs, which can lead to post-incident questioning. The lack of prior vehicle training and preparation increases the difficulty of making real-time decisions in a grey operational space.",
+      "everyday_answer": "Young soldiers found it tough to get used to driving in the busy and unpredictable traffic in Afghanistan, especially in Kabul. They had to learn quickly without much training beforehand and didn't always have experienced people to guide them. This made it hard to avoid accidents, and if something happened, they could get questioned later. Not having enough practice before going there made it harder to make good decisions in tricky situations.",
+      "target_probability": 0.7489364743232727,
+      "everyday_probability": 0.28468430042266846,
+      "margin": 0.46425217390060425,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "b04a17e186731e22",
+      "question": "What are some key technologies and considerations in the development of autonomous and uncrewed systems, as discussed in the passage?",
+      "target_answer": "Key technologies include hybrid power systems such as lithium batteries for endurance, commercial off-the-shelf components like Torquedo electric motors and Starlink/Iridium communications, and advanced circuitry using FPGAs for programmability and adaptability. Considerations include minimising magnetic signatures through materials like carbon composites, ensuring environmental and operational safety for certification, and protecting intellectual property and code to prevent battlefield exploitation and countermeasure development.",
+      "everyday_answer": "Important technologies for building autonomous systems include using hybrid power sources like lithium batteries to last longer, using proven commercial parts like electric motors and satellite communication systems, and using advanced computer chips that can be reprogrammed. Developers also need to make sure the systems don't leave strong magnetic traces, work safely in the environment, and keep their software and designs secure to avoid being copied or used against them.",
+      "target_probability": 0.11637848615646362,
+      "everyday_probability": 0.2857908606529236,
+      "margin": -0.16941237449645996,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "573ebab8dae45996",
+      "question": "How is the evolution of drone warfare impacting the use of older military tactics and technologies?",
+      "target_answer": "The evolution of drone warfare is causing a regression to older military tactics and technologies in certain scenarios, particularly in response to jamming and spoofing capabilities. This includes the use of fiber optic cables for fly-by-wire control in small drones, reminiscent of historical methods, and the increased reliance on non-emitting systems such as artillery and cameras for detection and response. These adaptations are driven by the need to maintain operational effectiveness in contested electromagnetic environments.",
+      "everyday_answer": "Drone warfare is making some old military tactics and technologies useful again because of problems with jamming and signal interference. For example, small drones are using fiber optic cables instead of radio signals, which is a throwback to older methods. There's also more use of things like artillery and cameras to detect and respond to threats when electronic systems are unreliable. This is happening because modern warfare is forcing a return to simpler, more resilient techniques.",
+      "target_probability": 0.2798633277416229,
+      "everyday_probability": 0.4700721204280853,
+      "margin": -0.1902087926864624,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "7dc056ec8d743dda",
+      "question": "What is the role of Singapore's Multi-Role Combat Vessels (MRCVs) in naval operations?",
+      "target_answer": "The MRCVs are designed to function as a 'mothership' for unmanned aerial, surface, and underwater systems, enabling the conduct of naval operations. They are equipped with advanced sensors, weapon systems, and network capabilities to handle a wide range of threats and function as a Command ship. Their advanced automation allows them to operate effectively with a smaller crew compared to similar-sized warships.",
+      "everyday_answer": "The Multi-Role Combat Vessels are built to support unmanned drones and underwater vehicles for naval missions. They have advanced technology for sensing and fighting threats and can act as a command ship. These ships can work well with fewer crew members because of their automated systems.",
+      "target_probability": 0.15286773443222046,
+      "everyday_probability": 0.40650075674057007,
+      "margin": -0.2536330223083496,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "6a4644d8fbef4906",
+      "question": "What are the current limitations of nanosized metasurface technology for night vision applications?",
+      "target_answer": "The current limitations of nanosized metasurface technology for night vision applications include the complexity of large-scale nanofabrication and the low resolution of experimental prototypes. While the technology demonstrates proof of concept, it is still some way from achieving the resolution required for practical applications such as foliage penetration or real-time imaging. Additionally, scaling the fabrication process to cover larger surfaces, such as a vehicle windscreen, remains a significant challenge.",
+      "everyday_answer": "Right now, nanosized metasurface tech for night vision has some issues. It's hard to make these surfaces on a large scale, and the image quality isn't very good yet. The pictures are a bit blocky and not detailed enough for things like seeing through leaves or in real time. Also, making these surfaces big enough, like for a car windshield, is still a tough task.",
+      "target_probability": 0.024760572239756584,
+      "everyday_probability": 0.02468840405344963,
+      "margin": 7.216818630695343e-05,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "3a6ada2fb0456f84",
+      "question": "What is the US Navy's plan for deploying its medium-displacement unmanned surface vessels (MDUSVs) in the coming years?",
+      "target_answer": "The US Navy plans to deploy two medium-displacement unmanned surface vessels (MDUSVs), the Sea Hunter and Seahawk, under fleet control for operational use. One of these vessels will deploy with a carrier strike group in 2026. The Navy will establish three 'early command' USV divisions and aims to operationalize USV squadrons in every fleet. By 2027, the Navy expects to have 11 MDUSVs in its inventory, growing to over 30 by 2030. These vessels will support a range of maritime missions, including counter-mine activities, intelligence, surveillance, and reconnaissance, and will complement manned ships rather than replace them.",
+      "everyday_answer": "The US Navy is planning to use two medium-sized drone ships, called the Sea Hunter and Seahawk, in real operations. One of these will join a carrier group in 2026. The Navy is setting up new divisions to manage these drones and wants to have squadrons in every fleet. By 2027, they expect to have 11 of these drones, and over 30 by 2030. These ships will help with tasks like finding mines, gathering intelligence, and watching the sea, and they will work alongside traditional ships.",
+      "target_probability": 0.27919620275497437,
+      "everyday_probability": 0.2790842056274414,
+      "margin": 0.00011199712753295898,
+      "winner": "target"
+    }
+  ]
+}

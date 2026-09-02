@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/easy_892_tfidf",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/combined_892_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3202620756480399,
+  "metrics": {
+    "n": 272,
+    "threshold": 0.3202620756480399,
+    "accuracy": 0.8161764705882353,
+    "precision": 0.7866666666666666,
+    "recall": 0.8676470588235294,
+    "f1": 0.8251748251748252,
+    "roc_auc": 0.926794982698962,
+    "average_precision": 0.9357758197761915,
+    "brier_score": 0.11109172160963307,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        104,
+        32
+      ],
+      [
+        18,
+        118
+      ]
+    ]
+  }
+}

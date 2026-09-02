@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "cf46cbcda13e8c83",
+      "question": "What is the significance of the Battle of Milne Bay in the context of all-domain warfare as described in the passage?",
+      "target_answer": "The Battle of Milne Bay exemplifies all-domain warfare by demonstrating how a land battle was fought to secure airfields, which in turn enabled air power to control the Solomon Sea. This illustrates the integrated contribution of land forces to achieving effects in other domains, aligning with the vision outlined in the Department of Defence Strategic Review.",
+      "everyday_answer": "The Battle of Milne Bay shows how fighting on land can help control the sea. Australian troops defended airfields, which allowed air power to control the Solomon Sea. This example helps explain how different parts of the military can work together across land and air.",
+      "target_probability": 0.900100588798523,
+      "everyday_probability": 0.16601434350013733,
+      "margin": 0.7340862452983856,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "e6ef78052ed961c5",
+      "question": "What is the main argument against the 'go native' approach in cultural awareness?",
+      "target_answer": "The 'go native' approach, which involves mimicking or adapting to the host culture, does not produce an increase in operational effectiveness and can be counterproductive. Individuals encountered will expect you to represent your own culture, and over-adaptation may be perceived as insincere or suspicious. This approach is based on the flawed premise that culture is an obstacle to communication, whereas the most effective strategy is to not regard cultural differences as an obstacle in the first place.",
+      "everyday_answer": "Trying to act or look like the local people you're working with doesn't really help you get your job done better. In fact, it can cause more problems than it solves. People you meet will probably expect you to be yourself and from your own culture. Trying too hard to fit in might make you look fake or even raise suspicions. The idea that you need to overcome cultural differences to communicate well is not the best way to think about it. It's better to see cultural differences as normal and not something you need to get rid of.",
+      "target_probability": 0.7654508352279663,
+      "everyday_probability": 0.11225175857543945,
+      "margin": 0.6531990766525269,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "ac0e64cc14eaa11b",
+      "question": "What factors are contributing to the democratization of space capabilities in Australia, and how does this affect defense considerations?",
+      "target_answer": "The democratization of space capabilities in Australia is being driven by the low cost of entry, with components such as modified smartphones being viable for space use and the proliferation of startups. This makes it relatively easy to acquire and deploy space-based capabilities, which can provide strategic advantages. However, defense considerations include the risk of these capabilities being accessed by non-state or adversarial actors, and the need to manage both opportunities and risks through national oversight, particularly regarding satellite launches which require government approvals.",
+      "everyday_answer": "Space technology is becoming more accessible in Australia because it's not that expensive to get started, and even things like smartphones can work in space with a few changes. More companies are entering the space industry, making it easier for people to get these kinds of tools. This can be useful for defense, but it also means others could get access to similar tech. The government is trying to manage this by controlling who can launch satellites, since that still needs official permission.",
+      "target_probability": 0.9103211164474487,
+      "everyday_probability": 0.2719322144985199,
+      "margin": 0.6383889019489288,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "a8e24925599d291d",
+      "question": "What is the central theme of the book 'Diggers and Greeks: The Australian campaigns in Greece and Crete' by Hill?",
+      "target_answer": "The central theme of the book is how the Australians interacted with the people of Greece and Crete and the ways in which the diggers tried to understand the Hellenic world.",
+      "everyday_answer": "The main focus of the book is on how Australian soldiers interacted with the people of Greece and Crete and how they tried to understand the local culture.",
+      "target_probability": 0.12051885575056076,
+      "everyday_probability": 0.25590965151786804,
+      "margin": -0.13539079576730728,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "fb3364f0c7088fe8",
+      "question": "What discrepancy did the recon patrol observe between the drone's report and their own observations during the exercise?",
+      "target_answer": "The recon patrol observed that the enemy position appeared to be a connected W-shaped trench system, whereas the drone reported two separate V-shaped trench lines. The patrol also noted movement between the ends of the trenches, indicating a connection not detected by the drone.",
+      "everyday_answer": "The recon team saw that the enemy position looked like a W-shaped trench with movement between the ends, but the drone thought it was two separate V-shaped trenches. The drone didn't pick up on the connection the team saw.",
+      "target_probability": 0.16336484253406525,
+      "everyday_probability": 0.3081062138080597,
+      "margin": -0.14474137127399445,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "8e662426fcb5d739",
+      "question": "What are some key problems of leadership identified by Norman F. Dixon in the context of military command?",
+      "target_answer": "Norman F. Dixon identifies several key problems of leadership in military command, including a serious wastage of human resources and failure to observe economy of force, fundamental conservatism and adherence to outworn tradition, inability to learn from the past, misuse of available technology, rejection of unpalatable information, overestimation of one's own capabilities and underestimation of the enemy, indecisiveness and abdication from decision-making, persistence in a given task despite contrary evidence, failure to exploit situations, inadequate reconnaissance, belief in brute force, preference for frontal assaults, failure to use surprise or deception, undue readiness to find scapegoats for setbacks, suppression or distortion of news from the front, and belief in mystical forces such as fate or bad luck.",
+      "everyday_answer": "Norman F. Dixon points out several issues with military leadership, such as not using resources well, sticking to old traditions, not learning from past mistakes, misusing technology, ignoring information that doesn't fit expectations, being too confident in one's own side and not taking the enemy seriously enough, being indecisive and avoiding making tough choices, continuing with a plan even when it's clearly not working, missing opportunities, not gathering enough information, relying too much on brute force, preferring direct attacks, not using surprise or trickery, blaming others for failures, hiding bad news to keep morale up, and believing in things like bad luck or fate.",
+      "target_probability": 0.6863619685173035,
+      "everyday_probability": 0.845201313495636,
+      "margin": -0.15883934497833252,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "e4a093a1aab7addd",
+      "question": "What is the title and author of a book reviewed in the Australian Army Journal that examines the US Army Medical Department's history from 1917 to 1941?",
+      "target_answer": "The book is titled 'The Army Medical Department 1917-1941', authored by Mary C. Gillett and published by the United States Army Center of Military History.",
+      "everyday_answer": "The book is called 'The Army Medical Department 1917-1941' and was written by Mary C. Gillett. It was published by the US Army Center of Military History.",
+      "target_probability": 0.0035771976690739393,
+      "everyday_probability": 0.0035547108855098486,
+      "margin": 2.248678356409073e-05,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "d40e1b6e6da49f8f",
+      "question": "Who won the 2024 Commodore Sam Bateman Book Prize and what was the winning book?",
+      "target_answer": "Tom Lewis won the 2024 Commodore Sam Bateman Book Prize for his book 'The Sinking of HMAS Sydney'.",
+      "everyday_answer": "Tom Lewis won the 2024 Commodore Sam Bateman Book Prize for writing a book about the sinking of HMAS Sydney.",
+      "target_probability": 0.005626787431538105,
+      "everyday_probability": 0.005806205328553915,
+      "margin": -0.00017941789701581,
+      "winner": "everyday"
+    }
+  ]
+}

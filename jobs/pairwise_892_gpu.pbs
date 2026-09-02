@@ -1,0 +1,36 @@
+#!/bin/bash
+#PBS -N pairwise892-gpu
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/pairwise_eval_892
+
+for name in preference combined; do
+  model_dir="models/${name}_892_qwen"
+  for test_name in preference easy pure_topic; do
+    prefix="reports/pairwise_eval_892/${name}892_qwen_on_${test_name}"
+    if [[ -f "${prefix}_summary.json" ]]; then echo "SKIP ${prefix}_summary.json"; continue; fi
+    "$PY" scripts/evaluate_pairwise_892.py \
+      --model-dir "$model_dir" --model-type sbert \
+      --test-name "$test_name" \
+      --scores-output "${prefix}_scores.jsonl" \
+      --summary-output "${prefix}_summary.json" \
+      --batch-size 4
+  done
+done
+echo "pairwise GPU stage complete."

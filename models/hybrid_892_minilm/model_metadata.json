@@ -1,0 +1,10 @@
+{
+  "dataset_sha256": "aa9a19f9fa094f18966f9ac18f1ce1ea5aa5311b0fd3c3bebebc00e0cc92b85f",
+  "sbert_logistic_regression": {
+    "artifact": "sbert_logistic_regression.joblib",
+    "checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+    "normalize_embeddings": true,
+    "embedding_dimension": 384,
+    "threshold": 0.46092021465301514
+  }
+}

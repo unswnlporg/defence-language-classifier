@@ -1,0 +1,905 @@
+{
+  "rows": [
+    {
+      "training_dataset": "Combined-892",
+      "model": "MiniLM",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9851851851851852,
+      "precision": 0.9782608695652174,
+      "recall": 0.9926470588235294,
+      "f1": 0.9854014598540146,
+      "roc_auc": 0.9987928007023705,
+      "average_precision": 0.9988684987951687,
+      "brier_score": 0.013591318391263485,
+      "confusion_matrix": [
+        [
+          131,
+          3
+        ],
+        [
+          1,
+          135
+        ]
+      ],
+      "threshold": 0.3655065596103668,
+      "source_file": "reports/cross_eval_892/combined892_minilm_on_easy.json"
+    },
+    {
+      "training_dataset": "Combined-892",
+      "model": "MiniLM",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.7867647058823529,
+      "precision": 0.8,
+      "recall": 0.7647058823529411,
+      "f1": 0.7819548872180451,
+      "roc_auc": 0.8546712802768166,
+      "average_precision": 0.8724125557811098,
+      "brier_score": 0.1620863527059555,
+      "confusion_matrix": [
+        [
+          110,
+          26
+        ],
+        [
+          32,
+          104
+        ]
+      ],
+      "threshold": 0.3655065596103668,
+      "source_file": "reports/cross_eval_892/combined892_minilm_on_preference.json"
+    },
+    {
+      "training_dataset": "Combined-892",
+      "model": "MiniLM",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.8866666666666667,
+      "precision": 0.8152173913043478,
+      "recall": 1.0,
+      "f1": 0.8982035928143712,
+      "roc_auc": 0.9904,
+      "average_precision": 0.9913669566783752,
+      "brier_score": 0.06303880363702774,
+      "confusion_matrix": [
+        [
+          58,
+          17
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "threshold": 0.3655065596103668,
+      "source_file": "reports/cross_eval_892/combined892_minilm_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Combined-892",
+      "model": "TF-IDF",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9888888888888889,
+      "precision": 0.9784172661870504,
+      "recall": 1.0,
+      "f1": 0.9890909090909091,
+      "roc_auc": 0.9990671641791045,
+      "average_precision": 0.9990296066287417,
+      "brier_score": 0.015297133883578541,
+      "confusion_matrix": [
+        [
+          131,
+          3
+        ],
+        [
+          0,
+          136
+        ]
+      ],
+      "threshold": 0.42508235382796933,
+      "source_file": "reports/cross_eval_892/combined892_tfidf_on_easy.json"
+    },
+    {
+      "training_dataset": "Combined-892",
+      "model": "TF-IDF",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.9007352941176471,
+      "precision": 0.9739130434782609,
+      "recall": 0.8235294117647058,
+      "f1": 0.8924302788844621,
+      "roc_auc": 0.9779952422145328,
+      "average_precision": 0.9772716446661506,
+      "brier_score": 0.0993140511070366,
+      "confusion_matrix": [
+        [
+          133,
+          3
+        ],
+        [
+          24,
+          112
+        ]
+      ],
+      "threshold": 0.42508235382796933,
+      "source_file": "reports/cross_eval_892/combined892_tfidf_on_preference.json"
+    },
+    {
+      "training_dataset": "Combined-892",
+      "model": "TF-IDF",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.8866666666666667,
+      "precision": 0.8152173913043478,
+      "recall": 1.0,
+      "f1": 0.8982035928143712,
+      "roc_auc": 0.9893333333333334,
+      "average_precision": 0.9892461105778682,
+      "brier_score": 0.06854598410148602,
+      "confusion_matrix": [
+        [
+          58,
+          17
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "threshold": 0.42508235382796933,
+      "source_file": "reports/cross_eval_892/combined892_tfidf_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "MiniLM",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.8345588235294118,
+      "precision": 0.837037037037037,
+      "recall": 0.8308823529411765,
+      "f1": 0.8339483394833949,
+      "roc_auc": 0.9201989619377163,
+      "average_precision": 0.9314433206563204,
+      "brier_score": 0.11634513735771179,
+      "confusion_matrix": [
+        [
+          114,
+          22
+        ],
+        [
+          23,
+          113
+        ]
+      ],
+      "threshold": 0.37145912647247314,
+      "source_file": "reports/cross_eval_892/easy892_minilm_on_combined.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "MiniLM",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9925925925925926,
+      "precision": 0.9926470588235294,
+      "recall": 0.9926470588235294,
+      "f1": 0.9926470588235294,
+      "roc_auc": 0.9999451273046532,
+      "average_precision": 0.999946328896522,
+      "brier_score": 0.016631457954645157,
+      "confusion_matrix": [
+        [
+          133,
+          1
+        ],
+        [
+          1,
+          135
+        ]
+      ],
+      "threshold": 0.37145912647247314,
+      "source_file": "reports/cross_eval_892/easy892_minilm_on_easy.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "MiniLM",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.9301470588235294,
+      "precision": 0.8823529411764706,
+      "recall": 0.9926470588235294,
+      "f1": 0.9342560553633218,
+      "roc_auc": 0.9837802768166091,
+      "average_precision": 0.9799687960580945,
+      "brier_score": 0.049615662544965744,
+      "confusion_matrix": [
+        [
+          118,
+          18
+        ],
+        [
+          1,
+          135
+        ]
+      ],
+      "threshold": 0.37145912647247314,
+      "source_file": "reports/cross_eval_892/easy892_minilm_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "MiniLM",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.5992647058823529,
+      "precision": 0.6115702479338843,
+      "recall": 0.5441176470588235,
+      "f1": 0.5758754863813229,
+      "roc_auc": 0.6248378027681661,
+      "average_precision": 0.6158596026615695,
+      "brier_score": 0.2771173417568207,
+      "confusion_matrix": [
+        [
+          89,
+          47
+        ],
+        [
+          62,
+          74
+        ]
+      ],
+      "threshold": 0.37145912647247314,
+      "source_file": "reports/cross_eval_892/easy892_minilm_on_preference.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "MiniLM",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.8733333333333333,
+      "precision": 0.8043478260869565,
+      "recall": 0.9866666666666667,
+      "f1": 0.8862275449101796,
+      "roc_auc": 0.9678222222222221,
+      "average_precision": 0.962674357283672,
+      "brier_score": 0.08003579825162888,
+      "confusion_matrix": [
+        [
+          57,
+          18
+        ],
+        [
+          1,
+          74
+        ]
+      ],
+      "threshold": 0.37145912647247314,
+      "source_file": "reports/cross_eval_892/easy892_minilm_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "TF-IDF",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.8161764705882353,
+      "precision": 0.7866666666666666,
+      "recall": 0.8676470588235294,
+      "f1": 0.8251748251748252,
+      "roc_auc": 0.926794982698962,
+      "average_precision": 0.9357758197761915,
+      "brier_score": 0.11109172160963307,
+      "confusion_matrix": [
+        [
+          104,
+          32
+        ],
+        [
+          18,
+          118
+        ]
+      ],
+      "threshold": 0.3202620756480399,
+      "source_file": "reports/cross_eval_892/easy892_tfidf_on_combined.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "TF-IDF",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9888888888888889,
+      "precision": 0.9784172661870504,
+      "recall": 1.0,
+      "f1": 0.9890909090909091,
+      "roc_auc": 0.9986281826163301,
+      "average_precision": 0.9986227670038239,
+      "brier_score": 0.01891723768883362,
+      "confusion_matrix": [
+        [
+          131,
+          3
+        ],
+        [
+          0,
+          136
+        ]
+      ],
+      "threshold": 0.3202620756480399,
+      "source_file": "reports/cross_eval_892/easy892_tfidf_on_easy.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "TF-IDF",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.9080882352941176,
+      "precision": 0.84472049689441,
+      "recall": 1.0,
+      "f1": 0.9158249158249159,
+      "roc_auc": 0.9868079584775087,
+      "average_precision": 0.9875210339783562,
+      "brier_score": 0.055967012983576626,
+      "confusion_matrix": [
+        [
+          111,
+          25
+        ],
+        [
+          0,
+          136
+        ]
+      ],
+      "threshold": 0.3202620756480399,
+      "source_file": "reports/cross_eval_892/easy892_tfidf_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "TF-IDF",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.6323529411764706,
+      "precision": 0.6232876712328768,
+      "recall": 0.6691176470588235,
+      "f1": 0.6453900709219859,
+      "roc_auc": 0.6895004325259515,
+      "average_precision": 0.6886635777615935,
+      "brier_score": 0.24191173430880278,
+      "confusion_matrix": [
+        [
+          81,
+          55
+        ],
+        [
+          45,
+          91
+        ]
+      ],
+      "threshold": 0.3202620756480399,
+      "source_file": "reports/cross_eval_892/easy892_tfidf_on_preference.json"
+    },
+    {
+      "training_dataset": "Easy-892",
+      "model": "TF-IDF",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.84,
+      "precision": 0.7575757575757576,
+      "recall": 1.0,
+      "f1": 0.8620689655172413,
+      "roc_auc": 0.9667555555555555,
+      "average_precision": 0.9710327795812344,
+      "brier_score": 0.09243635007205422,
+      "confusion_matrix": [
+        [
+          51,
+          24
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "threshold": 0.3202620756480399,
+      "source_file": "reports/cross_eval_892/easy892_tfidf_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "MiniLM",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.8345588235294118,
+      "precision": 0.9252336448598131,
+      "recall": 0.7279411764705882,
+      "f1": 0.8148148148148148,
+      "roc_auc": 0.9256596020761246,
+      "average_precision": 0.938295858562336,
+      "brier_score": 0.13253149390220642,
+      "confusion_matrix": [
+        [
+          128,
+          8
+        ],
+        [
+          37,
+          99
+        ]
+      ],
+      "threshold": 0.46092021465301514,
+      "source_file": "reports/cross_eval_892/hybrid892_minilm_on_combined.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "MiniLM",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9814814814814815,
+      "precision": 1.0,
+      "recall": 0.9632352941176471,
+      "f1": 0.9812734082397003,
+      "roc_auc": 1.0,
+      "average_precision": 0.9999999999999999,
+      "brier_score": 0.01413289550691843,
+      "confusion_matrix": [
+        [
+          134,
+          0
+        ],
+        [
+          5,
+          131
+        ]
+      ],
+      "threshold": 0.46092021465301514,
+      "source_file": "reports/cross_eval_892/hybrid892_minilm_on_easy.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "MiniLM",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.9705882352941176,
+      "precision": 0.9776119402985075,
+      "recall": 0.9632352941176471,
+      "f1": 0.9703703703703703,
+      "roc_auc": 0.9962153979238754,
+      "average_precision": 0.9958936690141715,
+      "brier_score": 0.023038817569613457,
+      "confusion_matrix": [
+        [
+          133,
+          3
+        ],
+        [
+          5,
+          131
+        ]
+      ],
+      "threshold": 0.46092021465301514,
+      "source_file": "reports/cross_eval_892/hybrid892_minilm_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "MiniLM",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.5661764705882353,
+      "precision": 0.6875,
+      "recall": 0.2426470588235294,
+      "f1": 0.358695652173913,
+      "roc_auc": 0.6383001730103806,
+      "average_precision": 0.6319834820963052,
+      "brier_score": 0.3468334674835205,
+      "confusion_matrix": [
+        [
+          121,
+          15
+        ],
+        [
+          103,
+          33
+        ]
+      ],
+      "threshold": 0.46092021465301514,
+      "source_file": "reports/cross_eval_892/hybrid892_minilm_on_preference.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "MiniLM",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.96,
+      "precision": 0.96,
+      "recall": 0.96,
+      "f1": 0.96,
+      "roc_auc": 0.9925333333333333,
+      "average_precision": 0.9921564747229472,
+      "brier_score": 0.033063411712646484,
+      "confusion_matrix": [
+        [
+          72,
+          3
+        ],
+        [
+          3,
+          72
+        ]
+      ],
+      "threshold": 0.46092021465301514,
+      "source_file": "reports/cross_eval_892/hybrid892_minilm_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "TF-IDF",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.8602941176470589,
+      "precision": 0.9454545454545454,
+      "recall": 0.7647058823529411,
+      "f1": 0.8455284552845529,
+      "roc_auc": 0.9490700692041523,
+      "average_precision": 0.9549925754618882,
+      "brier_score": 0.10959917771917158,
+      "confusion_matrix": [
+        [
+          130,
+          6
+        ],
+        [
+          32,
+          104
+        ]
+      ],
+      "threshold": 0.3866048471107162,
+      "source_file": "reports/cross_eval_892/hybrid892_tfidf_on_combined.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "TF-IDF",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.9814814814814815,
+      "precision": 0.9924812030075187,
+      "recall": 0.9705882352941176,
+      "f1": 0.9814126394052045,
+      "roc_auc": 0.9996707638279192,
+      "average_precision": 0.9996747456928917,
+      "brier_score": 0.023043986833505045,
+      "confusion_matrix": [
+        [
+          133,
+          1
+        ],
+        [
+          4,
+          132
+        ]
+      ],
+      "threshold": 0.3866048471107162,
+      "source_file": "reports/cross_eval_892/hybrid892_tfidf_on_easy.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "TF-IDF",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.9595588235294118,
+      "precision": 0.9496402877697842,
+      "recall": 0.9705882352941176,
+      "f1": 0.96,
+      "roc_auc": 0.9963235294117646,
+      "average_precision": 0.9964067656886664,
+      "brier_score": 0.032478505095699814,
+      "confusion_matrix": [
+        [
+          129,
+          7
+        ],
+        [
+          4,
+          132
+        ]
+      ],
+      "threshold": 0.3866048471107162,
+      "source_file": "reports/cross_eval_892/hybrid892_tfidf_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "TF-IDF",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.6102941176470589,
+      "precision": 0.7678571428571429,
+      "recall": 0.3161764705882353,
+      "f1": 0.4479166666666667,
+      "roc_auc": 0.7073421280276817,
+      "average_precision": 0.7044858517853678,
+      "brier_score": 0.27439897554207715,
+      "confusion_matrix": [
+        [
+          123,
+          13
+        ],
+        [
+          93,
+          43
+        ]
+      ],
+      "threshold": 0.3866048471107162,
+      "source_file": "reports/cross_eval_892/hybrid892_tfidf_on_preference.json"
+    },
+    {
+      "training_dataset": "Hybrid-892",
+      "model": "TF-IDF",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.9333333333333333,
+      "precision": 0.922077922077922,
+      "recall": 0.9466666666666667,
+      "f1": 0.9342105263157895,
+      "roc_auc": 0.9902222222222222,
+      "average_precision": 0.9907223817098956,
+      "brier_score": 0.04709363156852359,
+      "confusion_matrix": [
+        [
+          69,
+          6
+        ],
+        [
+          4,
+          71
+        ]
+      ],
+      "threshold": 0.3866048471107162,
+      "source_file": "reports/cross_eval_892/hybrid892_tfidf_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "MiniLM",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.7683823529411765,
+      "precision": 0.7016574585635359,
+      "recall": 0.9338235294117647,
+      "f1": 0.8012618296529969,
+      "roc_auc": 0.8757028546712802,
+      "average_precision": 0.8631871934884172,
+      "brier_score": 0.19330203533172607,
+      "confusion_matrix": [
+        [
+          82,
+          54
+        ],
+        [
+          9,
+          127
+        ]
+      ],
+      "threshold": 0.5747698545455933,
+      "source_file": "reports/cross_eval_892/preference892_minilm_on_combined.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "MiniLM",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.774074074074074,
+      "precision": 0.6923076923076923,
+      "recall": 0.9926470588235294,
+      "f1": 0.8157099697885196,
+      "roc_auc": 0.957089552238806,
+      "average_precision": 0.9563295190230543,
+      "brier_score": 0.18696874380111694,
+      "confusion_matrix": [
+        [
+          74,
+          60
+        ],
+        [
+          1,
+          135
+        ]
+      ],
+      "threshold": 0.5747698545455933,
+      "source_file": "reports/cross_eval_892/preference892_minilm_on_easy.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "MiniLM",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.6727941176470589,
+      "precision": 0.6053811659192825,
+      "recall": 0.9926470588235294,
+      "f1": 0.7520891364902507,
+      "roc_auc": 0.9133326124567475,
+      "average_precision": 0.8933324753161622,
+      "brier_score": 0.26141536235809326,
+      "confusion_matrix": [
+        [
+          48,
+          88
+        ],
+        [
+          1,
+          135
+        ]
+      ],
+      "threshold": 0.5747698545455933,
+      "source_file": "reports/cross_eval_892/preference892_minilm_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "MiniLM",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.8823529411764706,
+      "precision": 0.9333333333333333,
+      "recall": 0.8235294117647058,
+      "f1": 0.875,
+      "roc_auc": 0.9583693771626297,
+      "average_precision": 0.9616638428753546,
+      "brier_score": 0.08393868058919907,
+      "confusion_matrix": [
+        [
+          128,
+          8
+        ],
+        [
+          24,
+          112
+        ]
+      ],
+      "threshold": 0.5747698545455933,
+      "source_file": "reports/cross_eval_892/preference892_minilm_on_preference.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "MiniLM",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.62,
+      "precision": 0.5681818181818182,
+      "recall": 1.0,
+      "f1": 0.7246376811594203,
+      "roc_auc": 0.8867555555555556,
+      "average_precision": 0.8514836752955913,
+      "brier_score": 0.317671537399292,
+      "confusion_matrix": [
+        [
+          18,
+          57
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "threshold": 0.5747698545455933,
+      "source_file": "reports/cross_eval_892/preference892_minilm_on_pure_topic.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "TF-IDF",
+      "test_dataset": "Combined-892",
+      "n": 272,
+      "accuracy": 0.7683823529411765,
+      "precision": 0.7016574585635359,
+      "recall": 0.9338235294117647,
+      "f1": 0.8012618296529969,
+      "roc_auc": 0.8978698096885814,
+      "average_precision": 0.8961559358012867,
+      "brier_score": 0.17903116590775078,
+      "confusion_matrix": [
+        [
+          82,
+          54
+        ],
+        [
+          9,
+          127
+        ]
+      ],
+      "threshold": 0.6207162093119928,
+      "source_file": "reports/cross_eval_892/preference892_tfidf_on_combined.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "TF-IDF",
+      "test_dataset": "Easy",
+      "n": 270,
+      "accuracy": 0.7444444444444445,
+      "precision": 0.6700507614213198,
+      "recall": 0.9705882352941176,
+      "f1": 0.7927927927927928,
+      "roc_auc": 0.9321224758560139,
+      "average_precision": 0.9399867823740347,
+      "brier_score": 0.19899500426503516,
+      "confusion_matrix": [
+        [
+          69,
+          65
+        ],
+        [
+          4,
+          132
+        ]
+      ],
+      "threshold": 0.6207162093119928,
+      "source_file": "reports/cross_eval_892/preference892_tfidf_on_easy.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "TF-IDF",
+      "test_dataset": "Hybrid-892",
+      "n": 272,
+      "accuracy": 0.6323529411764706,
+      "precision": 0.5789473684210527,
+      "recall": 0.9705882352941176,
+      "f1": 0.7252747252747253,
+      "roc_auc": 0.8292603806228375,
+      "average_precision": 0.8433928076643875,
+      "brier_score": 0.2759903472985985,
+      "confusion_matrix": [
+        [
+          40,
+          96
+        ],
+        [
+          4,
+          132
+        ]
+      ],
+      "threshold": 0.6207162093119928,
+      "source_file": "reports/cross_eval_892/preference892_tfidf_on_hybrid.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "TF-IDF",
+      "test_dataset": "Preference-892",
+      "n": 272,
+      "accuracy": 0.9558823529411765,
+      "precision": 0.9920634920634921,
+      "recall": 0.9191176470588235,
+      "f1": 0.9541984732824428,
+      "roc_auc": 0.9968641868512111,
+      "average_precision": 0.9969000613167038,
+      "brier_score": 0.03338757085531771,
+      "confusion_matrix": [
+        [
+          135,
+          1
+        ],
+        [
+          11,
+          125
+        ]
+      ],
+      "threshold": 0.6207162093119928,
+      "source_file": "reports/cross_eval_892/preference892_tfidf_on_preference.json"
+    },
+    {
+      "training_dataset": "Preference-892",
+      "model": "TF-IDF",
+      "test_dataset": "Pure Topic-Matched",
+      "n": 150,
+      "accuracy": 0.5933333333333334,
+      "precision": 0.5514705882352942,
+      "recall": 1.0,
+      "f1": 0.7109004739336493,
+      "roc_auc": 0.7658666666666666,
+      "average_precision": 0.795983689136102,
+      "brier_score": 0.32018402239208316,
+      "confusion_matrix": [
+        [
+          14,
+          61
+        ],
+        [
+          0,
+          75
+        ]
+      ],
+      "threshold": 0.6207162093119928,
+      "source_file": "reports/cross_eval_892/preference892_tfidf_on_pure_topic.json"
+    }
+  ],
+  "n_rows": 36
+}

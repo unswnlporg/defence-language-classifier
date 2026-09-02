@@ -1,0 +1,48 @@
+{
+  "model_dir": "models/pilot",
+  "model_type": "sbert",
+  "n_examples": 698,
+  "n_pairs": 349,
+  "threshold": 0.371459154857299,
+  "pairwise": {
+    "target_greater_than_everyday": 284,
+    "everyday_wins": 65,
+    "ties": 0,
+    "target_win_rate": 0.8137535816618912
+  },
+  "scores": {
+    "target_mean": 0.4292909586455214,
+    "everyday_mean": 0.3196104670631937,
+    "mean_margin": 0.10968049158232772,
+    "median_margin": 0.0828142762184143,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.09553637926908407,
+      0.12400660675564742
+    ]
+  },
+  "aggregate_metrics_all_698": {
+    "n": 698,
+    "threshold": 0.371459154857299,
+    "accuracy": 0.5787965616045845,
+    "precision": 0.5895765472312704,
+    "recall": 0.5186246418338109,
+    "f1": 0.551829268292683,
+    "roc_auc": 0.6204875165228527,
+    "average_precision": 0.615217422172226,
+    "brier_score": 0.27795296907424927,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        223,
+        126
+      ],
+      [
+        168,
+        181
+      ]
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+#!/bin/bash
+#PBS -N train892-cpu
+#PBS -l walltime=02:00:00
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -q cse12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/cross_eval_892 reports/preference_common_892 models
+
+declare -A DATASETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+)
+declare -A TESTSETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+  [pure_topic]=data/processed/topic_matched_dataset_splits_final439.jsonl
+)
+
+# --- 1. Train TF-IDF+MiniLM for all 4 datasets (resumable: skip if reorganized dirs already exist) ---
+for name in "${!DATASETS[@]}"; do
+  dest_tfidf="models/${name}_892_tfidf"
+  dest_minilm="models/${name}_892_minilm"
+  if [[ -f "$dest_tfidf/model_metadata.json" && -f "$dest_minilm/model_metadata.json" ]]; then
+    echo "SKIP train ${name}_892 minilm (already done)"
+    continue
+  fi
+  ds="${DATASETS[$name]}"
+  raw_dir="models/${name}_892_minilm_raw"
+  "$PY" scripts/train_baselines.py \
+    --dataset "$ds" \
+    --model-dir "$raw_dir" \
+    --report-dir "reports/${name}_892_minilm" \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/${name}892-minilm" \
+    --sbert-checkpoint sentence-transformers/all-MiniLM-L6-v2 \
+    --batch-size 32
+  "$PY" scripts/reorganize_model_dir.py "$raw_dir" "${name}_892" minilm models
+done
+
+declare -A MODEL_TYPE_FLAG=( [tfidf]=tfidf [minilm]=sbert )
+
+# --- 2. Cross-eval all 8 non-Qwen models against all 5 test sets ---
+for name in "${!DATASETS[@]}"; do
+  for repr in tfidf minilm; do
+    model_dir="models/${name}_892_${repr}"
+    for test_name in "${!TESTSETS[@]}"; do
+      out="reports/cross_eval_892/${name}892_${repr}_on_${test_name}.json"
+      if [[ -f "$out" ]]; then echo "SKIP $out"; continue; fi
+      "$PY" scripts/cross_evaluate.py \
+        --model-dir "$model_dir" --model-type "${MODEL_TYPE_FLAG[$repr]}" \
+        --target-dataset "${TESTSETS[$test_name]}" \
+        --output "$out"
+    done
+  done
+done
+
+# --- 3. Pairwise preference evaluation (target vs everyday) for all 8 non-Qwen models on preference_892 test ---
+for name in "${!DATASETS[@]}"; do
+  for repr in tfidf minilm; do
+    model_dir="models/${name}_892_${repr}"
+    prefix="reports/preference_common_892/${name}892_${repr}"
+    if [[ -f "${prefix}_summary.json" ]]; then echo "SKIP ${prefix}_summary.json"; continue; fi
+    "$PY" scripts/evaluate_preference_transfer.py \
+      --model-dir "$model_dir" --model-type "${MODEL_TYPE_FLAG[$repr]}" \
+      --dataset data/processed/preference_892_dataset_splits.jsonl \
+      --scores-output "${prefix}_scores.jsonl" \
+      --summary-output "${prefix}_summary.json" \
+      --samples-output "${prefix}_samples.json"
+  done
+done
+
+echo "CPU stage complete."

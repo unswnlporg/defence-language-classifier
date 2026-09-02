@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "5d4aa45472b481bd",
+      "question": "What is the recommended strategic shift in mine countermeasure (MCM) operations according to the article?",
+      "target_answer": "The article recommends a strategic shift from direct, operational/tactical-level thinking to indirect, strategic-level thinking in MCM operations. This involves adopting a pervasive and persistent intelligence, surveillance, and reconnaissance (ISR) approach to 'know' where mines are a priori, rather than focusing solely on finding them.",
+      "everyday_answer": "The article suggests changing the way we think about dealing with sea mines. Instead of just trying to find and clear them, we should use constant monitoring and surveillance to know where they are before they become a problem.",
+      "target_probability": 0.8324237065110072,
+      "everyday_probability": 0.26498354690880405,
+      "margin": 0.5674401596022032,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "46e491a245bc9356",
+      "question": "What is the significance of the book 'The Secure Board' in the context of cybersecurity for directors and business leaders?",
+      "target_answer": "The Secure Board is a valuable resource for directors, enabling them to engage effectively with cybersecurity risks and satisfy their fiduciary responsibilities. It provides a framework for directors to address cybersecurity in the same manner as other enterprise risks, supporting informed decision-making and strategic integration within the boardroom.",
+      "everyday_answer": "The book 'The Secure Board' helps company directors understand and talk about cybersecurity issues with their security or IT teams. It's useful for directors to make sure they're doing their duty by considering cybersecurity as part of the overall business risks they manage in meetings.",
+      "target_probability": 0.6959989030907132,
+      "everyday_probability": 0.18934444620102248,
+      "margin": 0.5066544568896907,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f60e40d79186ee28",
+      "question": "What were the operational and strategic challenges faced by the CAOC during the air campaign in Afghanistan?",
+      "target_answer": "The CAOC faced operational delays and strategic challenges due to restrictions on targeting that stemmed from a high-level political imperative to avoid suggesting the campaign targeted the Afghan people or Islam. This led to a minimally destructive air campaign, which caused CAOC staff to be cautious in proposing targets due to fears of disapproval. The Air Component Commander had to repeatedly remind staff of the campaign's purpose. The emphasis on collateral damage avoidance often overrode mission accomplishment, creating a dilemma where mission success sometimes required collateral damage avoidance. The increased situation awareness and communication bandwidth enabled senior leaders to personally intervene in force employment decisions, further complicating operational execution.",
+      "everyday_answer": "The CAOC had trouble carrying out the air campaign in Afghanistan because they had to follow strict rules to avoid hurting civilians or making it look like they were targeting Muslims. This made the campaign less aggressive than it could have been, and staff were hesitant to suggest targets for fear of being criticized. The commander kept reminding the team of why they were there. The focus on avoiding civilian harm sometimes meant they couldn't carry out their missions properly. Also, because leaders could now communicate so easily, they started getting involved in the details of how the campaign was run, which added to the problems.",
+      "target_probability": 0.6954086225948458,
+      "everyday_probability": 0.21800008404498614,
+      "margin": 0.47740853854985965,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "38ff89dc96478a11",
+      "question": "What is the main thesis of the book 'Why Vietnam' by Frank N. Trager, and what is the author's background?",
+      "target_answer": "The main thesis of 'Why Vietnam' by Frank N. Trager concerns the international legality of American involvement in Vietnam. The author develops this argument by examining the history of Vietnamese resistance to alien domination, the deficiencies of the 1954 Geneva Conference, and the agreements between the USA and the Republic of Vietnam. Trager is a professor of International Affairs at New York University and a former director of the Point Four Programme in Burma, with extensive experience in Southeast Asia and a record of writing on Asian affairs.",
+      "everyday_answer": "The book 'Why Vietnam' by Frank N. Trager mainly looks at whether the US involvement in Vietnam was legal under international law. Trager explains this by looking at Vietnam's history of fighting against foreign control, problems with the 1954 Geneva Conference, and agreements between the US and South Vietnam. Trager is a professor who has worked in Southeast Asia and has written a lot about Asian issues.",
+      "target_probability": 0.07806602857269972,
+      "everyday_probability": 0.15652158586604584,
+      "margin": -0.07845555729334612,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "42937cb603187156",
+      "question": "What is distinctive about the role of cyber as a domain in hybrid war and grey zone activities?",
+      "target_answer": "The emergence of cyber as a distinct domain represents a new and unique vehicle for hybrid war and grey zone activities, with no historical precedence. This development has introduced a revolutionary shift in the character and significance of such operations.",
+      "everyday_answer": "What makes cyber different is that it's a new kind of space for hybrid and grey zone activities, something that hasn't existed before. This has changed how these kinds of operations are carried out and how important they are.",
+      "target_probability": 0.5738244284624087,
+      "everyday_probability": 0.7140566229551273,
+      "margin": -0.14023219449271862,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "c40a338df542c8fe",
+      "question": "How does KBR approach the development of training and performance support solutions compared to other organisations at the Avalon Airshow?",
+      "target_answer": "KBR positions itself as a first principles organisation focused on identifying and solving problems, rather than offering solutions in search of problems. While other organisations may present technology-driven solutions, KBR prioritises the people side of training and performance support, advocating for the workforce and utilising technology to reduce frustration and improve task efficiency. KBR is not an OEM or technology inventor but an innovator, aligning with the expectations of a new generation of workers who expect accessible, on-demand tools.",
+      "everyday_answer": "KBR takes a different approach by starting with the problem and figuring out the best way to solve it, rather than just offering technology solutions. They focus on making training and work easier for people by using tools that help them do their jobs better. Unlike companies that make technology products, KBR is more about understanding what workers need and using technology to make their work less frustrating. They also consider how younger workers expect to have these tools available when they start a job.",
+      "target_probability": 0.31733552324851927,
+      "everyday_probability": 0.4955814758460548,
+      "margin": -0.1782459525975355,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "5460bcf210afe11f",
+      "question": "What is the focus of the Canadian Nautical Research Society\u2019s virtual annual conference on 10-11 June?",
+      "target_answer": "The conference focuses on topics related to Canadian naval history and maritime development, including transnational Pacific relations, maritime safety, and the evolution of Canada\u2019s Pacific Gateway.",
+      "everyday_answer": "The conference is about Canadian naval history and the development of Canada\u2019s Pacific coast, covering topics like international relationships, maritime safety, and the growth of port cities.",
+      "target_probability": 0.09387510694273381,
+      "everyday_probability": 0.09335517024409454,
+      "margin": 0.0005199366986392701,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.06033059599003888,
+      "everyday_probability": 0.06114663258808198,
+      "margin": -0.0008160365980431003,
+      "winner": "everyday"
+    }
+  ]
+}

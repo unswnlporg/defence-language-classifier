@@ -1,0 +1,48 @@
+{
+  "model_dir": "models/hybrid_892_minilm",
+  "model_type": "sbert",
+  "n_examples": 272,
+  "n_pairs": 136,
+  "threshold": 0.46092021465301514,
+  "pairwise": {
+    "target_greater_than_everyday": 109,
+    "everyday_wins": 27,
+    "ties": 0,
+    "target_win_rate": 0.8014705882352942
+  },
+  "scores": {
+    "target_mean": 0.2646170507062326,
+    "everyday_mean": 0.15199457756791482,
+    "mean_margin": 0.11262247313831775,
+    "median_margin": 0.046757860109210014,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.0821047346119271,
+      0.14482901584753885
+    ]
+  },
+  "aggregate_metrics_all_698": {
+    "n": 272,
+    "threshold": 0.46092021465301514,
+    "accuracy": 0.5661764705882353,
+    "precision": 0.6875,
+    "recall": 0.2426470588235294,
+    "f1": 0.358695652173913,
+    "roc_auc": 0.6383001730103806,
+    "average_precision": 0.6319834820963052,
+    "brier_score": 0.3468334674835205,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        121,
+        15
+      ],
+      [
+        103,
+        33
+      ]
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/preference_892_tfidf",
+  "model_type": "tfidf",
+  "test_name": "preference",
+  "pairing_method": "candidate_id (real pairing)",
+  "threshold": 0.6207162093119928,
+  "n_pairs": 136,
+  "pairwise": {
+    "positive_greater_than_negative": 135,
+    "negative_wins": 1,
+    "ties": 0,
+    "win_rate": 0.9926470588235294
+  },
+  "scores": {
+    "positive_mean": 0.8728255003272238,
+    "negative_mean": 0.11559968470888565,
+    "mean_margin": 0.7572258156183382,
+    "median_margin": 0.8331226048006748,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.721132239241006,
+      0.7909923994537111
+    ]
+  }
+}

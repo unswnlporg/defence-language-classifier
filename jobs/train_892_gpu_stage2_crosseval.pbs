@@ -1,0 +1,42 @@
+#!/bin/bash
+#PBS -N train892-qwen-crosseval
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/cross_eval_892
+
+declare -A TESTSETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+  [pure_topic]=data/processed/topic_matched_dataset_splits_final439.jsonl
+)
+
+for name in easy hybrid preference combined; do
+  model_dir="models/${name}_892_qwen"
+  for test_name in "${!TESTSETS[@]}"; do
+    out="reports/cross_eval_892/${name}892_qwen_on_${test_name}.json"
+    if [[ -f "$out" ]]; then echo "SKIP $out"; continue; fi
+    "$PY" scripts/cross_evaluate.py \
+      --model-dir "$model_dir" --model-type sbert \
+      --target-dataset "${TESTSETS[$test_name]}" \
+      --output "$out" --batch-size 4
+  done
+done
+echo "stage2 (cross-eval) complete."

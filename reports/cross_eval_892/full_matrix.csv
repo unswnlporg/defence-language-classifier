@@ -1,0 +1,37 @@
+Training dataset,Model,Test dataset,N,Accuracy,F1,AUROC
+Combined-892,MiniLM,Easy,270,0.9852,0.9854,0.9988
+Combined-892,MiniLM,Preference-892,272,0.7868,0.7820,0.8547
+Combined-892,MiniLM,Pure Topic-Matched,150,0.8867,0.8982,0.9904
+Combined-892,TF-IDF,Easy,270,0.9889,0.9891,0.9991
+Combined-892,TF-IDF,Preference-892,272,0.9007,0.8924,0.9780
+Combined-892,TF-IDF,Pure Topic-Matched,150,0.8867,0.8982,0.9893
+Easy-892,MiniLM,Combined-892,272,0.8346,0.8339,0.9202
+Easy-892,MiniLM,Easy,270,0.9926,0.9926,0.9999
+Easy-892,MiniLM,Hybrid-892,272,0.9301,0.9343,0.9838
+Easy-892,MiniLM,Preference-892,272,0.5993,0.5759,0.6248
+Easy-892,MiniLM,Pure Topic-Matched,150,0.8733,0.8862,0.9678
+Easy-892,TF-IDF,Combined-892,272,0.8162,0.8252,0.9268
+Easy-892,TF-IDF,Easy,270,0.9889,0.9891,0.9986
+Easy-892,TF-IDF,Hybrid-892,272,0.9081,0.9158,0.9868
+Easy-892,TF-IDF,Preference-892,272,0.6324,0.6454,0.6895
+Easy-892,TF-IDF,Pure Topic-Matched,150,0.8400,0.8621,0.9668
+Hybrid-892,MiniLM,Combined-892,272,0.8346,0.8148,0.9257
+Hybrid-892,MiniLM,Easy,270,0.9815,0.9813,1.0000
+Hybrid-892,MiniLM,Hybrid-892,272,0.9706,0.9704,0.9962
+Hybrid-892,MiniLM,Preference-892,272,0.5662,0.3587,0.6383
+Hybrid-892,MiniLM,Pure Topic-Matched,150,0.9600,0.9600,0.9925
+Hybrid-892,TF-IDF,Combined-892,272,0.8603,0.8455,0.9491
+Hybrid-892,TF-IDF,Easy,270,0.9815,0.9814,0.9997
+Hybrid-892,TF-IDF,Hybrid-892,272,0.9596,0.9600,0.9963
+Hybrid-892,TF-IDF,Preference-892,272,0.6103,0.4479,0.7073
+Hybrid-892,TF-IDF,Pure Topic-Matched,150,0.9333,0.9342,0.9902
+Preference-892,MiniLM,Combined-892,272,0.7684,0.8013,0.8757
+Preference-892,MiniLM,Easy,270,0.7741,0.8157,0.9571
+Preference-892,MiniLM,Hybrid-892,272,0.6728,0.7521,0.9133
+Preference-892,MiniLM,Preference-892,272,0.8824,0.8750,0.9584
+Preference-892,MiniLM,Pure Topic-Matched,150,0.6200,0.7246,0.8868
+Preference-892,TF-IDF,Combined-892,272,0.7684,0.8013,0.8979
+Preference-892,TF-IDF,Easy,270,0.7444,0.7928,0.9321
+Preference-892,TF-IDF,Hybrid-892,272,0.6324,0.7253,0.8293
+Preference-892,TF-IDF,Preference-892,272,0.9559,0.9542,0.9969
+Preference-892,TF-IDF,Pure Topic-Matched,150,0.5933,0.7109,0.7659

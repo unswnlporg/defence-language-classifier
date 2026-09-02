@@ -1,0 +1,60 @@
+{
+  "dataset_name": "combined_892",
+  "seed": 42,
+  "quotas": {
+    "train": {
+      "easy": 207,
+      "hybrid": 207,
+      "preference": 206
+    },
+    "validation": {
+      "easy": 45,
+      "hybrid": 45,
+      "preference": 46
+    },
+    "test": {
+      "easy": 45,
+      "hybrid": 45,
+      "preference": 46
+    }
+  },
+  "total_examples": 1784,
+  "pairs_by_split_and_source": {
+    "test_easy": 45,
+    "test_hybrid": 45,
+    "test_preference": 46,
+    "train_easy": 207,
+    "train_hybrid": 207,
+    "train_preference": 206,
+    "validation_easy": 45,
+    "validation_hybrid": 45,
+    "validation_preference": 46
+  },
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 1240,
+      "documents": 509,
+      "positive": 620,
+      "negative": 620,
+      "general_wikipedia": 151,
+      "military_wikipedia": 141
+    },
+    "validation": {
+      "passages": 272,
+      "documents": 115,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 29,
+      "military_wikipedia": 32
+    },
+    "test": {
+      "passages": 272,
+      "documents": 114,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 20,
+      "military_wikipedia": 39
+    }
+  },
+  "output_sha256": "08d4eef324fc512fc7442db41d54edc7f170ec6084d2034a8d95e99ea2ff9a89"
+}

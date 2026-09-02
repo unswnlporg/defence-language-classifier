@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "5d4aa45472b481bd",
+      "question": "What is the recommended strategic shift in mine countermeasure (MCM) operations according to the article?",
+      "target_answer": "The article recommends a strategic shift from direct, operational/tactical-level thinking to indirect, strategic-level thinking in MCM operations. This involves adopting a pervasive and persistent intelligence, surveillance, and reconnaissance (ISR) approach to 'know' where mines are a priori, rather than focusing solely on finding them.",
+      "everyday_answer": "The article suggests changing the way we think about dealing with sea mines. Instead of just trying to find and clear them, we should use constant monitoring and surveillance to know where they are before they become a problem.",
+      "target_probability": 0.7137703540229573,
+      "everyday_probability": 0.21689348764674551,
+      "margin": 0.49687686637621176,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "46e491a245bc9356",
+      "question": "What is the significance of the book 'The Secure Board' in the context of cybersecurity for directors and business leaders?",
+      "target_answer": "The Secure Board is a valuable resource for directors, enabling them to engage effectively with cybersecurity risks and satisfy their fiduciary responsibilities. It provides a framework for directors to address cybersecurity in the same manner as other enterprise risks, supporting informed decision-making and strategic integration within the boardroom.",
+      "everyday_answer": "The book 'The Secure Board' helps company directors understand and talk about cybersecurity issues with their security or IT teams. It's useful for directors to make sure they're doing their duty by considering cybersecurity as part of the overall business risks they manage in meetings.",
+      "target_probability": 0.6051036925214472,
+      "everyday_probability": 0.12764007134580616,
+      "margin": 0.4774636211756411,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "4448374594adc57f",
+      "question": "What are the implications for New Zealand Defence in relation to grey zone activities and maritime trade?",
+      "target_answer": "The ascendency of grey zone activities in the maritime periphery poses a cumulative threat to the viability of crucial trading routes and the prosperity of smaller trading partners. New Zealand Defence must enhance maritime domain awareness, strengthen multi-lateral defence relationships, and contribute niche capabilities to multinational efforts. These actions are necessary to counter grey zone operations and preserve maritime trade, particularly through initiatives like the Pacific Fusion Centre and Indo-Pacific Maritime Coordination Cell.",
+      "everyday_answer": "Grey zone activities in the region are becoming a growing concern because they can disrupt important trade routes and affect the prosperity of smaller countries. New Zealand needs to improve its ability to monitor the sea, work closely with other countries, and offer specialized support to bigger international efforts. This includes taking part in programs that help track and respond to these threats, to protect trade and keep things stable in the region.",
+      "target_probability": 0.7278051034416644,
+      "everyday_probability": 0.284065669476668,
+      "margin": 0.4437394339649964,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "42937cb603187156",
+      "question": "What is distinctive about the role of cyber as a domain in hybrid war and grey zone activities?",
+      "target_answer": "The emergence of cyber as a distinct domain represents a new and unique vehicle for hybrid war and grey zone activities, with no historical precedence. This development has introduced a revolutionary shift in the character and significance of such operations.",
+      "everyday_answer": "What makes cyber different is that it's a new kind of space for hybrid and grey zone activities, something that hasn't existed before. This has changed how these kinds of operations are carried out and how important they are.",
+      "target_probability": 0.47987495652262946,
+      "everyday_probability": 0.5607722555289507,
+      "margin": -0.08089729900632125,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "9aa33bd04ba74638",
+      "question": "What is the main argument of the book 'Malaya' by Brian Farrell and Garth Pratten?",
+      "target_answer": "The main argument of the book is that the tragic outcome of the Malayan campaign was not due to inadequate fighting qualities in the common soldiers but rather due to poor leadership at all levels, from grand strategic to tactical, including prime ministers, generals, and battalion commanders.",
+      "everyday_answer": "The book argues that the failure in the Malayan campaign wasn't because Australian soldiers weren't brave or capable, but because the leadership at all levels, from top government officials to military commanders, didn't perform well.",
+      "target_probability": 0.2517436443454906,
+      "everyday_probability": 0.3432030994413574,
+      "margin": -0.09145945509586678,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "c40a338df542c8fe",
+      "question": "How does KBR approach the development of training and performance support solutions compared to other organisations at the Avalon Airshow?",
+      "target_answer": "KBR positions itself as a first principles organisation focused on identifying and solving problems, rather than offering solutions in search of problems. While other organisations may present technology-driven solutions, KBR prioritises the people side of training and performance support, advocating for the workforce and utilising technology to reduce frustration and improve task efficiency. KBR is not an OEM or technology inventor but an innovator, aligning with the expectations of a new generation of workers who expect accessible, on-demand tools.",
+      "everyday_answer": "KBR takes a different approach by starting with the problem and figuring out the best way to solve it, rather than just offering technology solutions. They focus on making training and work easier for people by using tools that help them do their jobs better. Unlike companies that make technology products, KBR is more about understanding what workers need and using technology to make their work less frustrating. They also consider how younger workers expect to have these tools available when they start a job.",
+      "target_probability": 0.18886613600433164,
+      "everyday_probability": 0.3213300928666788,
+      "margin": -0.13246395686234716,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "cf945c80ad4d9baa",
+      "question": "Who will launch the Australian Naval History video and podcast series and where will the launch take place?",
+      "target_answer": "The Chief of Navy, Vice Admiral Tim Barrett, will launch the Australian Naval History video and podcast series at the Seapower Conference in Sydney on 3 October 2017.",
+      "everyday_answer": "The head of the navy, Vice Admiral Tim Barrett, will start the Australian Naval History video and podcast series at a conference in Sydney on 3 October 2017.",
+      "target_probability": 0.09223289913018679,
+      "everyday_probability": 0.0884655366424147,
+      "margin": 0.003767362487772083,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "1bba79565f3a818e",
+      "question": "What is a quick fire plan and how is it different from a deliberate fire plan?",
+      "target_answer": "A quick fire plan is typically developed at the brigade level or lower and is created directly between the artillery officer and the commander of the supported arm. It is used for rapid deployment of artillery support, often for an imminent attack within an hour, and involves a limited number of targets and batteries. It is distinct from a deliberate fire plan, which is usually initiated at a higher level and involves the coordinated fire of multiple regiments.",
+      "everyday_answer": "A quick fire plan is a fast way to plan artillery support for an attack that's about to happen, usually within an hour. It's made by the artillery officer working directly with the unit commander and involves a small number of targets and batteries. This is different from a deliberate fire plan, which is more detailed and involves multiple regiments working together.",
+      "target_probability": 0.11109573115951651,
+      "everyday_probability": 0.10466104856141771,
+      "margin": 0.006434682598098804,
+      "winner": "target"
+    }
+  ]
+}

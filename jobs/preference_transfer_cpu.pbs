@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N pref-transfer-cpu
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -q cse12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+
+"$VENV/bin/python" scripts/evaluate_preference_transfer.py \
+  --model-dir models/pilot --model-type tfidf \
+  --scores-output reports/preference_transfer/easy_tfidf_scores.jsonl \
+  --summary-output reports/preference_transfer/easy_tfidf_summary.json \
+  --samples-output reports/preference_transfer/easy_tfidf_samples.json
+
+"$VENV/bin/python" scripts/evaluate_preference_transfer.py \
+  --model-dir models/pilot --model-type sbert \
+  --scores-output reports/preference_transfer/easy_minilm_scores.jsonl \
+  --summary-output reports/preference_transfer/easy_minilm_summary.json \
+  --samples-output reports/preference_transfer/easy_minilm_samples.json

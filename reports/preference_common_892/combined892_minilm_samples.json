@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "376a64ab996a1ce0",
+      "question": "What is the focus of Dr Anne Aly's book 'Terrorism and Global Security: Contemporary and Historical Perspectives'?",
+      "target_answer": "Dr Anne Aly's book takes a multidisciplinary approach to terrorism, with a particular focus on the evolution of terrorism and the impact of emerging trends and new technologies. It includes analysis of the tactical use of media by extremist groups and the interconnections between state, intergovernmental, and non-governmental actors, offering insights into potential counterterrorist strategies.",
+      "everyday_answer": "Dr Anne Aly's book looks at terrorism from different angles like psychology and politics. It mainly discusses how terrorism has changed over time and how new technologies are affecting it. The book also looks at how terrorist groups use media and how different groups work together, which can help in developing ways to fight terrorism.",
+      "target_probability": 0.948479950428009,
+      "everyday_probability": 0.006989645771682262,
+      "margin": 0.9414903046563268,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "43da411c206961b4",
+      "question": "What is the significance of incorporating remotely operated or autonomous underwater vehicles into naval fleet units?",
+      "target_answer": "Incorporating remotely operated or autonomous underwater vehicles (ROVs and UUVs) into naval fleet units forms an integral element of a ship\u2019s sensor suite, enabling distributed underwater sensing to augment and protect crewed vessels. This provides mass and resilience, allowing any vessel to put eyes on the seabed without waiting for specialised capabilities to arrive on scene. Normalising their operation builds experience and expertise, which is a major requirement of a consolidated approach to seabed warfare.",
+      "everyday_answer": "Putting underwater drones or robots on navy ships helps them see and monitor the seabed more effectively. These tools can work with or protect the main ship, giving the navy more coverage and flexibility. Using them regularly helps crews get better at operating them, which is important for managing underwater threats.",
+      "target_probability": 0.9813706278800964,
+      "everyday_probability": 0.04535924643278122,
+      "margin": 0.9360113814473152,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "3e09304fd4c0817e",
+      "question": "What are the escalatory effects of using cruise missiles in military operations, and how do they compare to other forms of military capability?",
+      "target_answer": "The use of cruise missiles can escalate tensions due to their offensive nature and high cost, making them inappropriate for graduated responses or political posturing. Unlike aircraft, which can serve as a visible show of force without offensive employment, cruise missiles are unlikely to be used for a 'warning shot'. Submarines, while effective in covert operations, also lack utility for overt military manoeuvre. The escalatory risk is heightened when cruise missiles are employed, as their use may provoke a more severe response from the adversary.",
+      "everyday_answer": "Cruise missiles can make a situation more tense because they are seen as aggressive and expensive, so they aren't good for sending a warning or showing strength without actually fighting. Unlike planes, which can be used to show strength without attacking, cruise missiles are not used for sending a message. Submarines are more suited for secret missions and aren't good for showing off military strength openly. Using cruise missiles can lead to a bigger response from the other side.",
+      "target_probability": 0.947117269039154,
+      "everyday_probability": 0.015096921473741531,
+      "margin": 0.9320203475654125,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.014767823740839958,
+      "everyday_probability": 0.025058792904019356,
+      "margin": -0.010290969163179398,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "2667a373a33beb7b",
+      "question": "What was the Chinese stance on its island-building activities in the South China Sea as conveyed by the head of the People\u2019s Liberation Army Navy?",
+      "target_answer": "The head of the People\u2019s Liberation Army Navy, Adm. Wu Shengli, stated that China has no intention of halting its island-building campaign in the Spratly Islands and that the construction is reasonable, justified, and lawful. He emphasized that China will not stop its efforts midway and that the Nansha Islands are China\u2019s inherent territory.",
+      "everyday_answer": "The leader of China\u2019s navy told the U.S. navy chief that China won\u2019t stop building islands in the Spratly Islands. He said the construction is legal and that the islands belong to China. He also warned that trying to force China to back down with military pressure won\u2019t work.",
+      "target_probability": 0.1358036994934082,
+      "everyday_probability": 0.15908931195735931,
+      "margin": -0.02328561246395111,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "21f3ede0284728f8",
+      "question": "What criteria does the passage suggest are important for a country to be considered a 'serious middle power'?",
+      "target_answer": "The passage suggests that tangible hard power factors such as a strong economy and military capability are important for a country to be considered a 'serious middle power', in addition to diplomatic and cultural influence as part of soft power.",
+      "everyday_answer": "The passage says that to be considered a serious middle power, a country needs a strong economy and military, along with some level of diplomatic and cultural influence.",
+      "target_probability": 0.5631333589553833,
+      "everyday_probability": 0.7901247143745422,
+      "margin": -0.22699135541915894,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "ef30a2e178fcad41",
+      "question": "What was Admiral Sir Victor Smith's fundamental problem as chief of the Naval Staff in 1967?",
+      "target_answer": "The fundamental problem Admiral Sir Victor Smith faced as chief of the Naval Staff in 1967 was maintaining the security of the country while meeting the Government's overseas commitments.",
+      "everyday_answer": "The main challenge for Admiral Sir Victor Smith when he became head of the Navy in 1967 was making sure Australia was secure and also fulfilling its international obligations.",
+      "target_probability": 0.49419987201690674,
+      "everyday_probability": 0.4927629828453064,
+      "margin": 0.0014368891716003418,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "807cac975d373318",
+      "question": "What is the key difference between the 'aimed fire' and 'area fire' equations in the context of air and land warfare?",
+      "target_answer": "The key difference is that in the 'aimed fire' equation for air combat, Blue force losses are proportional only to Red force numbers, with the square of the number of aircraft influencing overall effectiveness. In contrast, the 'area fire' equation for land warfare includes both Red and Blue force numbers in determining losses, meaning the side with greater numbers can offset technological disadvantages.",
+      "everyday_answer": "The main difference is that in air combat, the number of enemy aircraft has a bigger impact because it's squared, while in land battles, both sides' numbers matter equally. This means that in air fights, having more planes can make a bigger difference, whereas on land, you need more troops to balance out better weapons.",
+      "target_probability": 0.0038786670193076134,
+      "everyday_probability": 0.0016689703334122896,
+      "margin": 0.0022096966858953238,
+      "winner": "target"
+    }
+  ]
+}

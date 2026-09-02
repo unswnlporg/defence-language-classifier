@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "f5243bdff30cc3f1",
+      "question": "What is the composition and purpose of the New Zealand Defence Force contingent in the context of operations in Iraq?",
+      "target_answer": "The New Zealand Defence Force contingent is composed of approximately 100 personnel drawn from various units and backgrounds, assembled to provide a diverse range of skills. These include combat training, medical training, logistics, supply, driving, maintenance, communications, and engineering capabilities. The purpose of the contingent is to support training operations for the Iraqi forces, with the flexibility to adapt training focus based on operational needs, such as the recent shift towards medical training. The contingent operates as a cohesive team, having undergone pre-deployment training and is supported by enablers to ensure operational effectiveness.",
+      "everyday_answer": "The New Zealand Defence Force team in Iraq is made up of about 100 people from different units and backgrounds. They have a range of skills like combat training, medical support, logistics, driving, maintenance, communications, and engineering. The team is put together to train Iraqi forces and can change what they focus on depending on what's needed, like recently moving to more medical training. They trained together before deployment and work as a team to make sure everything runs smoothly in Iraq.",
+      "target_probability": 0.9977899789810181,
+      "everyday_probability": 0.013169421814382076,
+      "margin": 0.984620557166636,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "376a64ab996a1ce0",
+      "question": "What is the focus of Dr Anne Aly's book 'Terrorism and Global Security: Contemporary and Historical Perspectives'?",
+      "target_answer": "Dr Anne Aly's book takes a multidisciplinary approach to terrorism, with a particular focus on the evolution of terrorism and the impact of emerging trends and new technologies. It includes analysis of the tactical use of media by extremist groups and the interconnections between state, intergovernmental, and non-governmental actors, offering insights into potential counterterrorist strategies.",
+      "everyday_answer": "Dr Anne Aly's book looks at terrorism from different angles like psychology and politics. It mainly discusses how terrorism has changed over time and how new technologies are affecting it. The book also looks at how terrorist groups use media and how different groups work together, which can help in developing ways to fight terrorism.",
+      "target_probability": 0.9860323667526245,
+      "everyday_probability": 0.005583950784057379,
+      "margin": 0.9804484159685671,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "ea7c3032f0bdec73",
+      "question": "What is the role of compliance in the nuclear standards preparation for Australian SMEs under AUKUS?",
+      "target_answer": "Compliance is a structured and critical component for Australian SMEs preparing to meet nuclear standards under AUKUS. It involves initial system upgrades, audit processes, and annual compliance checks to ensure readiness for contract evaluation. Compliance is imperative to avoid legal and financial risks, such as imprisonment or substantial fines, and is linked to the certification provided by the undersigned body. The process ensures that only appropriately resourced companies undertake significant nuclear work, while smaller entities can focus on specific compliance requirements relevant to their operations.",
+      "everyday_answer": "Making sure companies follow the right rules is really important for Australian small businesses getting ready to work on nuclear projects under AUKUS. This includes checking their systems, doing audits, and making sure they meet all the requirements before they can start work. It also means checking in every year to make sure they're still following the rules. This helps avoid problems like getting fined or even going to jail. It's also a way to make sure only companies that are ready and able take on big nuclear work, while smaller businesses can focus on the parts that affect them.",
+      "target_probability": 0.9990915060043335,
+      "everyday_probability": 0.021019594743847847,
+      "margin": 0.9780719112604856,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "9d6292b5f393c1a2",
+      "question": "What does Bob Love express about the future of naval shipbuilding in Australia?",
+      "target_answer": "Bob Love expresses that it is a very exciting time to be in shipbuilding and ship repair, and he believes Australia is on the right track as it embarks on this journey.",
+      "everyday_answer": "Bob Love says it's an exciting time for building and repairing ships in Australia, and he thinks the country is heading in the right direction with these efforts.",
+      "target_probability": 0.03244460001587868,
+      "everyday_probability": 0.019910160452127457,
+      "margin": 0.01253443956375122,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.628434956073761,
+      "everyday_probability": 0.7824677228927612,
+      "margin": -0.15403276681900024,
+      "winner": "everyday"
+    },
+    {
+      "candidate_id": "ef30a2e178fcad41",
+      "question": "What was Admiral Sir Victor Smith's fundamental problem as chief of the Naval Staff in 1967?",
+      "target_answer": "The fundamental problem Admiral Sir Victor Smith faced as chief of the Naval Staff in 1967 was maintaining the security of the country while meeting the Government's overseas commitments.",
+      "everyday_answer": "The main challenge for Admiral Sir Victor Smith when he became head of the Navy in 1967 was making sure Australia was secure and also fulfilling its international obligations.",
+      "target_probability": 0.5388612747192383,
+      "everyday_probability": 0.7005245685577393,
+      "margin": -0.16166329383850098,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "9d6292b5f393c1a2",
+      "question": "What does Bob Love express about the future of naval shipbuilding in Australia?",
+      "target_answer": "Bob Love expresses that it is a very exciting time to be in shipbuilding and ship repair, and he believes Australia is on the right track as it embarks on this journey.",
+      "everyday_answer": "Bob Love says it's an exciting time for building and repairing ships in Australia, and he thinks the country is heading in the right direction with these efforts.",
+      "target_probability": 0.03244460001587868,
+      "everyday_probability": 0.019910160452127457,
+      "margin": 0.01253443956375122,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "ec8c892438dd7766",
+      "question": "What role did the Vickers Valentine tank play in the Eastern Front during World War II?",
+      "target_answer": "The Vickers Valentine tank was so effective and popular with the Red Army that it remained in production for Soviet use well after being replaced in the British Army, with thousands seeing action on the Eastern Front.",
+      "everyday_answer": "The Vickers Valentine tank was widely used by the Soviet Union on the Eastern Front because it worked well and stayed in production even after the British stopped using it.",
+      "target_probability": 0.19180229306221008,
+      "everyday_probability": 0.1463041603565216,
+      "margin": 0.04549813270568848,
+      "winner": "target"
+    }
+  ]
+}

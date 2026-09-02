@@ -1,0 +1,9 @@
+{
+  "dataset_name": "pure_topic_matched_test",
+  "derived_from": "data/processed/hybrid_892_dataset_splits.jsonl (test split, negative_type=='topic_matched' pairs only)",
+  "note": "The final deduplicated 439-pair topic-matched set's test split, isolated from Hybrid-892 rather than rebuilt separately -- identical underlying pairs, already leakage-verified.",
+  "n_examples": 150,
+  "n_positive": 75,
+  "n_negative": 75,
+  "sha256": "afc2351c8bf68230cf8b2b733ae00b5f75949767cab53326c710fef06d8e01fc"
+}

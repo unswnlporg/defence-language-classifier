@@ -1,0 +1,88 @@
+{
+  "highest_positive_margin": [
+    {
+      "candidate_id": "7cdb3dad8caca54a",
+      "question": "What lessons does the author highlight from the Allied efforts in 'Miracle at the Litza'?",
+      "target_answer": "The author highlights the critical importance of effective joint operations, including naval and naval air capabilities, on morale and flexibility; the timely interception and effective use of intelligence; the challenge of perception versus tangible assistance in trust and cooperation; the availability of the correct assets for flexible response options to local commanders; and the under-rated but critical importance of dogged resilience in defensive operations.",
+      "everyday_answer": "The author points out that working together well between different forces like navy and air is important for morale and flexibility. Good intelligence that is used quickly is also key. People need to see real help, not just the promise of it, to build trust. Having the right tools available for local leaders to respond quickly is important, and sticking with it in tough situations is crucial for defense.",
+      "target_probability": 0.9912752165076136,
+      "everyday_probability": 0.010070316952654165,
+      "margin": 0.9812048995549595,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "64fe0387fa840787",
+      "question": "What are the concerns regarding Iranian influence and disinformation in Australia?",
+      "target_answer": "There are concerns about Iranian narratives and influence operations in Australia, particularly through social media and AI-generated content, which can deepen communal divisions and potentially impact domestic stability. While Iran's cyber capabilities may not be as prominent, the use of deepfakes and disinformation campaigns remains a significant threat. Additionally, there is an awareness of the potential for proxy forces and sleeper cells to be activated domestically, necessitating vigilance and visibility within workplaces and communities.",
+      "everyday_answer": "People are worried that Iran is trying to influence what's happening in Australia, especially online. They're using things like fake videos and messages to spread certain ideas and maybe cause more division between communities. Although Iran might not be as strong in cyber attacks as people think, they're still using social media to push their messages. There's also concern that groups linked to Iran could try to affect what happens in Australia, so it's important to be aware and know what to do if you see something suspicious.",
+      "target_probability": 0.9836362936688201,
+      "everyday_probability": 0.003955119895665985,
+      "margin": 0.9796811737731541,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "f5243bdff30cc3f1",
+      "question": "What is the composition and purpose of the New Zealand Defence Force contingent in the context of operations in Iraq?",
+      "target_answer": "The New Zealand Defence Force contingent is composed of approximately 100 personnel drawn from various units and backgrounds, assembled to provide a diverse range of skills. These include combat training, medical training, logistics, supply, driving, maintenance, communications, and engineering capabilities. The purpose of the contingent is to support training operations for the Iraqi forces, with the flexibility to adapt training focus based on operational needs, such as the recent shift towards medical training. The contingent operates as a cohesive team, having undergone pre-deployment training and is supported by enablers to ensure operational effectiveness.",
+      "everyday_answer": "The New Zealand Defence Force team in Iraq is made up of about 100 people from different units and backgrounds. They have a range of skills like combat training, medical support, logistics, driving, maintenance, communications, and engineering. The team is put together to train Iraqi forces and can change what they focus on depending on what's needed, like recently moving to more medical training. They trained together before deployment and work as a team to make sure everything runs smoothly in Iraq.",
+      "target_probability": 0.9922563680918184,
+      "everyday_probability": 0.01785804162193325,
+      "margin": 0.9743983264698851,
+      "winner": "target"
+    }
+  ],
+  "lowest_negative_margin": [
+    {
+      "candidate_id": "ce7274a473cf9f8e",
+      "question": "What is the main challenge for Australian readers of the book 'Then Came the Fire\u2014Personal Accounts from the Pentagon, 11 September 2001'?",
+      "target_answer": "The main challenge for Australian readers is the extensive use of jargon, which could be quite frustrating for those who have not been immersed in the US military system.",
+      "everyday_answer": "The main challenge for Australian readers is that the book uses a lot of technical language, which might be confusing for those unfamiliar with the US military system.",
+      "target_probability": 0.42850132467417096,
+      "everyday_probability": 0.268070693586732,
+      "margin": 0.16043063108743894,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "cf945c80ad4d9baa",
+      "question": "Who will launch the Australian Naval History video and podcast series and where will the launch take place?",
+      "target_answer": "The Chief of Navy, Vice Admiral Tim Barrett, will launch the Australian Naval History video and podcast series at the Seapower Conference in Sydney on 3 October 2017.",
+      "everyday_answer": "The head of the navy, Vice Admiral Tim Barrett, will start the Australian Naval History video and podcast series at a conference in Sydney on 3 October 2017.",
+      "target_probability": 0.6318740461662105,
+      "everyday_probability": 0.6012903207444404,
+      "margin": 0.030583725421770014,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.4838806499249065,
+      "everyday_probability": 0.5804814561697973,
+      "margin": -0.09660080624489081,
+      "winner": "everyday"
+    }
+  ],
+  "closest_to_tie": [
+    {
+      "candidate_id": "cf945c80ad4d9baa",
+      "question": "Who will launch the Australian Naval History video and podcast series and where will the launch take place?",
+      "target_answer": "The Chief of Navy, Vice Admiral Tim Barrett, will launch the Australian Naval History video and podcast series at the Seapower Conference in Sydney on 3 October 2017.",
+      "everyday_answer": "The head of the navy, Vice Admiral Tim Barrett, will start the Australian Naval History video and podcast series at a conference in Sydney on 3 October 2017.",
+      "target_probability": 0.6318740461662105,
+      "everyday_probability": 0.6012903207444404,
+      "margin": 0.030583725421770014,
+      "winner": "target"
+    },
+    {
+      "candidate_id": "7b3984d6b83ce641",
+      "question": "Where and when will Exercise Pitch Black 2026 take place?",
+      "target_answer": "Exercise Pitch Black 2026 will take place from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "everyday_answer": "Exercise Pitch Black 2026 will happen from 20 July to 7 August 2026 at RAAF Bases Darwin and Tindal in the Northern Territory, and RAAF Base Amberley in Queensland.",
+      "target_probability": 0.4838806499249065,
+      "everyday_probability": 0.5804814561697973,
+      "margin": -0.09660080624489081,
+      "winner": "everyday"
+    }
+  ]
+}

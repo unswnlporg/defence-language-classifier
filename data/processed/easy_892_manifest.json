@@ -1,0 +1,51 @@
+{
+  "dataset_name": "easy_892",
+  "source": "data/processed/dataset_splits.jsonl",
+  "action": "verified_existing_no_rewrite",
+  "seed": 42,
+  "total_positive": 892,
+  "total_negative": 892,
+  "total_examples": 1784,
+  "positive_by_split": {
+    "test": 136,
+    "train": 620,
+    "validation": 136
+  },
+  "negative_by_split": {
+    "test": 134,
+    "train": 624,
+    "validation": 134
+  },
+  "target_pairs_per_split": {
+    "train": 622,
+    "validation": 135,
+    "test": 135
+  },
+  "deviations_from_target_table": [
+    {
+      "split": "train",
+      "target_pairs": 622,
+      "actual_positive": 620,
+      "actual_negative": 624,
+      "note": "existing frozen document-level split does not yield exactly balanced pos/neg counts per split; preserving frozen split rather than moving documents across splits."
+    },
+    {
+      "split": "validation",
+      "target_pairs": 135,
+      "actual_positive": 136,
+      "actual_negative": 134,
+      "note": "existing frozen document-level split does not yield exactly balanced pos/neg counts per split; preserving frozen split rather than moving documents across splits."
+    },
+    {
+      "split": "test",
+      "target_pairs": 135,
+      "actual_positive": 136,
+      "actual_negative": 134,
+      "note": "existing frozen document-level split does not yield exactly balanced pos/neg counts per split; preserving frozen split rather than moving documents across splits."
+    }
+  ],
+  "duplicate_example_ids": 0,
+  "duplicate_texts": 0,
+  "documents_leaking_across_splits": 0,
+  "sha256": "386ac5250ff379ce77a42a28ce0bc3f5750bff0ff5856c5c2bb821380405d540"
+}

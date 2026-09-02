@@ -1,0 +1,43 @@
+{
+  "dataset_name": "preference_892",
+  "seed": 42,
+  "selection_method": "SHA256('42\\0preference\\0' + candidate_id), ascending sort within split, top-N selected",
+  "target_pairs_per_split": {
+    "train": 620,
+    "validation": 136,
+    "test": 136
+  },
+  "actual_pairs_per_split": {
+    "train": 620,
+    "validation": 136,
+    "test": 136
+  },
+  "total_examples": 1784,
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 1240,
+      "documents": 620,
+      "positive": 620,
+      "negative": 620,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    },
+    "validation": {
+      "passages": 272,
+      "documents": 136,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    },
+    "test": {
+      "passages": 272,
+      "documents": 136,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 0,
+      "military_wikipedia": 0
+    }
+  },
+  "output_sha256": "cdf53d0d94b47fb0b5900ea4fd42058750f771c3693ed941dc3ce239ccb2ea38"
+}

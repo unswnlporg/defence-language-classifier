@@ -1,0 +1,246 @@
+{
+  "positive_defence": [
+    {
+      "feature": "planning",
+      "coefficient": 5.492903767839919
+    },
+    {
+      "feature": "operational",
+      "coefficient": 4.161917954653024
+    },
+    {
+      "feature": "jmap",
+      "coefficient": 3.931211303491847
+    },
+    {
+      "feature": "adf",
+      "coefficient": 3.8893291379917088
+    },
+    {
+      "feature": "military",
+      "coefficient": 3.8880842422092607
+    },
+    {
+      "feature": "strategic",
+      "coefficient": 3.4188280576859995
+    },
+    {
+      "feature": "this",
+      "coefficient": 3.3475755921762764
+    },
+    {
+      "feature": "warfare",
+      "coefficient": 3.3131243144418145
+    },
+    {
+      "feature": "political",
+      "coefficient": 3.2788867982939074
+    },
+    {
+      "feature": "the adf",
+      "coefficient": 3.2765486578853795
+    },
+    {
+      "feature": "doctrine",
+      "coefficient": 3.190152230474142
+    },
+    {
+      "feature": "approach",
+      "coefficient": 2.9059675662945086
+    },
+    {
+      "feature": "the jmap",
+      "coefficient": 2.8159566949769936
+    },
+    {
+      "feature": "process",
+      "coefficient": 2.7859140833766975
+    },
+    {
+      "feature": "environment",
+      "coefficient": 2.586278544122882
+    },
+    {
+      "feature": "us",
+      "coefficient": 2.5699877395480955
+    },
+    {
+      "feature": "cog",
+      "coefficient": 2.557679152052811
+    },
+    {
+      "feature": "political warfare",
+      "coefficient": 2.5107857410704564
+    },
+    {
+      "feature": "that",
+      "coefficient": 2.509898222064262
+    },
+    {
+      "feature": "will",
+      "coefficient": 2.481087271811063
+    },
+    {
+      "feature": "complex",
+      "coefficient": 2.443257749294294
+    },
+    {
+      "feature": "thinking",
+      "coefficient": 2.412617790865551
+    },
+    {
+      "feature": "operations",
+      "coefficient": 2.2766617927616126
+    },
+    {
+      "feature": "joint",
+      "coefficient": 2.2489313925128926
+    },
+    {
+      "feature": "these",
+      "coefficient": 2.2368731910152335
+    },
+    {
+      "feature": "western",
+      "coefficient": 2.225248262806201
+    },
+    {
+      "feature": "can",
+      "coefficient": 2.212275192668389
+    },
+    {
+      "feature": "operational art",
+      "coefficient": 2.1764618908707445
+    },
+    {
+      "feature": "linear",
+      "coefficient": 2.1314702438892756
+    },
+    {
+      "feature": "how",
+      "coefficient": 2.111180123180209
+    }
+  ],
+  "negative_wikipedia": [
+    {
+      "feature": "was",
+      "coefficient": -3.9581947293486497
+    },
+    {
+      "feature": "were",
+      "coefficient": -2.591358021485441
+    },
+    {
+      "feature": "he",
+      "coefficient": -2.3239389905915
+    },
+    {
+      "feature": "his",
+      "coefficient": -2.274040583400497
+    },
+    {
+      "feature": "had",
+      "coefficient": -1.9449777042789862
+    },
+    {
+      "feature": "on",
+      "coefficient": -1.6327443512852362
+    },
+    {
+      "feature": "german",
+      "coefficient": -1.6261433970760697
+    },
+    {
+      "feature": "law",
+      "coefficient": -1.6104803638680698
+    },
+    {
+      "feature": "who",
+      "coefficient": -1.608494697388502
+    },
+    {
+      "feature": "army",
+      "coefficient": -1.5661281518884467
+    },
+    {
+      "feature": "she",
+      "coefficient": -1.5340342615843612
+    },
+    {
+      "feature": "her",
+      "coefficient": -1.4930522484188886
+    },
+    {
+      "feature": "university",
+      "coefficient": -1.4604990470420178
+    },
+    {
+      "feature": "at",
+      "coefficient": -1.4589308441171327
+    },
+    {
+      "feature": "it was",
+      "coefficient": -1.4461001782120466
+    },
+    {
+      "feature": "after",
+      "coefficient": -1.4181592749099268
+    },
+    {
+      "feature": "ai systems",
+      "coefficient": -1.3772470671963797
+    },
+    {
+      "feature": "school",
+      "coefficient": -1.3593673365313896
+    },
+    {
+      "feature": "references",
+      "coefficient": -1.341418029978964
+    },
+    {
+      "feature": "research",
+      "coefficient": -1.3224246044017172
+    },
+    {
+      "feature": "american",
+      "coefficient": -1.2366670996538962
+    },
+    {
+      "feature": "police",
+      "coefficient": -1.195539216428065
+    },
+    {
+      "feature": "military police",
+      "coefficient": -1.1724679029438962
+    },
+    {
+      "feature": "ai",
+      "coefficient": -1.1584230751739268
+    },
+    {
+      "feature": "one of",
+      "coefficient": -1.1372908773085861
+    },
+    {
+      "feature": "september",
+      "coefficient": -1.121158306045015
+    },
+    {
+      "feature": "first",
+      "coefficient": -1.0980236353623725
+    },
+    {
+      "feature": "january",
+      "coefficient": -1.0851455771060752
+    },
+    {
+      "feature": "partner",
+      "coefficient": -1.073726795293998
+    },
+    {
+      "feature": "april",
+      "coefficient": -1.0720143706057084
+    }
+  ]
+}

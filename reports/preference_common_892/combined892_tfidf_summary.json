@@ -1,0 +1,48 @@
+{
+  "model_dir": "models/combined_892_tfidf",
+  "model_type": "tfidf",
+  "n_examples": 272,
+  "n_pairs": 136,
+  "threshold": 0.42508235382796933,
+  "pairwise": {
+    "target_greater_than_everyday": 135,
+    "everyday_wins": 1,
+    "ties": 0,
+    "target_win_rate": 0.9926470588235294
+  },
+  "scores": {
+    "target_mean": 0.6474012751325989,
+    "everyday_mean": 0.11538015811686042,
+    "mean_margin": 0.5320211170157386,
+    "median_margin": 0.556330677078239,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.49349664849529906,
+      0.5693202555344303
+    ]
+  },
+  "aggregate_metrics_all_698": {
+    "n": 272,
+    "threshold": 0.42508235382796933,
+    "accuracy": 0.9007352941176471,
+    "precision": 0.9739130434782609,
+    "recall": 0.8235294117647058,
+    "f1": 0.8924302788844621,
+    "roc_auc": 0.9779952422145328,
+    "average_precision": 0.9772716446661506,
+    "brier_score": 0.0993140511070366,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        133,
+        3
+      ],
+      [
+        24,
+        112
+      ]
+    ]
+  }
+}

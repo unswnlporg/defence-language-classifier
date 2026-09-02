@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/combined_892_tfidf",
+  "model_type": "tfidf",
+  "test_name": "easy",
+  "pairing_method": "deterministic SHA256-sorted position (NO ground-truth content link -- original easy negatives were only length-matched, not id-linked to a specific passage)",
+  "threshold": 0.42508235382796933,
+  "n_pairs": 134,
+  "pairwise": {
+    "positive_greater_than_negative": 134,
+    "negative_wins": 0,
+    "ties": 0,
+    "win_rate": 1.0
+  },
+  "scores": {
+    "positive_mean": 0.911089447481672,
+    "negative_mean": 0.06548656325303517,
+    "mean_margin": 0.8456028842286368,
+    "median_margin": 0.8951830898977488,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.8211330860461367,
+      0.8678178806815711
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "dataset_name": "hybrid_892",
+  "seed": 42,
+  "defence_positives": 892,
+  "topic_matched_negatives": 439,
+  "easy_fallback_negatives": 453,
+  "total_examples": 1784,
+  "positive_by_split": {
+    "train": 620,
+    "validation": 136,
+    "test": 136
+  },
+  "negative_type_by_split": {
+    "test_easy": 61,
+    "test_topic_matched": 75,
+    "train_easy": 324,
+    "train_topic_matched": 296,
+    "validation_easy": 68,
+    "validation_topic_matched": 68
+  },
+  "target_pairs_per_split": {
+    "train": 622,
+    "validation": 135,
+    "test": 135
+  },
+  "note": "Defence-side split counts (620/136/136) match the frozen Easy-892 split exactly, not the requested 622/135/135 -- same root cause documented in easy_892_manifest.json (existing frozen split isn't perfectly pos/neg-balanced per split; preserved rather than moved).",
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 1240,
+      "documents": 489,
+      "positive": 620,
+      "negative": 620,
+      "general_wikipedia": 165,
+      "military_wikipedia": 159
+    },
+    "validation": {
+      "passages": 272,
+      "documents": 111,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 35,
+      "military_wikipedia": 33
+    },
+    "test": {
+      "passages": 272,
+      "documents": 115,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 24,
+      "military_wikipedia": 37
+    }
+  },
+  "output_sha256": "aa9a19f9fa094f18966f9ac18f1ce1ea5aa5311b0fd3c3bebebc00e0cc92b85f"
+}

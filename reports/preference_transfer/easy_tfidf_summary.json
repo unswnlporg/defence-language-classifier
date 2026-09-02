@@ -1,0 +1,48 @@
+{
+  "model_dir": "models/pilot",
+  "model_type": "tfidf",
+  "n_examples": 698,
+  "n_pairs": 349,
+  "threshold": 0.3202620756480383,
+  "pairwise": {
+    "target_greater_than_everyday": 304,
+    "everyday_wins": 45,
+    "ties": 0,
+    "target_win_rate": 0.8710601719197708
+  },
+  "scores": {
+    "target_mean": 0.4456630816839142,
+    "everyday_mean": 0.3066231633518387,
+    "mean_margin": 0.1390399183320755,
+    "median_margin": 0.12270345217707823,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.12439581882793399,
+      0.1538472730251472
+    ]
+  },
+  "aggregate_metrics_all_698": {
+    "n": 698,
+    "threshold": 0.3202620756480383,
+    "accuracy": 0.6475644699140402,
+    "precision": 0.6310432569974554,
+    "recall": 0.7106017191977078,
+    "f1": 0.6684636118598383,
+    "roc_auc": 0.6996083775995271,
+    "average_precision": 0.7023202473766066,
+    "brier_score": 0.23642774021740862,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        204,
+        145
+      ],
+      [
+        101,
+        248
+      ]
+    ]
+  }
+}

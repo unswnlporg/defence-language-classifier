@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/hybrid_892_tfidf",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/preference_892_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3866048471107162,
+  "metrics": {
+    "n": 272,
+    "threshold": 0.3866048471107162,
+    "accuracy": 0.6102941176470589,
+    "precision": 0.7678571428571429,
+    "recall": 0.3161764705882353,
+    "f1": 0.4479166666666667,
+    "roc_auc": 0.7073421280276817,
+    "average_precision": 0.7044858517853678,
+    "brier_score": 0.27439897554207715,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        123,
+        13
+      ],
+      [
+        93,
+        43
+      ]
+    ]
+  }
+}

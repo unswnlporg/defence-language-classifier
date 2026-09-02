@@ -1,0 +1,47 @@
+#!/bin/bash
+#PBS -N train892-qwen-train
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p models
+
+declare -A DATASETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+)
+
+for name in "${!DATASETS[@]}"; do
+  dest_qwen="models/${name}_892_qwen"
+  if [[ -f "$dest_qwen/model_metadata.json" ]]; then
+    echo "SKIP train ${name}_892 qwen (already done)"
+    continue
+  fi
+  ds="${DATASETS[$name]}"
+  raw_dir="models/${name}_892_qwen_raw"
+  "$PY" scripts/train_baselines.py \
+    --dataset "$ds" \
+    --model-dir "$raw_dir" \
+    --report-dir "reports/${name}_892_qwen" \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/${name}892-qwen3-embedding-8b" \
+    --sbert-checkpoint Qwen/Qwen3-Embedding-8B \
+    --batch-size 4
+  "$PY" scripts/reorganize_model_dir.py "$raw_dir" "${name}_892" qwen models
+done
+echo "stage1 (train) complete."

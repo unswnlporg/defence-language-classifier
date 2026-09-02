@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/combined_892_minilm",
+  "model_type": "sbert",
+  "test_name": "preference",
+  "pairing_method": "candidate_id (real pairing)",
+  "threshold": 0.3655065596103668,
+  "n_pairs": 136,
+  "pairwise": {
+    "positive_greater_than_negative": 133,
+    "negative_wins": 3,
+    "ties": 0,
+    "win_rate": 0.9779411764705882
+  },
+  "scores": {
+    "positive_mean": 0.6482857465744019,
+    "negative_mean": 0.19121623039245605,
+    "mean_margin": 0.4570695459842682,
+    "median_margin": 0.47284966707229614,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.4064371258020401,
+      0.5080626294016838
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+#!/bin/bash
+#PBS -N train892-gpu
+#PBS -l walltime=03:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/cross_eval_892 reports/preference_common_892 models
+
+declare -A DATASETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+)
+declare -A TESTSETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [hybrid]=data/processed/hybrid_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+  [combined]=data/processed/combined_892_dataset_splits.jsonl
+  [pure_topic]=data/processed/topic_matched_dataset_splits_final439.jsonl
+)
+
+# --- 1. Train Qwen for all 4 datasets (resumable) ---
+for name in "${!DATASETS[@]}"; do
+  dest_qwen="models/${name}_892_qwen"
+  if [[ -f "$dest_qwen/model_metadata.json" ]]; then
+    echo "SKIP train ${name}_892 qwen (already done)"
+    continue
+  fi
+  ds="${DATASETS[$name]}"
+  raw_dir="models/${name}_892_qwen_raw"
+  "$PY" scripts/train_baselines.py \
+    --dataset "$ds" \
+    --model-dir "$raw_dir" \
+    --report-dir "reports/${name}_892_qwen" \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/${name}892-qwen3-embedding-8b" \
+    --sbert-checkpoint Qwen/Qwen3-Embedding-8B \
+    --batch-size 4
+  "$PY" scripts/reorganize_model_dir.py "$raw_dir" "${name}_892" qwen models
+done
+
+# --- 2. Cross-eval all 4 Qwen models against all 5 test sets ---
+for name in "${!DATASETS[@]}"; do
+  model_dir="models/${name}_892_qwen"
+  for test_name in "${!TESTSETS[@]}"; do
+    out="reports/cross_eval_892/${name}892_qwen_on_${test_name}.json"
+    if [[ -f "$out" ]]; then echo "SKIP $out"; continue; fi
+    "$PY" scripts/cross_evaluate.py \
+      --model-dir "$model_dir" --model-type sbert \
+      --target-dataset "${TESTSETS[$test_name]}" \
+      --output "$out" --batch-size 4
+  done
+done
+
+# --- 3. Pairwise preference evaluation for all 4 Qwen models on preference_892 test ---
+for name in "${!DATASETS[@]}"; do
+  model_dir="models/${name}_892_qwen"
+  prefix="reports/preference_common_892/${name}892_qwen"
+  if [[ -f "${prefix}_summary.json" ]]; then echo "SKIP ${prefix}_summary.json"; continue; fi
+  "$PY" scripts/evaluate_preference_transfer.py \
+    --model-dir "$model_dir" --model-type sbert \
+    --dataset data/processed/preference_892_dataset_splits.jsonl \
+    --scores-output "${prefix}_scores.jsonl" \
+    --summary-output "${prefix}_summary.json" \
+    --samples-output "${prefix}_samples.json" \
+    --batch-size 4
+done
+
+echo "GPU stage complete."

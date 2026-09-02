@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/preference_892_tfidf",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/topic_matched_dataset_splits_final439.jsonl",
+  "split": "test",
+  "threshold_used": 0.6207162093119928,
+  "metrics": {
+    "n": 150,
+    "threshold": 0.6207162093119928,
+    "accuracy": 0.5933333333333334,
+    "precision": 0.5514705882352942,
+    "recall": 1.0,
+    "f1": 0.7109004739336493,
+    "roc_auc": 0.7658666666666666,
+    "average_precision": 0.795983689136102,
+    "brier_score": 0.32018402239208316,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        14,
+        61
+      ],
+      [
+        0,
+        75
+      ]
+    ]
+  }
+}
