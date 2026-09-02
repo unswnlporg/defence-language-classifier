@@ -98,6 +98,16 @@ Labels are `1` for Defence-corpus passages and `0` for non-Defence passages.
 - [ ] Consider whether topic-matching yield can be raised past ~49% with a
       different approach (e.g. a local full-Wikipedia index), or whether 439
       is the practical ceiling for this corpus.
+- [x] Train a classifier directly on preference pairs (target vs.
+      dispreferred), using the larger 2,327-pair generated corpus. See
+      "Direct preference-pair classifier" in `docs/training_methodology.md`.
+- [x] Cross-evaluate every classifier (Easy / Topic-matched / Preference)
+      against every other task's test set. Finding: Easy and Topic-matched
+      transfer well to each other; Preference is a one-way wall that nothing
+      trained on Defence-vs-Wikipedia data transfers into.
+- [x] Train a combined classifier on the union of all three sources.
+      Resolves the transfer wall: 90%+ accuracy on all three tasks
+      simultaneously, for every embedding model tried.
 
 ## Katana handoff
 

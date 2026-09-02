@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/qwen",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/hybrid_topic_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3202620756480425,
+  "metrics": {
+    "n": 225,
+    "threshold": 0.3202620756480425,
+    "accuracy": 0.8844444444444445,
+    "precision": 0.7425742574257426,
+    "recall": 1.0,
+    "f1": 0.8522727272727273,
+    "roc_auc": 0.9823999999999999,
+    "average_precision": 0.9698537581722865,
+    "brier_score": 0.06513725034601743,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        124,
+        26
+      ],
+      [
+        0,
+        75
+      ]
+    ]
+  }
+}

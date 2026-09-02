@@ -1,0 +1,29 @@
+#!/bin/bash
+#PBS -N comb-cross-eval-cpu
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -q cse12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+EASY=data/processed/dataset_splits.jsonl
+TOPIC=data/processed/hybrid_topic_dataset_splits.jsonl
+PREF=data/processed/preference_classifier_dataset_splits.jsonl
+
+for TARGET_NAME in easy:$EASY topic:$TOPIC pref:$PREF; do
+  NAME="${TARGET_NAME%%:*}"
+  PATH_="${TARGET_NAME#*:}"
+  "$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/combined_minilm --model-type tfidf --target-dataset "$PATH_" --output reports/cross_eval/comb_tfidf_on_${NAME}.json
+  "$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/combined_minilm --model-type sbert --target-dataset "$PATH_" --output reports/cross_eval/comb_minilm_on_${NAME}.json
+done

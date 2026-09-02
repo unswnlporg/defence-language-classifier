@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -N pref-cross-eval-gpu
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+EASY=data/processed/dataset_splits.jsonl
+TOPIC=data/processed/hybrid_topic_dataset_splits.jsonl
+
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/preference_qwen --model-type sbert --target-dataset "$EASY"  --output reports/cross_eval/pref_qwen_on_easy.json --batch-size 4
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/preference_qwen --model-type sbert --target-dataset "$TOPIC" --output reports/cross_eval/pref_qwen_on_topic.json --batch-size 4

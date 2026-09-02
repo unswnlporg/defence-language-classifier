@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/preference_qwen",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/hybrid_topic_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.4265407621860504,
+  "metrics": {
+    "n": 225,
+    "threshold": 0.4265407621860504,
+    "accuracy": 0.3688888888888889,
+    "precision": 0.3456221198156682,
+    "recall": 1.0,
+    "f1": 0.5136986301369864,
+    "roc_auc": 0.7945777777777778,
+    "average_precision": 0.6552489242441576,
+    "brier_score": 0.47081902623176575,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        8,
+        142
+      ],
+      [
+        0,
+        75
+      ]
+    ]
+  }
+}

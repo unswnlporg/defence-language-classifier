@@ -20,6 +20,14 @@ models/qwen/*.joblib
 models/hybrid_minilm/*.joblib
 !models/hybrid_qwen/
 models/hybrid_qwen/*.joblib
+!models/preference_minilm/
+models/preference_minilm/*.joblib
+!models/preference_qwen/
+models/preference_qwen/*.joblib
+!models/combined_minilm/
+models/combined_minilm/*.joblib
+!models/combined_qwen/
+models/combined_qwen/*.joblib
 !reports/.gitkeep
 
 *.o[0-9]*

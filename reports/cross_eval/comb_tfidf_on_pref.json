@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/combined_minilm",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/preference_classifier_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.41061853359489053,
+  "metrics": {
+    "n": 698,
+    "threshold": 0.41061853359489053,
+    "accuracy": 0.9885386819484241,
+    "precision": 0.9913544668587896,
+    "recall": 0.9856733524355301,
+    "f1": 0.9885057471264368,
+    "roc_auc": 0.9996962258109539,
+    "average_precision": 0.9996978687856579,
+    "brier_score": 0.015889746099193924,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        346,
+        3
+      ],
+      [
+        5,
+        344
+      ]
+    ]
+  }
+}

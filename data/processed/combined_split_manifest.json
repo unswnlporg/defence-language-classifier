@@ -1,0 +1,63 @@
+{
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "sources": {
+    "hybrid_dataset": "data/processed/hybrid_topic_dataset_splits.jsonl",
+    "preference_shards": [
+      "/srv/scratch/z5703460/outputs/prefqa-generation/qwen3-32b-awq-corpus/shard-00.jsonl",
+      "/srv/scratch/z5703460/outputs/prefqa-generation/qwen3-32b-awq-corpus/shard-01.jsonl",
+      "/srv/scratch/z5703460/outputs/prefqa-generation/qwen3-32b-awq-corpus/shard-02.jsonl",
+      "/srv/scratch/z5703460/outputs/prefqa-generation/qwen3-32b-awq-corpus/shard-03.jsonl"
+    ]
+  },
+  "documents_shared_between_sources": 27,
+  "output_sha256": "5772a4c6b7fd101c46bb60b87a58f61c07abab8e6c7a793863e8b0e4334a2cc8",
+  "total_examples": 5971,
+  "by_split_and_source": {
+    "test": {
+      "preference_pair": 698,
+      "defence": 60,
+      "wikipedia": 137
+    },
+    "train": {
+      "preference_pair": 3264,
+      "defence": 304,
+      "wikipedia": 613
+    },
+    "validation": {
+      "preference_pair": 692,
+      "defence": 75,
+      "wikipedia": 128
+    }
+  },
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 4181,
+      "documents": 2106,
+      "positive": 1936,
+      "negative": 2245,
+      "general_wikipedia": 155,
+      "military_wikipedia": 149
+    },
+    "validation": {
+      "passages": 895,
+      "documents": 451,
+      "positive": 421,
+      "negative": 474,
+      "general_wikipedia": 32,
+      "military_wikipedia": 30
+    },
+    "test": {
+      "passages": 895,
+      "documents": 451,
+      "positive": 409,
+      "negative": 486,
+      "general_wikipedia": 31,
+      "military_wikipedia": 42
+    }
+  }
+}

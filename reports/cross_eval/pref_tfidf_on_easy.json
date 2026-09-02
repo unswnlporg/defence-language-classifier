@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/preference_qwen",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.6120334193348326,
+  "metrics": {
+    "n": 270,
+    "threshold": 0.6120334193348326,
+    "accuracy": 0.7222222222222222,
+    "precision": 0.6473429951690821,
+    "recall": 0.9852941176470589,
+    "f1": 0.7813411078717201,
+    "roc_auc": 0.9342076382791923,
+    "average_precision": 0.9407634647069171,
+    "brier_score": 0.21087950062281371,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        61,
+        73
+      ],
+      [
+        2,
+        134
+      ]
+    ]
+  }
+}

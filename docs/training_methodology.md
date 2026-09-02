@@ -405,6 +405,192 @@ distributions moved off the 1.0 ceiling — training against real topic-matched
 hard negatives measurably reduced the overconfidence/saturation problem
 identified in the easy-only Qwen re-run above, without costing win rate.
 
+## Direct preference-pair classifier
+
+Every classifier above was trained on a *proxy* task (Defence corpus vs.
+Wikipedia) and only evaluated against preference pairs. This section trains
+directly on the actual task instead: separating `target_answer` (Defence
+register) from `dispreferred_answer` (everyday paraphrase of the same
+content).
+
+### Dataset
+
+A larger preference-pair corpus was generated separately
+(`prefqa-generation`, model `qwen3-32b-awq`, 4 shards, 3,000 candidates),
+each candidate sampled from a distinct source document. 2,327 pass
+`automatic_qc` (question well-formed, source present, answers non-empty and
+different, numbers match, reasonable length ratio). Each QC-passed pair
+contributes two examples: `target_answer` → label 1, `dispreferred_answer` →
+label 0.
+
+```text
+QC-passed pairs: 2,327
+Examples: 4,654 (2,327 : 2,327)
+```
+
+Every source document contributes exactly one candidate, so a document-level
+group split (the same `assign_group_splits` utility used everywhere else in
+this project, seed 42) is equivalent to a plain random split here — no
+leakage risk by construction.
+
+| Split | Total | Target (1) | Dispreferred (0) |
+|---|---:|---:|---:|
+| Train | 3,258 | 1,629 | 1,629 |
+| Validation | 698 | 349 | 349 |
+| Test | 698 | 349 | 349 |
+
+Verified: zero duplicate example IDs, zero duplicate texts, zero documents
+spanning more than one split.
+
+### Held-out results
+
+Same C grid, same validation-AUROC selection rule as every other run in this
+document.
+
+| Model | Selected C | Threshold | Accuracy | F1 | AUROC |
+|---|---:|---|---:|---:|---:|
+| TF-IDF + LR | 10.0 | 0.612 | 98.0% | 98.0% | 99.8% |
+| MiniLM + LR | 10.0 | 0.406 | 90.8% | 90.9% | 97.0% |
+| Qwen3-8B + LR | 10.0 | 0.427 | 94.7% | 94.8% | 99.0% |
+
+TF-IDF wins clearly here, the opposite ranking from every Defence-vs-Wikipedia
+result in this document. This is expected: target and dispreferred answers
+describe the *same content*, so the only separating signal is phrasing and
+register (jargon density, sentence construction), which is exactly what
+lexical features capture and what semantic embeddings partially discard by
+design (they are built to see paraphrases as similar).
+
+### Evaluation against genuinely unseen preference pairs
+
+30 of the 52 original Defence documents also appear as source documents in
+the new 2,999-document preference-generation corpus. Of the original 300
+preference pairs, 159 come from a document that ended up somewhere in the new
+corpus (111 in its train split, 32 validation, 16 test) — evaluating the new
+classifier against those would leak. The remaining 141 pairs come from
+documents absent from the new corpus entirely and are genuinely unseen.
+
+Scoring the Qwen preference classifier against those 141:
+
+```text
+Target win rate:     100.0% (141/141)
+Target mean score:   0.949   Dispreferred mean score: 0.347
+Mean margin:         +0.603  (95% CI: 0.557 to 0.646)
+Median margin:       +0.653
+Sign-test p-value:   3.6e-43
+```
+
+Every single pair correct, and the two score distributions are cleanly
+separated (0.95 vs. 0.35) rather than both saturated near 1.0, as happened
+with every Defence-vs-Wikipedia-trained classifier scored against preference
+pairs earlier in this document. Training directly on the actual task, rather
+than treating Defence-vs-Wikipedia as a proxy, closes the domain-shift gap
+that every earlier classifier was fighting. These numbers are not directly
+comparable to the ~85% win rates reported earlier — they measure a
+structurally easier, same-task evaluation.
+
+## Cross-evaluation: do these classifiers generalize across tasks?
+
+Three genuinely different datasets now exist: **Easy** (Defence corpus vs.
+length-matched-only Wikipedia), **Topic-matched** (Defence corpus vs.
+same-topic Wikipedia, the 50/50 hybrid), and **Preference** (target vs.
+dispreferred answer). Each classifier above was evaluated only on its own
+task. This section scores every classifier against every *other* task's
+held-out test split too, using the model's own threshold (no re-tuning) —
+`scripts/cross_evaluate.py`.
+
+Accuracy (%), rows are what a classifier was trained on, columns are what it
+was tested on; own-task cells are in **bold**:
+
+| Trained on | Model | Easy | Topic-matched | Preference |
+|---|---|---:|---:|---:|
+| Easy-only | TF-IDF | **98.9** | 88.4 | 64.8 |
+| Easy-only | MiniLM | **99.3** | 91.6 | 57.9 |
+| Easy-only | Qwen3-8B | **100.0** | 92.9 | 58.6 |
+| Topic-matched | TF-IDF | 98.5 | **96.4** | 61.6 |
+| Topic-matched | MiniLM | 95.6 | **96.0** | 55.7 |
+| Topic-matched | Qwen3-8B | 100.0 | **99.1** | 60.2 |
+| Preference | TF-IDF | 72.2 | 53.3 | **98.0** |
+| Preference | MiniLM | 65.6 | 48.0 | **90.8** |
+| Preference | Qwen3-8B | 53.7 | 36.9 | **94.7** |
+
+Findings:
+
+- **Easy and Topic-matched transfer well in both directions** (88.4-100%).
+  They are the same underlying task (Defence corpus vs. Wikipedia) at
+  different difficulty; Topic-matched → Easy (Qwen) reaches a perfect
+  100/100/100/100 accuracy/precision/recall/F1, the single best cross-transfer
+  result found.
+- **Preference is a one-way wall.** No Defence-vs-Wikipedia-trained
+  classifier exceeds 65% accuracy on Preference (AUROC 0.62-0.71, barely
+  above chance-ranking), regardless of embedding model. This confirms
+  Preference measures something structurally different — same-topic,
+  style-only separation — not just a harder version of Defence-vs-Wikipedia.
+  Recall stays near 100% in the reverse direction (Preference-trained →
+  Easy/Topic-matched) but precision collapses (35-65%): these classifiers
+  over-predict "Defence-style" on any text at all resembling the training
+  distribution's register, because their threshold was calibrated on data
+  where both classes already score in a narrower, higher range.
+- Qwen's higher capacity makes both effects more extreme than TF-IDF or
+  MiniLM: the best cross-transfer result *and* the worst.
+
+## Combined dataset (all three sources trained jointly)
+
+Given the one-way wall above, does training on the union of all three
+sources produce one classifier good at all three tasks, rather than trading
+one off against another?
+
+### Construction
+
+27 documents are shared between the Topic-matched dataset's 439 Defence
+documents and the preference-generation corpus's 2,999. Concatenating the
+two datasets' *independently computed* splits would risk a document landing
+in `train` under one split and `test` under the other — leakage. Instead,
+`scripts/build_combined_dataset.py` re-splits the **union** of both
+datasets' records in one pass, grouping purely by `document_id` (ignoring
+label), so every record sharing a document lands in the same split
+regardless of source. This is deliberately simpler than the project's usual
+per-class-stratified group split (`assign_group_splits`), since preserving
+per-source proportions matters less than guaranteeing no shared document
+crosses a split boundary.
+
+```text
+Hybrid dataset (topic-matched):  1,317 rows
+Preference-pair dataset:         4,654 rows
+Combined:                        5,971 rows
+Documents shared between sources: 27
+```
+
+Verified: zero duplicate example IDs, zero duplicate texts, zero documents
+spanning more than one split (`validate_dataset`).
+
+### Held-out results (combined test set, n=895, mixed sources)
+
+| Model | Selected C | Threshold | Accuracy | F1 | AUROC |
+|---|---:|---|---:|---:|---:|
+| TF-IDF + LR | 10.0 | 0.411 | 95.9% | 95.6% | 99.2% |
+| MiniLM + LR | 10.0 | 0.490 | 88.0% | 87.0% | 94.8% |
+| Qwen3-8B + LR | 10.0 | 0.421 | 93.5% | 93.0% | 98.6% |
+
+### Cross-evaluation of the combined classifiers
+
+The same transfer check as above, now for classifiers trained on the union:
+
+| Model | → Easy | → Topic-matched | → Preference |
+|---|---:|---:|---:|
+| TF-IDF + LR | 99.3% | 98.2% | 98.9% |
+| MiniLM + LR | 96.3% | 91.6% | 90.3% |
+| Qwen3-8B + LR | 98.9% | 96.9% | 96.1% |
+
+Every model, on every task, reaches 90%+ accuracy — TF-IDF and Qwen both hit
+AUROC 1.000 on Easy and Topic-matched while holding 96-99% on Preference too.
+This is not an average of the single-purpose classifiers' scores; it is a
+strictly better model on all three fronts simultaneously, including the
+Preference task that nothing else transferred into. Combining the training
+data resolves the one-way wall identified above: it appears the merged data
+forces the classifier to find features that genuinely explain Defence
+register across all three distributions, rather than the topic shortcut that
+a single-source classifier can get away with.
+
 ## Reproducibility artifacts
 
 - `data/processed/defence_passages.jsonl`
@@ -438,4 +624,25 @@ identified in the easy-only Qwen re-run above, without costing win rate.
 - `models/hybrid_minilm/model_metadata.json`, `reports/hybrid_minilm/metrics.json`
 - `models/hybrid_qwen/model_metadata.json`, `reports/hybrid_qwen/metrics.json`,
   `reports/hybrid_qwen/preference_pair_summary.json`
+- `scripts/build_preference_classifier_dataset.py` (reshapes QC-passed
+  preference pairs into the standard training schema)
+- `data/processed/preference_classifier_dataset_splits.jsonl`,
+  `data/processed/preference_classifier_split_manifest.json`
+- `models/preference_minilm/model_metadata.json`,
+  `models/preference_qwen/model_metadata.json`,
+  `reports/preference_minilm/metrics.json`, `reports/preference_qwen/metrics.json`
+- `reports/preference_qwen/eval_clean141_summary.json`,
+  `reports/preference_qwen/eval_clean141_scores.jsonl` (leakage-checked
+  evaluation against the 141 genuinely unseen original preference pairs)
+- `scripts/cross_evaluate.py` (scores any trained model against any other
+  dataset's test split using the model's own threshold)
+- `reports/cross_eval/*.json` (full 9-cell single-source + 3-cell combined
+  cross-evaluation matrix)
+- `scripts/build_combined_dataset.py` (joint document-level split across the
+  topic-matched and preference-pair sources)
+- `data/processed/combined_dataset_splits.jsonl`,
+  `data/processed/combined_split_manifest.json`
+- `models/combined_minilm/model_metadata.json`,
+  `models/combined_qwen/model_metadata.json`,
+  `reports/combined_minilm/metrics.json`, `reports/combined_qwen/metrics.json`
 

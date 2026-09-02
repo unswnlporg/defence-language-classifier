@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/combined_minilm",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/hybrid_topic_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.48987242579460144,
+  "metrics": {
+    "n": 225,
+    "threshold": 0.48987242579460144,
+    "accuracy": 0.9155555555555556,
+    "precision": 0.7978723404255319,
+    "recall": 1.0,
+    "f1": 0.8875739644970414,
+    "roc_auc": 0.992,
+    "average_precision": 0.98446461954068,
+    "brier_score": 0.05954558402299881,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        131,
+        19
+      ],
+      [
+        0,
+        75
+      ]
+    ]
+  }
+}

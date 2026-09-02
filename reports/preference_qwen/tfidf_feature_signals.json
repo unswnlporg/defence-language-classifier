@@ -1,0 +1,246 @@
+{
+  "positive_defence": [
+    {
+      "feature": "of",
+      "coefficient": 8.401269686315102
+    },
+    {
+      "feature": "as",
+      "coefficient": 7.134015431837689
+    },
+    {
+      "feature": "such",
+      "coefficient": 5.862218693283165
+    },
+    {
+      "feature": "strategic",
+      "coefficient": 5.547546238516263
+    },
+    {
+      "feature": "operational",
+      "coefficient": 5.500139754281521
+    },
+    {
+      "feature": "such as",
+      "coefficient": 4.8568971545123745
+    },
+    {
+      "feature": "significant",
+      "coefficient": 4.82251759129449
+    },
+    {
+      "feature": "particularly",
+      "coefficient": 4.2838031000731345
+    },
+    {
+      "feature": "including",
+      "coefficient": 4.122444745132828
+    },
+    {
+      "feature": "capability",
+      "coefficient": 3.586879567929345
+    },
+    {
+      "feature": "an",
+      "coefficient": 3.245178221086914
+    },
+    {
+      "feature": "enabling",
+      "coefficient": 3.2302744478279326
+    },
+    {
+      "feature": "of the",
+      "coefficient": 3.204158895921446
+    },
+    {
+      "feature": "additionally",
+      "coefficient": 3.199394916928097
+    },
+    {
+      "feature": "critical",
+      "coefficient": 3.192618847674751
+    },
+    {
+      "feature": "due",
+      "coefficient": 3.1918140814596003
+    },
+    {
+      "feature": "due to",
+      "coefficient": 3.1498533283477346
+    },
+    {
+      "feature": "it is",
+      "coefficient": 3.122983161106331
+    },
+    {
+      "feature": "may",
+      "coefficient": 3.098779107354421
+    },
+    {
+      "feature": "capabilities",
+      "coefficient": 3.02043004571987
+    },
+    {
+      "feature": "provide",
+      "coefficient": 3.0136352145295553
+    },
+    {
+      "feature": "provides",
+      "coefficient": 2.977406812258207
+    },
+    {
+      "feature": "personnel",
+      "coefficient": 2.9073232081457685
+    },
+    {
+      "feature": "potential",
+      "coefficient": 2.884283848686121
+    },
+    {
+      "feature": "individuals",
+      "coefficient": 2.798125820194657
+    },
+    {
+      "feature": "within",
+      "coefficient": 2.774434216246029
+    },
+    {
+      "feature": "must",
+      "coefficient": 2.7394466113842086
+    },
+    {
+      "feature": "through",
+      "coefficient": 2.6179862682288824
+    },
+    {
+      "feature": "engagement",
+      "coefficient": 2.5861564068533114
+    },
+    {
+      "feature": "ensuring",
+      "coefficient": 2.4294081881553127
+    }
+  ],
+  "negative_wikipedia": [
+    {
+      "feature": "like",
+      "coefficient": -9.271629323279225
+    },
+    {
+      "feature": "people",
+      "coefficient": -7.530451954768319
+    },
+    {
+      "feature": "how",
+      "coefficient": -7.272648313414215
+    },
+    {
+      "feature": "help",
+      "coefficient": -7.148684451503776
+    },
+    {
+      "feature": "important",
+      "coefficient": -5.98613952359497
+    },
+    {
+      "feature": "because",
+      "coefficient": -5.915825146031044
+    },
+    {
+      "feature": "they",
+      "coefficient": -5.707780808551599
+    },
+    {
+      "feature": "about",
+      "coefficient": -5.691661902771535
+    },
+    {
+      "feature": "helps",
+      "coefficient": -5.667182587018528
+    },
+    {
+      "feature": "more",
+      "coefficient": -4.949206677576739
+    },
+    {
+      "feature": "it",
+      "coefficient": -4.826848699810326
+    },
+    {
+      "feature": "helped",
+      "coefficient": -4.747381152061842
+    },
+    {
+      "feature": "work",
+      "coefficient": -4.445359869720279
+    },
+    {
+      "feature": "big",
+      "coefficient": -4.277479351391803
+    },
+    {
+      "feature": "together",
+      "coefficient": -4.169650876772642
+    },
+    {
+      "feature": "used",
+      "coefficient": -4.136434424499882
+    },
+    {
+      "feature": "different",
+      "coefficient": -4.091990724630013
+    },
+    {
+      "feature": "out",
+      "coefficient": -4.048204572355238
+    },
+    {
+      "feature": "get",
+      "coefficient": -4.013897055435952
+    },
+    {
+      "feature": "working",
+      "coefficient": -4.013276475999925
+    },
+    {
+      "feature": "to help",
+      "coefficient": -3.992171675381683
+    },
+    {
+      "feature": "keep",
+      "coefficient": -3.954899746390319
+    },
+    {
+      "feature": "ships",
+      "coefficient": -3.9503406715212064
+    },
+    {
+      "feature": "especially",
+      "coefficient": -3.9487050948916727
+    },
+    {
+      "feature": "better",
+      "coefficient": -3.858333751295026
+    },
+    {
+      "feature": "main",
+      "coefficient": -3.8135024162675233
+    },
+    {
+      "feature": "enough",
+      "coefficient": -3.701514626777766
+    },
+    {
+      "feature": "might",
+      "coefficient": -3.6445220870945443
+    },
+    {
+      "feature": "countries",
+      "coefficient": -3.636752109995739
+    },
+    {
+      "feature": "sure",
+      "coefficient": -3.616301242931521
+    }
+  ]
+}

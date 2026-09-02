@@ -1,0 +1,44 @@
+#!/bin/bash
+#PBS -N fill-cross-eval-cpu
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=8:mem=32gb
+#PBS -q cse12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+
+# Regenerate the missing pilot (easy-only) MiniLM/TF-IDF joblib artifacts.
+"$VENV/bin/python" scripts/train_baselines.py \
+    --dataset data/processed/dataset_splits.jsonl \
+    --model-dir models/pilot \
+    --report-dir reports/pilot_regenerated_check \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/minilm" \
+    --sbert-checkpoint sentence-transformers/all-MiniLM-L6-v2 \
+    --batch-size 32
+
+EASY=data/processed/dataset_splits.jsonl
+TOPIC=data/processed/hybrid_topic_dataset_splits.jsonl
+PREF=data/processed/preference_classifier_dataset_splits.jsonl
+
+# easy-trained -> topic, pref
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/qwen   --model-type tfidf --target-dataset "$TOPIC" --output reports/cross_eval/easy_tfidf_on_topic.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/qwen   --model-type tfidf --target-dataset "$PREF"  --output reports/cross_eval/easy_tfidf_on_pref.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/pilot  --model-type sbert --target-dataset "$TOPIC" --output reports/cross_eval/easy_minilm_on_topic.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/pilot  --model-type sbert --target-dataset "$PREF"  --output reports/cross_eval/easy_minilm_on_pref.json
+
+# topic-matched-trained -> easy, pref
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/hybrid_qwen   --model-type tfidf --target-dataset "$EASY" --output reports/cross_eval/topic_tfidf_on_easy.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/hybrid_qwen   --model-type tfidf --target-dataset "$PREF" --output reports/cross_eval/topic_tfidf_on_pref.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/hybrid_minilm --model-type sbert --target-dataset "$EASY" --output reports/cross_eval/topic_minilm_on_easy.json
+"$VENV/bin/python" scripts/cross_evaluate.py --model-dir models/hybrid_minilm --model-type sbert --target-dataset "$PREF" --output reports/cross_eval/topic_minilm_on_pref.json

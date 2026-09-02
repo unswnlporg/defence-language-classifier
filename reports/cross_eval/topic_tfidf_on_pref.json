@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/hybrid_qwen",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/preference_classifier_dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.3585146061067104,
+  "metrics": {
+    "n": 698,
+    "threshold": 0.3585146061067104,
+    "accuracy": 0.6160458452722063,
+    "precision": 0.7755102040816326,
+    "recall": 0.32664756446991405,
+    "f1": 0.4596774193548387,
+    "roc_auc": 0.7140089161829541,
+    "average_precision": 0.7079889055009734,
+    "brier_score": 0.2832225939056907,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        316,
+        33
+      ],
+      [
+        235,
+        114
+      ]
+    ]
+  }
+}
