@@ -1,0 +1,246 @@
+{
+  "positive_defence": [
+    {
+      "feature": "strategic",
+      "coefficient": 5.267063485156148
+    },
+    {
+      "feature": "operational",
+      "coefficient": 4.985295052835811
+    },
+    {
+      "feature": "planning",
+      "coefficient": 4.861698745620054
+    },
+    {
+      "feature": "jmap",
+      "coefficient": 3.957236561688603
+    },
+    {
+      "feature": "adf",
+      "coefficient": 3.6263199194699776
+    },
+    {
+      "feature": "doctrine",
+      "coefficient": 3.10485123047238
+    },
+    {
+      "feature": "the adf",
+      "coefficient": 2.9389376549522965
+    },
+    {
+      "feature": "warfare",
+      "coefficient": 2.881003327483815
+    },
+    {
+      "feature": "the jmap",
+      "coefficient": 2.8017090677807817
+    },
+    {
+      "feature": "approach",
+      "coefficient": 2.7843796170087285
+    },
+    {
+      "feature": "environment",
+      "coefficient": 2.7254070534075483
+    },
+    {
+      "feature": "western",
+      "coefficient": 2.4892186125103266
+    },
+    {
+      "feature": "political warfare",
+      "coefficient": 2.4853171188609013
+    },
+    {
+      "feature": "military",
+      "coefficient": 2.481354593163028
+    },
+    {
+      "feature": "key",
+      "coefficient": 2.3397788603223213
+    },
+    {
+      "feature": "capabilities",
+      "coefficient": 2.334552929781367
+    },
+    {
+      "feature": "this",
+      "coefficient": 2.2899617187600105
+    },
+    {
+      "feature": "within",
+      "coefficient": 2.2218828918061644
+    },
+    {
+      "feature": "will",
+      "coefficient": 2.2132301123115403
+    },
+    {
+      "feature": "cog",
+      "coefficient": 2.2063594510414988
+    },
+    {
+      "feature": "significant",
+      "coefficient": 2.171941840403932
+    },
+    {
+      "feature": "complex",
+      "coefficient": 2.136678152516737
+    },
+    {
+      "feature": "capability",
+      "coefficient": 2.129793371693612
+    },
+    {
+      "feature": "australian",
+      "coefficient": 2.1123800031748776
+    },
+    {
+      "feature": "of",
+      "coefficient": 2.018944153400883
+    },
+    {
+      "feature": "challenges",
+      "coefficient": 1.9837811979663753
+    },
+    {
+      "feature": "the operational",
+      "coefficient": 1.9645386076577596
+    },
+    {
+      "feature": "adversary",
+      "coefficient": 1.9544699205340434
+    },
+    {
+      "feature": "required",
+      "coefficient": 1.9016563902467127
+    },
+    {
+      "feature": "of military",
+      "coefficient": 1.880860948746541
+    }
+  ],
+  "negative_wikipedia": [
+    {
+      "feature": "was",
+      "coefficient": -4.018986100219077
+    },
+    {
+      "feature": "help",
+      "coefficient": -3.931610554168673
+    },
+    {
+      "feature": "people",
+      "coefficient": -3.3125127000286785
+    },
+    {
+      "feature": "they",
+      "coefficient": -3.1520944542501765
+    },
+    {
+      "feature": "like",
+      "coefficient": -3.080154728643673
+    },
+    {
+      "feature": "more",
+      "coefficient": -3.0342069060927335
+    },
+    {
+      "feature": "had",
+      "coefficient": -2.877038311870692
+    },
+    {
+      "feature": "were",
+      "coefficient": -2.6925751635316604
+    },
+    {
+      "feature": "important",
+      "coefficient": -2.6409682015665563
+    },
+    {
+      "feature": "other",
+      "coefficient": -2.610176223453176
+    },
+    {
+      "feature": "about",
+      "coefficient": -2.5891175897319316
+    },
+    {
+      "feature": "used",
+      "coefficient": -2.5609929576177426
+    },
+    {
+      "feature": "helps",
+      "coefficient": -2.3819214662716393
+    },
+    {
+      "feature": "keep",
+      "coefficient": -2.3066228440645733
+    },
+    {
+      "feature": "in",
+      "coefficient": -2.3065538208041043
+    },
+    {
+      "feature": "main",
+      "coefficient": -2.27593191635109
+    },
+    {
+      "feature": "up",
+      "coefficient": -2.262740068701562
+    },
+    {
+      "feature": "in the",
+      "coefficient": -2.1808561596623646
+    },
+    {
+      "feature": "many",
+      "coefficient": -2.156974374199123
+    },
+    {
+      "feature": "make",
+      "coefficient": -2.131955101978012
+    },
+    {
+      "feature": "to help",
+      "coefficient": -2.110639650416288
+    },
+    {
+      "feature": "because",
+      "coefficient": -2.0956949973471994
+    },
+    {
+      "feature": "at",
+      "coefficient": -2.07104998052871
+    },
+    {
+      "feature": "work",
+      "coefficient": -2.023599369832178
+    },
+    {
+      "feature": "also",
+      "coefficient": -2.0120829076396873
+    },
+    {
+      "feature": "together",
+      "coefficient": -1.9822395415151997
+    },
+    {
+      "feature": "sure",
+      "coefficient": -1.9805976032103285
+    },
+    {
+      "feature": "have",
+      "coefficient": -1.9483316653079017
+    },
+    {
+      "feature": "which",
+      "coefficient": -1.94212956002774
+    },
+    {
+      "feature": "some",
+      "coefficient": -1.9360758808043992
+    }
+  ]
+}

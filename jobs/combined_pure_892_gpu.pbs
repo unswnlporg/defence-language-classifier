@@ -1,0 +1,69 @@
+#!/bin/bash
+#PBS -N combpure892-gpu
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -q csegpu12
+#PBS -j oe
+
+set -euo pipefail
+REPO=/home/z5703460/defence-language-classifier
+SCRATCH=/srv/scratch/z5703460
+VENV="$SCRATCH/venvs/defence-language-classifier"
+PY="$VENV/bin/python"
+
+module purge
+module load python/3.11.3
+export HF_HOME="$SCRATCH/cache/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TOKENIZERS_PARALLELISM=true
+
+cd "$REPO"
+mkdir -p reports/cross_eval_combined_pure_892 reports/pairwise_eval_combined_pure_892
+DS=data/processed/combined_pure_892_dataset_splits.jsonl
+
+if [[ -f "models/combined_pure_892_qwen/model_metadata.json" ]]; then
+  echo "SKIP train qwen (already done)"
+else
+  raw_dir="models/combined_pure_892_qwen_raw"
+  "$PY" scripts/train_baselines.py \
+    --dataset "$DS" \
+    --model-dir "$raw_dir" \
+    --report-dir "reports/combined_pure_892_qwen" \
+    --cache-dir "$SCRATCH/defence-language-classifier/embeddings/combinedpure892-qwen3-embedding-8b" \
+    --sbert-checkpoint Qwen/Qwen3-Embedding-8B \
+    --batch-size 4
+  "$PY" scripts/reorganize_model_dir.py "$raw_dir" "combined_pure_892" qwen models
+fi
+
+declare -A TESTSETS=(
+  [easy]=data/processed/dataset_splits.jsonl
+  [pure_topic]=data/processed/pure_topic_892_dataset_splits.jsonl
+  [preference]=data/processed/preference_892_dataset_splits.jsonl
+)
+model_dir="models/combined_pure_892_qwen"
+for test_name in "${!TESTSETS[@]}"; do
+  out="reports/cross_eval_combined_pure_892/qwen_on_${test_name}.json"
+  if [[ -f "$out" ]]; then echo "SKIP $out"; continue; fi
+  "$PY" scripts/cross_evaluate.py \
+    --model-dir "$model_dir" --model-type sbert \
+    --target-dataset "${TESTSETS[$test_name]}" \
+    --output "$out" --batch-size 4
+done
+
+for test_name in preference pure_topic; do
+  prefix="reports/pairwise_eval_combined_pure_892/qwen_on_${test_name}"
+  if [[ -f "${prefix}_summary.json" ]]; then echo "SKIP ${prefix}_summary.json"; continue; fi
+  "$PY" scripts/evaluate_pairwise_892.py \
+    --model-dir "$model_dir" --model-type sbert \
+    --test-name "$test_name" \
+    --scores-output "${prefix}_scores.jsonl" \
+    --summary-output "${prefix}_summary.json" \
+    --batch-size 4
+done
+cat > "reports/pairwise_eval_combined_pure_892/qwen_on_easy_summary.json" <<'EOF'
+{
+  "status": "unavailable",
+  "reason": "Easy dataset has no recorded ground-truth positive/negative pairing (original negatives were only length-matched at build time, not id-linked to a specific Defence passage). Per spec, arbitrary positional/hash-sorted pairing is not used here as a substitute."
+}
+EOF
+echo "combined_pure_892 GPU stage complete."

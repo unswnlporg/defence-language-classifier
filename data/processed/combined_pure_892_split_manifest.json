@@ -1,0 +1,63 @@
+{
+  "dataset_name": "combined_pure_892",
+  "seed": 42,
+  "replaces": "combined_892 (which used Hybrid-892, mixing topic-matched with easy-fallback negatives); this version uses only genuine topic-matched negatives",
+  "quotas": {
+    "train": {
+      "easy": 207,
+      "pure_topic": 207,
+      "preference": 206
+    },
+    "validation": {
+      "easy": 45,
+      "pure_topic": 45,
+      "preference": 46
+    },
+    "test": {
+      "easy": 46,
+      "pure_topic": 45,
+      "preference": 45
+    }
+  },
+  "global_test_document_exclusion_count": 270,
+  "total_examples": 1784,
+  "pairs_by_split_and_source": {
+    "test_easy": 46,
+    "test_preference": 45,
+    "test_pure_topic": 45,
+    "train_easy": 207,
+    "train_preference": 206,
+    "train_pure_topic": 207,
+    "validation_easy": 45,
+    "validation_preference": 46,
+    "validation_pure_topic": 45
+  },
+  "easy_pairing_note": "Easy source has no recorded ground-truth positive/negative link; pairs were formed by deterministic SHA256-sorted zipping (seed 42, documented, not a real content pairing). Pairwise Easy evaluation is reported as unavailable for this reason, per spec.",
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 1240,
+      "documents": 563,
+      "positive": 620,
+      "negative": 620,
+      "general_wikipedia": 103,
+      "military_wikipedia": 104
+    },
+    "validation": {
+      "passages": 272,
+      "documents": 124,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 21,
+      "military_wikipedia": 24
+    },
+    "test": {
+      "passages": 272,
+      "documents": 125,
+      "positive": 136,
+      "negative": 136,
+      "general_wikipedia": 23,
+      "military_wikipedia": 23
+    }
+  },
+  "output_sha256": "c7bffa4b1740aa7de623fde03fc1402d3f510c8f099fbf688c32171a1209a07b"
+}

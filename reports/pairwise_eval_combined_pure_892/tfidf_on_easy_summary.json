@@ -1,0 +1,4 @@
+{
+  "status": "unavailable",
+  "reason": "Easy dataset has no recorded ground-truth positive/negative pairing (original negatives were only length-matched at build time, not id-linked to a specific Defence passage). Per spec, arbitrary positional/hash-sorted pairing is not used here as a substitute."
+}

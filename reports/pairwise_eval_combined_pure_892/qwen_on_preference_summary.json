@@ -1,0 +1,24 @@
+{
+  "model_dir": "models/combined_pure_892_qwen",
+  "model_type": "sbert",
+  "test_name": "preference",
+  "pairing_method": "candidate_id (real pairing)",
+  "threshold": 0.43896734714508057,
+  "n_pairs": 136,
+  "pairwise": {
+    "positive_greater_than_negative": 136,
+    "negative_wins": 0,
+    "ties": 0,
+    "win_rate": 1.0
+  },
+  "scores": {
+    "positive_mean": 0.7252013087272644,
+    "negative_mean": 0.1395842283964157,
+    "mean_margin": 0.5856170654296875,
+    "median_margin": 0.6252721548080444,
+    "mean_margin_95_percent_bootstrap_ci": [
+      0.5385811060667038,
+      0.6325916811823845
+    ]
+  }
+}

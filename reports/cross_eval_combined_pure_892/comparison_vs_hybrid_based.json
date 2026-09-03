@@ -1,0 +1,157 @@
+{
+  "rows": [
+    {
+      "model": "tfidf",
+      "test_dataset": "easy",
+      "old_hybrid_based": {
+        "accuracy": 0.9888888888888889,
+        "f1": 0.9890909090909091,
+        "roc_auc": 0.9990671641791045
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9851851851851852,
+        "f1": 0.9854014598540146,
+        "roc_auc": 0.9991769095697981
+      },
+      "accuracy_delta": -0.0037,
+      "f1_delta": -0.0037,
+      "auroc_delta": 0.0001
+    },
+    {
+      "model": "tfidf",
+      "test_dataset": "pure_topic",
+      "old_hybrid_based": {
+        "accuracy": 0.8866666666666667,
+        "f1": 0.8982035928143712,
+        "roc_auc": 0.9893333333333334
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.8866666666666667,
+        "f1": 0.896969696969697,
+        "roc_auc": 0.9879111111111111
+      },
+      "accuracy_delta": 0.0,
+      "f1_delta": -0.0012,
+      "auroc_delta": -0.0014
+    },
+    {
+      "model": "tfidf",
+      "test_dataset": "preference",
+      "old_hybrid_based": {
+        "accuracy": 0.9007352941176471,
+        "f1": 0.8924302788844621,
+        "roc_auc": 0.9779952422145328
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9080882352941176,
+        "f1": 0.9034749034749034,
+        "roc_auc": 0.9761570069204153
+      },
+      "accuracy_delta": 0.0074,
+      "f1_delta": 0.011,
+      "auroc_delta": -0.0018
+    },
+    {
+      "model": "minilm",
+      "test_dataset": "easy",
+      "old_hybrid_based": {
+        "accuracy": 0.9851851851851852,
+        "f1": 0.9854014598540146,
+        "roc_auc": 0.9987928007023705
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9888888888888889,
+        "f1": 0.988929889298893,
+        "roc_auc": 0.9995610184372257
+      },
+      "accuracy_delta": 0.0037,
+      "f1_delta": 0.0035,
+      "auroc_delta": 0.0008
+    },
+    {
+      "model": "minilm",
+      "test_dataset": "pure_topic",
+      "old_hybrid_based": {
+        "accuracy": 0.8866666666666667,
+        "f1": 0.8982035928143712,
+        "roc_auc": 0.9904
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9333333333333333,
+        "f1": 0.9367088607594937,
+        "roc_auc": 0.9930666666666667
+      },
+      "accuracy_delta": 0.0467,
+      "f1_delta": 0.0385,
+      "auroc_delta": 0.0027
+    },
+    {
+      "model": "minilm",
+      "test_dataset": "preference",
+      "old_hybrid_based": {
+        "accuracy": 0.7867647058823529,
+        "f1": 0.7819548872180451,
+        "roc_auc": 0.8546712802768166
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.7830882352941176,
+        "f1": 0.7510548523206751,
+        "roc_auc": 0.8526708477508651
+      },
+      "accuracy_delta": -0.0037,
+      "f1_delta": -0.0309,
+      "auroc_delta": -0.002
+    },
+    {
+      "model": "qwen",
+      "test_dataset": "easy",
+      "old_hybrid_based": {
+        "accuracy": 0.9888888888888889,
+        "f1": 0.9890909090909091,
+        "roc_auc": 0.9995610184372257
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9888888888888889,
+        "f1": 0.9890909090909091,
+        "roc_auc": 0.9998902546093064
+      },
+      "accuracy_delta": 0.0,
+      "f1_delta": 0.0,
+      "auroc_delta": 0.0003
+    },
+    {
+      "model": "qwen",
+      "test_dataset": "pure_topic",
+      "old_hybrid_based": {
+        "accuracy": 0.9666666666666667,
+        "f1": 0.967741935483871,
+        "roc_auc": 0.9991111111111112
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.9466666666666667,
+        "f1": 0.9493670886075949,
+        "roc_auc": 0.9996444444444444
+      },
+      "accuracy_delta": -0.02,
+      "f1_delta": -0.0184,
+      "auroc_delta": 0.0005
+    },
+    {
+      "model": "qwen",
+      "test_dataset": "preference",
+      "old_hybrid_based": {
+        "accuracy": 0.8345588235294118,
+        "f1": 0.8132780082987552,
+        "roc_auc": 0.9423118512110726
+      },
+      "new_pure_topic_based": {
+        "accuracy": 0.8566176470588235,
+        "f1": 0.8494208494208494,
+        "roc_auc": 0.9392301038062284
+      },
+      "accuracy_delta": 0.0221,
+      "f1_delta": 0.0361,
+      "auroc_delta": -0.0031
+    }
+  ]
+}

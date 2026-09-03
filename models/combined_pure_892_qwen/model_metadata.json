@@ -1,0 +1,10 @@
+{
+  "dataset_sha256": "c7bffa4b1740aa7de623fde03fc1402d3f510c8f099fbf688c32171a1209a07b",
+  "sbert_logistic_regression": {
+    "artifact": "sbert_logistic_regression.joblib",
+    "checkpoint": "Qwen/Qwen3-Embedding-8B",
+    "normalize_embeddings": true,
+    "embedding_dimension": 4096,
+    "threshold": 0.43896734714508057
+  }
+}
