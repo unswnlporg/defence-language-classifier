@@ -1,0 +1,64 @@
+{
+  "dataset_name": "combined_preference_heavy",
+  "seed": 42,
+  "exclusion": {
+    "excluded_document_ids": 270,
+    "excluded_normalised_texts": 617,
+    "excluded_pair_ids": 211,
+    "easy_pairs_excluded": 617,
+    "pure_topic_pairs_excluded": 80,
+    "preference_pairs_excluded": 140
+  },
+  "eligible_pairs": {
+    "easy": 275,
+    "pure_topic": 359,
+    "preference": 2187
+  },
+  "final_counts_by_split_and_source": {
+    "train": {
+      "easy": 198,
+      "pure_topic": 257,
+      "preference": 1520
+    },
+    "validation": {
+      "easy": 43,
+      "pure_topic": 46,
+      "preference": 334
+    },
+    "test": {
+      "easy": 34,
+      "pure_topic": 56,
+      "preference": 333
+    }
+  },
+  "total_pairs": 2821,
+  "total_examples": 5642,
+  "easy_pairing_note": "Easy pairs are deterministic SHA256-sorted synthetic pairings, not genuine source-linked pairs (Easy negatives were only length-matched at build time). Pure-Topic and Preference pairs are genuine (matched_defence_example_id and candidate_id respectively).",
+  "validate_dataset_summary": {
+    "train": {
+      "passages": 3950,
+      "documents": 1990,
+      "positive": 1975,
+      "negative": 1975,
+      "general_wikipedia": 133,
+      "military_wikipedia": 65
+    },
+    "validation": {
+      "passages": 846,
+      "documents": 425,
+      "positive": 423,
+      "negative": 423,
+      "general_wikipedia": 23,
+      "military_wikipedia": 20
+    },
+    "test": {
+      "passages": 846,
+      "documents": 426,
+      "positive": 423,
+      "negative": 423,
+      "general_wikipedia": 19,
+      "military_wikipedia": 15
+    }
+  },
+  "output_sha256": "6013e28dc2250f317d9a0710b760a27cdf7f94d4c186fbc47dda5c8df8966c15"
+}

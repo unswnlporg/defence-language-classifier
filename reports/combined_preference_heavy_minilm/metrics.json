@@ -1,0 +1,499 @@
+{
+  "dataset": {
+    "path": "data/processed/combined_preference_heavy_dataset_splits.jsonl",
+    "sha256": "6013e28dc2250f317d9a0710b760a27cdf7f94d4c186fbc47dda5c8df8966c15",
+    "splits": {
+      "train": {
+        "passages": 3950,
+        "documents": 1990,
+        "positive": 1975,
+        "negative": 1975,
+        "general_wikipedia": 133,
+        "military_wikipedia": 65
+      },
+      "validation": {
+        "passages": 846,
+        "documents": 425,
+        "positive": 423,
+        "negative": 423,
+        "general_wikipedia": 23,
+        "military_wikipedia": 20
+      },
+      "test": {
+        "passages": 846,
+        "documents": 426,
+        "positive": 423,
+        "negative": 423,
+        "general_wikipedia": 19,
+        "military_wikipedia": 15
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.3",
+    "scikit_learn": "1.9.0",
+    "sentence_transformers": "6.0.0"
+  },
+  "tfidf_logistic_regression": {
+    "selection": {
+      "selected": {
+        "C": 10.0,
+        "threshold": 0.45496163485655416,
+        "validation": {
+          "n": 846,
+          "threshold": 0.45496163485655416,
+          "accuracy": 0.9716312056737588,
+          "precision": 0.9586206896551724,
+          "recall": 0.9858156028368794,
+          "f1": 0.972027972027972,
+          "roc_auc": 0.9956798506670244,
+          "average_precision": 0.9957041910183558,
+          "brier_score": 0.0327093710181223,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              405,
+              18
+            ],
+            [
+              6,
+              417
+            ]
+          ]
+        }
+      },
+      "candidates": [
+        {
+          "C": 0.01,
+          "threshold": 0.5009275767014001,
+          "validation": {
+            "n": 846,
+            "threshold": 0.5009275767014001,
+            "accuracy": 0.9479905437352246,
+            "precision": 0.9417249417249417,
+            "recall": 0.9550827423167849,
+            "f1": 0.9483568075117371,
+            "roc_auc": 0.989224776307921,
+            "average_precision": 0.989103813716434,
+            "brier_score": 0.2388935211811819,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                398,
+                25
+              ],
+              [
+                19,
+                404
+              ]
+            ]
+          }
+        },
+        {
+          "C": 0.1,
+          "threshold": 0.5077873383589525,
+          "validation": {
+            "n": 846,
+            "threshold": 0.5077873383589525,
+            "accuracy": 0.9515366430260047,
+            "precision": 0.9483568075117371,
+            "recall": 0.9550827423167849,
+            "f1": 0.9517078916372202,
+            "roc_auc": 0.9912479251546703,
+            "average_precision": 0.9912656746397167,
+            "brier_score": 0.17432248453630791,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                401,
+                22
+              ],
+              [
+                19,
+                404
+              ]
+            ]
+          }
+        },
+        {
+          "C": 1.0,
+          "threshold": 0.5129516492153964,
+          "validation": {
+            "n": 846,
+            "threshold": 0.5129516492153964,
+            "accuracy": 0.9657210401891253,
+            "precision": 0.9624413145539906,
+            "recall": 0.9692671394799054,
+            "f1": 0.9658421672555948,
+            "roc_auc": 0.9947744636140592,
+            "average_precision": 0.9948223538147783,
+            "brier_score": 0.06954359945463726,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                407,
+                16
+              ],
+              [
+                13,
+                410
+              ]
+            ]
+          }
+        },
+        {
+          "C": 10.0,
+          "threshold": 0.45496163485655416,
+          "validation": {
+            "n": 846,
+            "threshold": 0.45496163485655416,
+            "accuracy": 0.9716312056737588,
+            "precision": 0.9586206896551724,
+            "recall": 0.9858156028368794,
+            "f1": 0.972027972027972,
+            "roc_auc": 0.9956798506670244,
+            "average_precision": 0.9957041910183558,
+            "brier_score": 0.0327093710181223,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                405,
+                18
+              ],
+              [
+                6,
+                417
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "test": {
+      "overall": {
+        "n": 846,
+        "threshold": 0.45496163485655416,
+        "accuracy": 0.9598108747044918,
+        "precision": 0.9533799533799534,
+        "recall": 0.966903073286052,
+        "f1": 0.960093896713615,
+        "roc_auc": 0.9948471181306552,
+        "average_precision": 0.9948888843542057,
+        "brier_score": 0.03192236331485476,
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            403,
+            20
+          ],
+          [
+            14,
+            409
+          ]
+        ]
+      },
+      "negative_slices": {
+        "general_wikipedia": {
+          "n": 442,
+          "threshold": 0.45496163485655416,
+          "accuracy": 0.9683257918552036,
+          "precision": 1.0,
+          "recall": 0.966903073286052,
+          "f1": 0.9831730769230769,
+          "roc_auc": 0.9976359338061466,
+          "average_precision": 0.9998950624873344,
+          "brier_score": 0.031052371976021682,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              19,
+              0
+            ],
+            [
+              14,
+              409
+            ]
+          ]
+        },
+        "military_wikipedia": {
+          "n": 438,
+          "threshold": 0.45496163485655416,
+          "accuracy": 0.9680365296803652,
+          "precision": 1.0,
+          "recall": 0.966903073286052,
+          "f1": 0.9831730769230769,
+          "roc_auc": 0.9982663514578408,
+          "average_precision": 0.9999390802517711,
+          "brier_score": 0.030740258961145652,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              15,
+              0
+            ],
+            [
+              14,
+              409
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "sbert_logistic_regression": {
+    "checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dimension": 384,
+    "selection": {
+      "selected": {
+        "C": 10.0,
+        "threshold": 0.4170578122138977,
+        "validation": {
+          "n": 846,
+          "threshold": 0.4170578122138977,
+          "accuracy": 0.9160756501182034,
+          "precision": 0.8963963963963963,
+          "recall": 0.9408983451536643,
+          "f1": 0.9181084198385236,
+          "roc_auc": 0.9703849012736896,
+          "average_precision": 0.9725832763432063,
+          "brier_score": 0.06713662296533585,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              377,
+              46
+            ],
+            [
+              25,
+              398
+            ]
+          ]
+        }
+      },
+      "candidates": [
+        {
+          "C": 0.01,
+          "threshold": 0.475360244512558,
+          "validation": {
+            "n": 846,
+            "threshold": 0.475360244512558,
+            "accuracy": 0.7624113475177305,
+            "precision": 0.7126436781609196,
+            "recall": 0.8794326241134752,
+            "f1": 0.7873015873015873,
+            "roc_auc": 0.8647787669969652,
+            "average_precision": 0.8821845638051858,
+            "brier_score": 0.2182197868824005,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                273,
+                150
+              ],
+              [
+                51,
+                372
+              ]
+            ]
+          }
+        },
+        {
+          "C": 0.1,
+          "threshold": 0.47119346261024475,
+          "validation": {
+            "n": 846,
+            "threshold": 0.47119346261024475,
+            "accuracy": 0.8427895981087471,
+            "precision": 0.8341013824884793,
+            "recall": 0.8557919621749409,
+            "f1": 0.8448074679113186,
+            "roc_auc": 0.922404976275506,
+            "average_precision": 0.9313080230889232,
+            "brier_score": 0.14508774876594543,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                351,
+                72
+              ],
+              [
+                61,
+                362
+              ]
+            ]
+          }
+        },
+        {
+          "C": 1.0,
+          "threshold": 0.5280335545539856,
+          "validation": {
+            "n": 846,
+            "threshold": 0.5280335545539856,
+            "accuracy": 0.9030732860520094,
+            "precision": 0.9251870324189526,
+            "recall": 0.8770685579196218,
+            "f1": 0.9004854368932039,
+            "roc_auc": 0.9603194563206634,
+            "average_precision": 0.9637677303353039,
+            "brier_score": 0.0870596170425415,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                393,
+                30
+              ],
+              [
+                52,
+                371
+              ]
+            ]
+          }
+        },
+        {
+          "C": 10.0,
+          "threshold": 0.4170578122138977,
+          "validation": {
+            "n": 846,
+            "threshold": 0.4170578122138977,
+            "accuracy": 0.9160756501182034,
+            "precision": 0.8963963963963963,
+            "recall": 0.9408983451536643,
+            "f1": 0.9181084198385236,
+            "roc_auc": 0.9703849012736896,
+            "average_precision": 0.9725832763432063,
+            "brier_score": 0.06713662296533585,
+            "confusion_matrix_labels": [
+              0,
+              1
+            ],
+            "confusion_matrix": [
+              [
+                377,
+                46
+              ],
+              [
+                25,
+                398
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "test": {
+      "overall": {
+        "n": 846,
+        "threshold": 0.4170578122138977,
+        "accuracy": 0.8936170212765957,
+        "precision": 0.8691796008869179,
+        "recall": 0.9267139479905437,
+        "f1": 0.897025171624714,
+        "roc_auc": 0.957117068781472,
+        "average_precision": 0.9580237028721509,
+        "brier_score": 0.07885301858186722,
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "confusion_matrix": [
+          [
+            364,
+            59
+          ],
+          [
+            31,
+            392
+          ]
+        ]
+      },
+      "negative_slices": {
+        "general_wikipedia": {
+          "n": 442,
+          "threshold": 0.4170578122138977,
+          "accuracy": 0.920814479638009,
+          "precision": 0.98989898989899,
+          "recall": 0.9267139479905437,
+          "f1": 0.9572649572649573,
+          "roc_auc": 0.9674007714321264,
+          "average_precision": 0.9984676996531949,
+          "brier_score": 0.07634802162647247,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              15,
+              4
+            ],
+            [
+              31,
+              392
+            ]
+          ]
+        },
+        "military_wikipedia": {
+          "n": 438,
+          "threshold": 0.4170578122138977,
+          "accuracy": 0.9223744292237442,
+          "precision": 0.9924050632911392,
+          "recall": 0.9267139479905437,
+          "f1": 0.9584352078239609,
+          "roc_auc": 0.9478329393223011,
+          "average_precision": 0.998033511558047,
+          "brier_score": 0.07787779718637466,
+          "confusion_matrix_labels": [
+            0,
+            1
+          ],
+          "confusion_matrix": [
+            [
+              12,
+              3
+            ],
+            [
+              31,
+              392
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

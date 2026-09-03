@@ -1,0 +1,169 @@
+{
+  "model_dir": "models/combined_preference_heavy_minilm",
+  "model_type": "sbert",
+  "threshold": 0.4170578122138977,
+  "n_examples": 846,
+  "n_pairs": 423,
+  "overall": {
+    "n": 846,
+    "threshold": 0.4170578122138977,
+    "accuracy": 0.8936170212765957,
+    "precision": 0.8691796008869179,
+    "recall": 0.9267139479905437,
+    "f1": 0.897025171624714,
+    "roc_auc": 0.957117068781472,
+    "average_precision": 0.9580237028721509,
+    "brier_score": 0.07885301858186722,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        364,
+        59
+      ],
+      [
+        31,
+        392
+      ]
+    ]
+  },
+  "by_source_classification": {
+    "easy": {
+      "n": 68,
+      "threshold": 0.4170578122138977,
+      "accuracy": 0.8970588235294118,
+      "precision": 0.8292682926829268,
+      "recall": 1.0,
+      "f1": 0.9066666666666666,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "brier_score": 0.04697798565030098,
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "confusion_matrix": [
+        [
+          27,
+          7
+        ],
+        [
+          0,
+          34
+        ]
+      ]
+    },
+    "pure_topic": {
+      "n": 112,
+      "threshold": 0.4170578122138977,
+      "accuracy": 0.875,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8888888888888888,
+      "roc_auc": 0.9633290816326531,
+      "average_precision": 0.9599239435453386,
+      "brier_score": 0.08588653802871704,
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "confusion_matrix": [
+        [
+          42,
+          14
+        ],
+        [
+          0,
+          56
+        ]
+      ]
+    },
+    "preference": {
+      "n": 666,
+      "threshold": 0.4170578122138977,
+      "accuracy": 0.8963963963963963,
+      "precision": 0.888235294117647,
+      "recall": 0.9069069069069069,
+      "f1": 0.8974739970282318,
+      "roc_auc": 0.9555321086852617,
+      "average_precision": 0.9567620099490681,
+      "brier_score": 0.08092471212148666,
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "confusion_matrix": [
+        [
+          295,
+          38
+        ],
+        [
+          31,
+          302
+        ]
+      ]
+    }
+  },
+  "overall_pairwise": {
+    "positive_greater_than_negative": 420,
+    "negative_wins": 3,
+    "ties": 0,
+    "win_rate": 0.9929078014184397,
+    "positive_mean": 0.8340145788258977,
+    "negative_mean": 0.17119750404174094,
+    "mean_margin": 0.6628170747841567,
+    "median_margin": 0.738824650645256
+  },
+  "pairwise_by_source": {
+    "easy": {
+      "pairing_type": "synthetic (SHA256-sorted, no ground-truth link)",
+      "n_pairs": 34,
+      "positive_greater_than_negative": 34,
+      "negative_wins": 0,
+      "ties": 0,
+      "win_rate": 1.0,
+      "positive_mean": 0.9593198334469515,
+      "negative_mean": 0.18804435692522126,
+      "mean_margin": 0.7712754765217302,
+      "median_margin": 0.8602174093248323,
+      "mean_margin_95_percent_bootstrap_ci": [
+        0.6913618837451555,
+        0.8430342274249758
+      ]
+    },
+    "pure_topic": {
+      "pairing_type": "genuine",
+      "n_pairs": 56,
+      "positive_greater_than_negative": 54,
+      "negative_wins": 2,
+      "ties": 0,
+      "win_rate": 0.9642857142857143,
+      "positive_mean": 0.9177262697901044,
+      "negative_mean": 0.2605915676727558,
+      "mean_margin": 0.6571347021173486,
+      "median_margin": 0.7352893557399511,
+      "mean_margin_95_percent_bootstrap_ci": [
+        0.5791931935471699,
+        0.7302134797011344
+      ]
+    },
+    "preference": {
+      "pairing_type": "genuine",
+      "n_pairs": 333,
+      "positive_greater_than_negative": 332,
+      "negative_wins": 1,
+      "ties": 0,
+      "win_rate": 0.996996996996997,
+      "positive_mean": 0.8071430072009385,
+      "negative_mean": 0.1544441690225963,
+      "mean_margin": 0.6526988381783422,
+      "median_margin": 0.7312443763948977,
+      "mean_margin_95_percent_bootstrap_ci": [
+        0.6238868355680901,
+        0.6813613819584756
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/combined_preference_heavy_qwen",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.4277815520763397,
+  "metrics": {
+    "n": 270,
+    "threshold": 0.4277815520763397,
+    "accuracy": 0.9666666666666667,
+    "precision": 0.9379310344827586,
+    "recall": 1.0,
+    "f1": 0.9679715302491103,
+    "roc_auc": 0.997859964881475,
+    "average_precision": 0.9978239762549046,
+    "brier_score": 0.024886604398489,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        125,
+        9
+      ],
+      [
+        0,
+        136
+      ]
+    ]
+  }
+}

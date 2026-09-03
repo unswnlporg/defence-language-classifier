@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/combined_preference_heavy_minilm",
+  "model_type": "sbert",
+  "target_dataset": "data/processed/dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.4170578122138977,
+  "metrics": {
+    "n": 270,
+    "threshold": 0.4170578122138977,
+    "accuracy": 0.9444444444444444,
+    "precision": 0.9060402684563759,
+    "recall": 0.9926470588235294,
+    "f1": 0.9473684210526315,
+    "roc_auc": 0.9951163301141351,
+    "average_precision": 0.9955227802913146,
+    "brier_score": 0.034158967435359955,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        120,
+        14
+      ],
+      [
+        1,
+        135
+      ]
+    ]
+  }
+}

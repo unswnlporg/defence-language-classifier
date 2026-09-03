@@ -1,0 +1,32 @@
+{
+  "source_model_dir": "models/combined_preference_heavy_tfidf",
+  "model_type": "tfidf",
+  "target_dataset": "data/processed/dataset_splits.jsonl",
+  "split": "test",
+  "threshold_used": 0.45496163485655416,
+  "metrics": {
+    "n": 270,
+    "threshold": 0.45496163485655416,
+    "accuracy": 0.9851851851851852,
+    "precision": 0.9714285714285714,
+    "recall": 1.0,
+    "f1": 0.9855072463768116,
+    "roc_auc": 0.9957748024582967,
+    "average_precision": 0.9950073081375439,
+    "brier_score": 0.02018528774492918,
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        130,
+        4
+      ],
+      [
+        0,
+        136
+      ]
+    ]
+  }
+}

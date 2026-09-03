@@ -64,6 +64,12 @@ models/combined_pure_892_tfidf/*.joblib
 models/combined_pure_892_minilm/*.joblib
 !models/combined_pure_892_qwen/
 models/combined_pure_892_qwen/*.joblib
+!models/combined_preference_heavy_tfidf/
+models/combined_preference_heavy_tfidf/*.joblib
+!models/combined_preference_heavy_minilm/
+models/combined_preference_heavy_minilm/*.joblib
+!models/combined_preference_heavy_qwen/
+models/combined_preference_heavy_qwen/*.joblib
 models/*_892_*_raw/
 !reports/.gitkeep
 
